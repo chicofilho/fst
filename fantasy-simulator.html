@@ -458,7 +458,7 @@
         jQuery(document).ready(function(){
              
             tierA = ['MATT WILKINSON', 'KOLOHE ANDINO', 'CAIO IBELLI', 'STUART KENNEDY', 'JORDY SMITH', 'CONNER COFFIN', 'ADRIANO DE SOUZA', 'ITALO FERREIRA']
-            tierB = ['ADRIAN BUCHAN', 'SEBASTIAN ZIETZ', 'KANOA IGARASHI', 'JOHN JOHN FLORENCE', 'NAT YOUNG', 'DAVEY CATHELS', 'KAI OTTON', 'JEREMY FLORES', 'GABRIEL MEDINA', 'MICHEL BOUREZ', 'JADSON ANDRE', 'WIGGOLLY DANTAS', 'MICK FANNING','JOEL PARKINSON', 'TAJ BURROW', 'JOSH KERR', 'KELLY SLATER', 'JULIAN WILSON']
+            tierB = ['ADRIAN BUCHAN', 'SEBASTIAN ZIETZ', 'KANOA IGARASHI', 'JOHN JOHN FLORENCE', 'NAT YOUNG', 'DAVEY CATHELS', 'KAI OTTON', 'JEREMY FLORES', 'GABRIEL MEDINA', 'MICHEL BOUREZ', 'WIGGOLLY DANTAS', 'MICK FANNING','JOEL PARKINSON', 'TAJ BURROW', 'JOSH KERR', 'KELLY SLATER', 'JULIAN WILSON']
             tierC = ['RYAN CALLINAN', 'DUSTY PAYNE', 'JADSON ANDRE', 'KEANU ASING', 'MATT BANTING', 'JORDY SMITH', 'ALEX RIBEIRO', 'ADAM MELLING', 'MIGUEL PUPO', 'ALEJO MUNIZ', 'JACK FREESTONE']
 
             rd1 = [
@@ -570,11 +570,16 @@
                 while(tierA_result.length<2 || tierB_result.length<4 || tierC_result.length<2){
                     
                     surfer = picked_result[i][0]
+                    console.log(surfer)
                     has_matchup = false
                     if(rd1_matchups){
                         has_matchup = compute_macthups(surfer, all_tiers)
                     }
+                    console.log(has_matchup)
                     if(!has_matchup){
+                        console.log(contains.call(tierA, surfer))
+                        console.log(contains.call(tierB, surfer))
+                        console.log(contains.call(tierC, surfer))
                         if(contains.call(tierA, surfer)){
                             if(tierA_result.length<2){
                                 all_tiers.push(surfer)
@@ -586,6 +591,8 @@
                                 tierB_result.push(surfer)    
                             }
                         }else if(contains.call(tierC, surfer)){
+                            console.log(tierC_result.length)
+
                            if(tierC_result.length<2){
                                 all_tiers.push(surfer)
                                 tierC_result.push(surfer)    
