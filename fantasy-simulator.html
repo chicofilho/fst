@@ -870,6 +870,7 @@
                 };
 
                 counter = 1
+                change = 0
                 for (var i = 0; i < rd_heads.length; i++) {
                     for (var j = 0; j < rd3_ordered.length; j++) {
                         
@@ -879,9 +880,15 @@
                             console.log(counter)
                     
                             rd3[rd3_head_obj[counter]-1].push(rd3_ordered[j])
-                            counter = counter+1
+                            if(change == 0){
+                                counter = counter+1    
+                            }else{
+                                counter = counter-1
+                            }
+                            
                         }if(counter == 13){
-                            counter = 1
+                            change = 1
+                            counter = 12
                         }
                     };
 
