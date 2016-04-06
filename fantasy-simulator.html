@@ -25,8 +25,8 @@
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+<!--     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css"> -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -110,7 +110,7 @@
                     <p> <input id="momentum" type="checkbox" value="momentum"/> Momentum    </p>
                 </div>
                 <div class="col-lg-2">    
-                    <p> <input id="performance" type="hidden" value="performance" /> Performance   </p>
+                    <p> <input id="performance" type="checkbox" value="performance" /> Performance   </p>
                 </div>
                 <div class="col-lg-2">        
                     <p> <input id="past_position" type="checkbox" value="past_position"/> Past Position   </p>
@@ -192,7 +192,7 @@
                     <h4 style="text-align: center;">
                     FANTASY SURFING TIPS ROUND SIMULATOR
                     </h4>
-                    <p>We are working to finish it before Margaret River (generate all rounds). Follow our <a href="https://twitter.com/FanSurfingTips">Twitter</a> and check the news!</p>
+                    <p>The surfer in bold wins the heat. We are still improving this simulation. Follow our <a href="https://twitter.com/FanSurfingTips">Twitter</a> and check the news!</p>
                 </div>
                 <div class="col-lg-3">
 
@@ -213,6 +213,53 @@
                 </div>
                 <div id="rd2-container" class="row">
                     
+                </div>
+            </div>
+            <div id="rd3" class="row">
+                <div id="rd1" class="row">
+                <h5>Round 3</h5>
+                </div>
+                <div id="rd3-container" class="row">
+                    
+                </div>
+            </div>
+            <div id="rd4" class="row">
+                <div id="rd1" class="row">
+                <h5>Round 4</h5>
+                </div>
+                <div id="rd4-container" class="row">
+                    
+                </div>
+            </div>
+            <div id="rd5" class="row">
+                <div id="rd1" class="row">
+                <h5>Round 5</h5>
+                </div>
+                <div id="rd5-container" class="row">
+                    
+                </div>
+            </div>
+            <div id="qf" class="row">
+                <div id="rd1" class="row">
+                <h5>Quarter Finals</h5>
+                </div>
+                <div id="qf-container" class="row">
+                    
+                </div>
+            </div>
+            <div id="sf" class="row">
+                <div id="rd1" class="row">
+                <h5>Semi Finals</h5>
+                </div>
+                <div id="sf-container" class="row">
+                    
+                </div>
+            </div>
+            <div id="f" class="row">
+                <div id="rd1" class="row">
+                <h5>Final</h5>
+                </div>
+                <div id="f-container" class="row">
                     
                 </div>
             </div>
@@ -524,13 +571,17 @@
             sf = [[], []]
             f = [[]]
 
-            past_position_rank = [['NAT YOUNG', 69], ['ADRIANO DE SOUZA', 67], ['JOHN JOHN FLORENCE', 61], ['TAJ BURROW', 60], ['JULIAN WILSON', 57], ['OWEN WRIGHT', 57], ['MICK FANNING', 55], ['SEBASTIAN ZIETZ', 51], ['ADRIAN BUCHAN', 46], ['KAI OTTON', 46], ['JADSON ANDRE', 46], ['ADAM MELLING', 46], ['MICHEL BOUREZ', 45], ['KELLY SLATER', 43], ['JEREMY FLORES', 38], ['JOSH KERR', 38], ['ITALO FERREIRA', 33], ['FREDDY PATACCHIA JR.', 30], ['JOEL PARKINSON', 30], ['GABRIEL MEDINA', 30], ['JORDY SMITH', 30], ['MIGUEL PUPO', 25], ['GLENN HALL', 17], ['RICARDO CHRISTIE', 17], ['WADE CARMICHAEL', 16], ['MATT WILKINSON', 16], ['KANOA IGARASHI', 16], ['DUSTY PAYNE', 16], ['RYAN CALLINAN', 16], ['JACK FREESTONE', 16], ['TIMOTHEE BISSO', 16], ['CAIO IBELLI', 16], ['DAVEY CATHELS', 16], ['TIM STEVENSON', 16], ['KEANU ASING', 16], ['ALEJO MUNIZ', 16], ['CONNER COFFIN', 16], ['MASON HO', 16], ['WIGGOLLY DANTAS', 16], ['MATT BANTING', 16], ['ALEX RIBEIRO', 16], ['STUART KENNEDY', 16], ['MIKEY WRIGHT', 16], ['BEDE DURBIDGE', 15], ['C.J. HOBGOOD', 13], ['FILIPE TOLEDO', 8], ['KOLOHE ANDINO', 4], ['MITCH COLEBORN', 0], ['TRAVIS LOGIE', 0], ['DION ATKINSON', 0], ['RAONI MONTEIRO', 0], ['ARITZ ARANBURU', 0], ['TIAGO PIRES', 0], ['MITCH CREWS', 0], ['BRETT SIMPSON', 0]]
-            //
-            momentum_rank = [['MATT WILKINSON', 50], ['CONNER COFFIN', 38], ['CAIO IBELLI', 35], ['KOLOHE ANDINO', 32], ['JORDY SMITH', 28], ['KANOA IGARASHI', 25], ['ITALO FERREIRA', 25], ['DAVEY CATHELS', 24], ['JOHN JOHN FLORENCE', 24], ['MICHEL BOUREZ', 23], ['MICK FANNING', 22], ['JOEL PARKINSON', 22], ['ADRIANO DE SOUZA', 22], ['STUART KENNEDY', 21], ['ADRIAN BUCHAN', 20], ['MASON HO', 20], ['NAT YOUNG', 20], ['FILIPE TOLEDO', 20], ['WIGGOLLY DANTAS', 19], ['SEBASTIAN ZIETZ', 17], ['RYAN CALLINAN', 16], ['JULIAN WILSON', 14], ['ALEX RIBEIRO', 13], ['GABRIEL MEDINA', 12], ['JACK FREESTONE', 12], ['C.J. HOBGOOD', 12], ['BRETT SIMPSON', 12], ['MIKEY WRIGHT', 11], ['ALEJO MUNIZ', 10], ['JEREMY FLORES', 9], ['WADE CARMICHAEL', 9], ['TIM STEVENSON', 9], ['TIMOTHEE BISSO', 9], ['JADSON ANDRE', 9], ['GLENN HALL', 9], ['RICARDO CHRISTIE', 8], ['KEANU ASING', 7], ['MIGUEL PUPO', 7], ['JOSH KERR', 7], ['FREDDY PATACCHIA JR.', 7], ['DUSTY PAYNE', 7], ['KAI OTTON', 6], ['MATT BANTING', 6], ['KELLY SLATER', 6], ['TAJ BURROW', 6], ['ADAM MELLING', 6], ['BEDE DURBIDGE', 3], ['OWEN WRIGHT', 0]]
-            
-            performance_rank = []
+            past_position_rank = [['MICHEL BOUREZ', 70], ['NAT YOUNG', 69], ['ADRIANO DE SOUZA', 67], ['JOHN JOHN FLORENCE', 61], ['TAJ BURROW', 60], ['JULIAN WILSON', 57], ['OWEN WRIGHT', 57], ['MICK FANNING', 55], ['SEBASTIAN ZIETZ', 51], ['ADRIAN BUCHAN', 46], ['KAI OTTON', 46], ['JADSON ANDRE', 46], ['ADAM MELLING', 46], ['KELLY SLATER', 43], ['JEREMY FLORES', 38], ['JOSH KERR', 38], ['ITALO FERREIRA', 33], ['FREDDY PATACCHIA JR.', 30], ['JOEL PARKINSON', 30], ['GABRIEL MEDINA', 30], ['JORDY SMITH', 30], ['MIGUEL PUPO', 25], ['GLENN HALL', 17], ['RICARDO CHRISTIE', 17], ['WADE CARMICHAEL', 16], ['MATT WILKINSON', 16], ['KANOA IGARASHI', 16], ['DUSTY PAYNE', 16], ['RYAN CALLINAN', 16], ['JACK FREESTONE', 16], ['TIMOTHEE BISSO', 16], ['CAIO IBELLI', 16], ['DAVEY CATHELS', 16], ['TIM STEVENSON', 16], ['KEANU ASING', 16], ['ALEJO MUNIZ', 16], ['CONNER COFFIN', 16], ['MASON HO', 16], ['WIGGOLLY DANTAS', 16], ['MATT BANTING', 16], ['ALEX RIBEIRO', 16], ['STUART KENNEDY', 16], ['MIKEY WRIGHT', 16], ['BEDE DURBIDGE', 15], ['C.J. HOBGOOD', 13], ['FILIPE TOLEDO', 8], ['KOLOHE ANDINO', 4], ['MITCH COLEBORN', 0], ['TRAVIS LOGIE', 0], ['DION ATKINSON', 0], ['RAONI MONTEIRO', 0], ['ARITZ ARANBURU', 0], ['TIAGO PIRES', 0], ['MITCH CREWS', 0], ['BRETT SIMPSON', 0]]
 
-            overall = [['ADRIANO DE SOUZA', 161], ['JOHN JOHN FLORENCE', 157], ['MATT WILKINSON', 147], ['NAT YOUNG', 142], ['ADRIAN BUCHAN', 138], ['SEBASTIAN ZIETZ', 131], ['MICK FANNING', 130], ['JOEL PARKINSON', 124], ['MICHEL BOUREZ', 121], ['TAJ BURROW', 119], ['CONNER COFFIN', 117], ['KOLOHE ANDINO', 115], ['CAIO IBELLI', 114], ['STUART KENNEDY', 114], ['ITALO FERREIRA', 111], ['JADSON ANDRE', 108], ['FILIPE TOLEDO', 105], ['KANOA IGARASHI', 104], ['JEREMY FLORES', 100], ['JOSH KERR', 98], ['JULIAN WILSON', 96], ['GABRIEL MEDINA', 95], ['WIGGOLLY DANTAS', 88], ['RYAN CALLINAN', 85], ['JORDY SMITH', 83], ['MIKEY WRIGHT', 80], ['KAI OTTON', 77], ['ADAM MELLING', 77], ['KELLY SLATER', 74], ['DAVEY CATHELS', 65], ['MIGUEL PUPO', 57], ['OWEN WRIGHT', 54], ['ALEX RIBEIRO', 54], ['JACK FREESTONE', 53], ['WADE CARMICHAEL', 50], ['KEANU ASING', 48], ['MATT BANTING', 47], ['FREDDY PATACCHIA JR.', 37], ['MASON HO', 33], ['GLENN HALL', 26], ['C.J. HOBGOOD', 25], ['RICARDO CHRISTIE', 25], ['ALEJO MUNIZ', 23], ['TIMOTHEE BISSO', 22], ['TIM STEVENSON', 22], ['DUSTY PAYNE', 20], ['BEDE DURBIDGE', 15], ['BRETT SIMPSON', 12], ['MITCH COLEBORN', 0], ['TRAVIS LOGIE', 0], ['DION ATKINSON', 0], ['RAONI MONTEIRO', 0], ['ARITZ ARANBURU', 0], ['TIAGO PIRES', 0], ['MITCH CREWS', 0]]
+            //
+            momentum_rank = [['MATT WILKINSON', 50], ['CONNER COFFIN', 37], ['CAIO IBELLI', 34], ['KOLOHE ANDINO', 31], ['JORDY SMITH', 31], ['ITALO FERREIRA', 25], ['JOEL PARKINSON', 25], ['MICHEL BOUREZ', 25], ['KANOA IGARASHI', 25], ['DAVEY CATHELS', 24], ['JOHN JOHN FLORENCE', 23], ['ADRIAN BUCHAN', 23], ['MICK FANNING', 22], ['FILIPE TOLEDO', 22], ['NAT YOUNG', 21], ['ADRIANO DE SOUZA', 21], ['WIGGOLLY DANTAS', 21], ['STUART KENNEDY', 20], ['MASON HO', 19], ['SEBASTIAN ZIETZ', 19], ['RYAN CALLINAN', 16], ['BRETT SIMPSON', 14], ['JULIAN WILSON', 14], ['C.J. HOBGOOD', 14], ['ALEX RIBEIRO', 12], ['JACK FREESTONE', 11], ['GLENN HALL', 11], ['RICARDO CHRISTIE', 11], ['GABRIEL MEDINA', 10], ['MIKEY WRIGHT', 10], ['JEREMY FLORES', 10], ['FREDDY PATACCHIA JR.', 10], ['ALEJO MUNIZ', 10], ['JADSON ANDRE', 10], ['DUSTY PAYNE', 9], ['MIGUEL PUPO', 9], ['JOSH KERR', 9], ['KEANU ASING', 9], ['MATT BANTING', 9], ['WADE CARMICHAEL', 8], ['KAI OTTON', 8], ['ADAM MELLING', 8], ['TAJ BURROW', 8], ['TIM STEVENSON', 8], ['KELLY SLATER', 8], ['TIMOTHEE BISSO', 8], ['BEDE DURBIDGE', 1], ['OWEN WRIGHT', 0]]
+
+            
+            performance_rank = [['GABRIEL MEDINA', 139.97363852726946], ['JOHN JOHN FLORENCE', 136.13313053867031], ['KELLY SLATER', 130.5242860727152], ['ADRIANO DE SOUZA', 128.0640775145014], ['JOEL PARKINSON', 112.22705853562408], ['TAJ BURROW', 110.73014085165713], ['JULIAN WILSON', 100.60931284944247], ['ITALO FERREIRA', 96.26003208887145], ['JEREMY FLORES', 91.17724620003207], ['KAI OTTON', 88.8011899411109], ['JORDY SMITH', 88.4564508293829], ['SEBASTIAN ZIETZ', 85.36003168514597], ['MICHEL BOUREZ', 85.06290223514752], ['JACK FREESTONE', 83.58014216301154], ['NAT YOUNG', 83.45212580298033], ['MIGUEL PUPO', 72.76729520183005], ['JAY DAVIES', 71.26243749757168], ['ADRIAN BUCHAN', 70.17548182394191], ['JOSH KERR', 64.83536273535103], ['ADAM MELLING', 64.16237468048298], ['JADSON ANDRE', 60.78023316478504], ['KOLOHE ANDINO', 60.34349210579312], ['CONNER COFFIN', 56.76268147651646], ['CAIO IBELLI', 54.68961662236022], ['DAVEY CATHELS', 49.06904238711045], ['ALEJO MUNIZ', 48.90851132288561], ['MATT WILKINSON', 48.393569700112614], ['WIGGOLLY DANTAS', 47.94312009955964], ['RYAN CALLINAN', 46.054473088670406], ['KANOA IGARASHI', 37.64490160309931], ['MATT BANTING', 37.5061322642319], ['KEANU ASING', 33.783472482362995], ['STUART KENNEDY', 31.2635230683779], ['DUSTY PAYNE', 28.312438491876932], ['JACK ROBINSON', 24.315958715119617], ['ALEX RIBEIRO', 0.0]]
+
+
+            overall = [['JOHN JOHN FLORENCE', 301.3331305386703], ['ADRIANO DE SOUZA', 296.4640775145014], ['JOEL PARKINSON', 249.22705853562408], ['MICHEL BOUREZ', 243.06290223514753], ['GABRIEL MEDINA', 236.97363852726946], ['TAJ BURROW', 234.93014085165714], ['NAT YOUNG', 234.85212580298034], ['SEBASTIAN ZIETZ', 225.96003168514596], ['ADRIAN BUCHAN', 220.3754818239419], ['ITALO FERREIRA', 217.26003208887147], ['MATT WILKINSON', 215.3935697001126], ['KELLY SLATER', 209.7242860727152], ['JULIAN WILSON', 202.20931284944248], ['JEREMY FLORES', 196.17724620003207], ['CONNER COFFIN', 187.56268147651645], ['JORDY SMITH', 186.8564508293829], ['KOLOHE ANDINO', 186.7434921057931], ['CAIO IBELLI', 181.2896166223602], ['JADSON ANDRE', 173.78023316478505], ['KAI OTTON', 171.0011899411109], ['JOSH KERR', 168.43536273535102], ['STUART KENNEDY', 152.2635230683779], ['KANOA IGARASHI', 151.6449016030993], ['ADAM MELLING', 146.362374680483], ['WIGGOLLY DANTAS', 146.34312009955966], ['JACK FREESTONE', 139.98014216301155], ['MICK FANNING', 138.8], ['RYAN CALLINAN', 137.4544730886704], ['MIGUEL PUPO', 135.36729520183005], ['DAVEY CATHELS', 123.66904238711044], ['FILIPE TOLEDO', 115.8], ['MATT BANTING', 91.1061322642319], ['KEANU ASING', 87.383472482363], ['MIKEY WRIGHT', 83.0], ['ALEJO MUNIZ', 75.9085113228856], ['ALEX RIBEIRO', 57.8], ['OWEN WRIGHT', 54.0], ['DUSTY PAYNE', 53.912438491876934], ['WADE CARMICHAEL', 52.2], ['FREDDY PATACCHIA JR.', 44.0], ['MASON HO', 39.599999999999994], ['C.J. HOBGOOD', 32.599999999999994], ['GLENN HALL', 32.4], ['RICARDO CHRISTIE', 32.4], ['TIMOTHEE BISSO', 24.2], ['TIM STEVENSON', 24.2], ['BRETT SIMPSON', 19.599999999999998], ['BEDE DURBIDGE', 13.4], ['MITCH COLEBORN', 0], ['TRAVIS LOGIE', 0], ['DION ATKINSON', 0], ['RAONI MONTEIRO', 0], ['ARITZ ARANBURU', 0], ['TIAGO PIRES', 0], ['MITCH CREWS', 0]]
+
 
 
 
@@ -725,33 +776,47 @@
 
             function updateMatchup(picked_result){
                 html = ''
-                html2 = ''
+                
+
 
                 var rd1_ordered = order_matchup(rd1, picked_result)
+                $('#rd1-container').html(generate_round_html(rd1_ordered))
                 
-                for (var i = 0; i< rd1_ordered.length; i++) {
-                    html = html + apply_round(rd1_ordered[i], 1, i+1, picked_result)
-                };
-                $('#rd1-container').html(html)
-                
-                rd2_ordered = create_round_two(rd1_ordered)
+                var rd2_ordered = create_round_two(rd1_ordered)
+                $('#rd2-container').html(generate_round_html(rd2_ordered))
 
-                for (var i = 0; i< rd2_ordered.length; i++) {
-                    html2 = html2 + apply_round(rd2_ordered[i], 1, i+1, picked_result)
-                };
-                
-                $('#rd2-container').html(html2)
-
-
-                rd3_ordered = create_round_three(rd1_ordered, rd2_ordered)
+                create_round_three(rd1_ordered, rd2_ordered)
+                $('#rd3-container').html(generate_round_html(rd3))
+            
                 create_round_four(rd3)
+                $('#rd4-container').html(generate_round_html(rd4))
+            
                 create_round_five(rd4)
-                create_qf(rd4, rd5)
-                create_sf(qf)
-                create_f(sf)
-                console.log("=====================")
-                console.log(rd3)
+                $('#rd5-container').html(generate_round_html(rd5))
 
+
+                create_qf(rd4, rd5)
+                $('#qf-container').html(generate_round_html(qf))
+
+                create_sf(qf)
+                $('#sf-container').html(generate_round_html(sf))
+
+                create_f(sf)
+                $('#f-container').html(generate_round_html(f))
+                rd3 = [[], [], [], [], [], [], [], [], [], [], [], []]
+                rd4 = [[], [], [], []]
+                rd5 = [[], [], [], []]
+                qf = [[], [], [], []]
+                sf = [[], []]
+                f = [[]]
+
+            }
+            function generate_round_html(round){
+                html = ''
+                for (var i = 0; i< round.length; i++) {
+                    html = html + apply_round(round[i], 1, i+1, picked_result)
+                };
+                return html
             }
 
             function order_matchup(round, picked_result){
@@ -830,7 +895,27 @@
 
                     
                 };
+                console.log('............RD3.........')
+                order_matches(rd3)
+                console.log('=====end==========')
+                console.log(rd3)
+                
                 return rd3_ordered
+            }
+
+            function order_matches(rd){
+                for (var i = 0; i < rd.length; i++) {
+                    new_heat = []
+                    for (var j = 0; j < picked_result.length; j++) {
+                        for (var k = 0; k < rd[i].length; k++) {
+                            if(picked_result[j][0] == rd[i][k]){
+                                new_heat.push(picked_result[j][0])    
+                            }
+                        };
+                        
+                    };
+                    rd[i] = new_heat
+                };
             }
 
             function create_round_four(rd3_ordered){
@@ -846,6 +931,7 @@
                 rd4[3].push(rd3_ordered[9][0])
                 rd4[3].push(rd3_ordered[10][0])
                 rd4[3].push(rd3_ordered[11][0])
+                order_matches(rd4)
                 console.log(rd4)
 
             }
@@ -859,6 +945,7 @@
                 rd5[2].push(rd4_ordered[3][2])
                 rd5[3].push(rd4_ordered[3][1])
                 rd5[3].push(rd4_ordered[2][2])
+                order_matches(rd5)
                 console.log(rd5)
             }
 
@@ -871,6 +958,7 @@
                 qf[2].push(rd5_ordered[2][0])
                 qf[3].push(rd4_ordered[3][0])
                 qf[3].push(rd5_ordered[3][0])
+                order_matches(qf)
                 console.log(qf)
             }
 
@@ -879,24 +967,32 @@
                 sf[0].push(qf_ordered[1][0])
                 sf[1].push(qf_ordered[2][0])
                 sf[1].push(qf_ordered[3][0])
+                order_matches(sf)
                 console.log(sf)
             }
 
             function create_f(sf_ordered){
                 f[0].push(sf_ordered[0][0])
                 f[0].push(sf_ordered[1][0])
+                order_matches(f)
                 console.log(f)
             }
 
             function apply_round(surfers, round, heat, picked_result){
                 html = '<div id="rd'+round+'h'+heat+'" class="col-lg-3" style="height:86px;">'
+                counter = 0
                 for (var i = 0; i < surfers.length; i++) {
                     for (var j = 0; j < picked_result.length; j++) {
                         if(picked_result[j][0] == surfers[i]){
-                            html = html + '<div class="col-lg-3" style="overflow: hidden;text-overflow: ellipsis; padding-left:0px">'
-                            html = html + picked_result[j][0]
-                            html = html + ": "+picked_result[j][1]
+                            html = html + '<div class="col-lg-4" style="overflow: hidden;text-overflow: ellipsis; padding-left:0px">'
+                            if(counter == 0){
+                                html = html + '<strong>'+picked_result[j][0]+'</strong>'
+                            }
+                            else{
+                                html = html + picked_result[j][0]
+                            }
                             html = html + '</div>'
+                            counter = counter + 1
                         }
                     }
                 };
