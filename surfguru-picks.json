@@ -1,8 +1,8 @@
 {
 	"events":[{
 		"name": "Oi Rio Pro",
-		"tierA": ["Matt Wilkinson", "Italo Ferreira"],
-		"tierB": ["Adrian Buchan", "Filipe Toledo", "John John Florence", "Nat Young"],
-		"tierC": ["Jadson Andre", "Matt Banting"] 
+		"tierA": [{"nome": "Matt Wilkinson", "thumb":"http://fantasysurfingtips.com/img/surfers/mwil.png"}, {"nome":"Italo Ferreira", "thumb":"http://fantasysurfingtips.com/img/surfers/ifer.png"}],
+		"tierB": [{"nome":"Adrian Buchan", "thumb":"http://fantasysurfingtips.com/img/surfers/abuc.png"}, {"nome":"Filipe Toledo", "thumb":"http://fantasysurfingtips.com/img/surfers/ftol.png"}, {"nome":"John John Florence", "thumb":"http://fantasysurfingtips.com/img/surfers/jjoh.png"}, {"nome":"Nat Young", "thumb":"http://fantasysurfingtips.com/img/surfers/nyou.png"}],
+		"tierC": [{"nome":"Jadson Andre", "thumb":"http://fantasysurfingtips.com/img/surfers/jand.png"}, {"nome":"Matt Banting", "thumb":"http://fantasysurfingtips.com/img/surfers/mban.png"}] 
 		}]
 }
