@@ -3,6 +3,6 @@
 		"name": "Oi Rio Pro",
 		"tierA": [{"nome": "Matt Wilkinson", "codigo":"mwil"}, {"nome":"Italo Ferreira", "codigo":"ifer"}],
 		"tierB": [{"nome":"Adrian Buchan", "codigo":"abuc"}, {"nome":"Filipe Toledo", "codigo":"ftol"}, {"nome":"John John Florence", "codigo":"jjoh"}, {"nome":"Gabriel Medina", "codigo":"gmed"}],
-		"tierC": [{"nome":"Jadson Andre", "codigo":"jand"}, {"nome":"Kelly Slater", "codigo":"ksla"}] 
+		"tierC": [{"nome":"Jadson Andre", "codigo":"jand"}, {"nome":"Matt Banting", "codigo":"mban"}] 
 		}]
 }
