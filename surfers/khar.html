@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="We calculate the stats for creating the best teams for WLS Fantasy Surfing. Play against our computer program">
+
+    <meta name="author" content="">
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
+    <title>Tips for WSL Fantasy Surfing</title>
+
+    <meta property="og:title" content="Fantasy Surfing tips"/>
+    <meta property="og:image" content="http://fantasysurfingtips.com/img/just_waves.png"/>
+    <meta property="og:description" content="We calculate the best picks for WSL Fantasy Surfing based on Stats"/>
+
+    
+
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link href="http://fantasysurfingtips.com/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="http://fantasysurfingtips.com/css/freelancer.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="http://fantasysurfingtips.com/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+
+  
+ 
+ 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+	
+    <script src="https://code.jquery.com/jquery-2.x-git.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ujs/1.2.1/rails.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/1.3.0/turbolinks.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+</head>
+<body>
+	<!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Fantasy Surfing Tips</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Fantasy Surfing Tips</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="fantasy-simulator.html">Fantasy Simulator</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="calculation-updates.html">Bot Updates</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="all-events.html">All Events</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="/women">Women's</a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+<hr/>
+<hr/>
+<section >
+    <div class="container">
+    	<div class="row">
+    		<div class="col-sm-4 ">
+    			<div class="col-sm-3 ">
+    			</div>
+    			<div class="col-sm-6 ">
+	                <img src="http://fantasysurfingtips.com/img/surfers/khar.png" class="img-responsive" alt="">
+	                <h3 style="text-align:center;">Kahea Hart</h3>
+                </div>
+                <div class="col-sm-3 ">
+    			</div>
+            </div>
+            <div class="col-sm-4 portfolio-item">
+              	<h6 style="text-align:center;">Avg wave (FST DATA)</h6>
+                <h1 style="text-align:center;">5.72</h1>
+            </div>
+    	</div>
+    	
+
+    	<hr/>
+    	<h4 style="text-align:center;" >Heat Stats (FST data)</h4>
+    	<div  class="row">
+    		<div class="col-sm-4 portfolio-item">
+              	<h6 style="text-align:center;">Heats</h6>
+                <h2 style="text-align:center;">1</h2>
+            </div>
+              <div class="col-sm-4 portfolio-item">
+              	<h6 style="text-align:center;">Win in heats</h6>
+                <h2 style="text-align:center;">0</h2>
+            </div>
+            <div class="col-sm-4 portfolio-item">
+              	<h6 style="text-align:center;">Winning percentage</h6>
+                <h2 style="text-align:center;">0.0%</h2>
+            </div>
+    	</div>
+    	<hr/>
+		<h4 style="text-align:center;">Avg wave score progression</h4>
+		<div id="avg_chart" style="height: 250px;"></div>
+		<hr/>
+
+		<h4 style="text-align:center;">Heat stats progression</h4>
+		<div id="heat_chart" style="height: 250px;"></div>
+    	<hr/>
+
+
+    	<style type="text/css">
+    		.heats-all{
+    			z-index: 3;
+    			margin-left: 5px;
+    			cursor: pointer;
+    		}
+    	</style>
+    	<h4 style="text-align:center;">Path to glory (FST data)</h4>
+    	<div class="row">
+    		<div class="col-sm-12 ">
+    		<div class="dropdown">
+			  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Choose Round
+			  <span class="caret"></span></button>
+			  <ul class="dropdown-menu" style="z-index:999;">
+			    	<li href="#" id="rd1-all" class="heats-all">Round 1</li>
+					<li href="#" id="rd2-all" class="heats-all">Round 2</li>
+					<li href="#" id="rd3-all" class="heats-all">Round 3</li>
+					<li href="#" id="rd4-all" class="heats-all">Round 4</li>
+					<li href="#" id="rd5-all" class="heats-all">Round 5</li>
+					<li href="#" id="rd6-all" class="heats-all">Quaterfinals</li>
+					<li href="#" id="rd7-all" class="heats-all">Semifinals</li>
+					<li href="#" id="rd8-all" class="heats-all">Final</li>
+			  </ul>
+			</div>
+			</div>
+    	</div>
+    	<div class="row">
+    	 	<div id="rd1-all-stat" class="col-sm-12 heats-all-stat" style="display:block;">
+	    	 	<h6 style="text-align:center;">Round 1</h6>
+	    		<div class="col-sm-4">
+	              	<h5 style="text-align:center;">Appereances</h5>
+	                <p style="text-align:center;">1</p>
+	            </div>
+	              <div class="col-sm-4">
+	              	<h5 style="text-align:center;">Victories</h5>
+	                <p style="text-align:center;">0</p>
+	            </div>
+	            <div class="col-sm-4">
+	              	<h5 style="text-align:center;">Winning percentage</h5>
+	                <p style="text-align:center;">0.0%</p>
+	            </div>
+            </div>
+    	</div>
+
+
+
+</section>
+
+<script type="text/javascript">
+	$('.heats-all').click(function(){
+		
+		$('.heats-all-stat').css('display', 'none')
+
+		$('#'+$(this).attr('id')+'-stat').css('display', 'block')
+
+	});
+
+	$('.heats-2016').click(function(){
+		$('.heats-2016-stat').css('display', 'none')
+
+		$('#'+$(this).attr('id')+'-stat').css('display', 'block')
+
+	});
+
+	$('document').ready(function(){
+		new Morris.Line({
+		  // ID of the element in which to draw the chart.
+		  element: 'avg_chart',
+		  // Chart data records -- each entry in this array corresponds to a point on
+		  // the chart.
+		  data: [{"year":"2013","avg":5.72,"avg_all":5.72}],
+
+		  // The name of the data record attribute that contains x-values.
+		  xkey: 'year',
+		  // A list of names of data record attributes that contain y-values.
+		  ykeys: ['avg', 'avg_all'],
+		  // Labels for the ykeys -- will be displayed when you hover over the
+		  // chart.
+		  labels: ['Avg score in year', 'Avg score FST DATA']
+		});
+
+		new Morris.Bar({
+		  // ID of the element in which to draw the chart.
+		  element: 'heat_chart',
+		  // Chart data records -- each entry in this array corresponds to a point on
+		  // the chart.
+		  data: [{"year":"2013","heats":1,"wins":0,"percs":"0.0%"}],
+
+		  // The name of the data record attribute that contains x-values.
+		  xkey: 'year',
+		  // A list of names of data record attributes that contain y-values.
+		  ykeys: ['heats', 'wins', 'percs'],
+		  // Labels for the ykeys -- will be displayed when you hover over the
+		  // chart.
+		  labels: ['Heats surfed', 'Heats won', 'Winning percentage']
+		});
+	});
+</script>
+
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                       <h3>Meet the creators</h3>
+                       <p>Just come to surf <a href="https://goo.gl/maps/UmWhsRsU3bP2">here</a> on weekends. We are always there</p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Around the Web</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="https://twitter.com/FanSurfingTips" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Play against us on WSL Fantasy Surfing</h3>
+                        <p>Get in <a href="http://mct.fantasy.worldsurfleague.com/group/13341">the group</a> and see if you can beat us</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; Fantasy Surfing Tips 2016
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+
+   
+    <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-74337819-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+     <!-- jQuery -->
+    <script src="http://fantasysurfingtips.com/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="http://fantasysurfingtips.com/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="http://fantasysurfingtips.com/js/classie.js"></script>
+    <script src="http://fantasysurfingtips.com/js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="http://fantasysurfingtips.com/js/jqBootstrapValidation.js"></script>
+    <script src="http://fantasysurfingtips.com/js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="http://fantasysurfingtips.com/js/freelancer.js"></script>
+
+</body>
+</html>
