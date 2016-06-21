@@ -1,8 +1,8 @@
 {
 	"events":[{
-		"name": "Fiji Pro",
-		"tierA": [{"nome": "Sebastian Zietz", "codigo":"szie"}, {"nome":"Italo Ferreira", "codigo":"ifer"}],
-		"tierB": [{"nome":"Julian Wilson", "codigo":"jwil"}, {"nome":"Joel Parkinson", "codigo":"jpar"}, {"nome":"Nat Young", "codigo":"nyou"}, {"nome":"Gabriel Medina", "codigo":"gmed"}],
-		"tierC": [{"nome":"Jeremy Flores", "codigo":"jflo"}, {"nome":"Taj Burrow", "codigo":"tbur"}] 
+		"name": "J-Bay",
+		"tierA": [{"nome": "Gabriel Medina", "codigo":"gmed"}, {"nome":"Adriano de Souza", "codigo":"asou"}],
+		"tierB": [{"nome":"Mick Fanning", "codigo":"mfan"}, {"nome":"Julian Wilson", "codigo":"jwil"}, {"nome":"Nat Young", "codigo":"nyou"}, {"nome":"Michel Bourez", "codigo":"mbou"}],
+		"tierC": [{"nome":"Kelly Slater", "codigo":"ksla"}, {"nome":"Kai Otton", "codigo":"kott"}] 
 		}]
 }
