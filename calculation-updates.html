@@ -113,6 +113,118 @@
     <section id="portfolio">
         <div class="container">
             <h2>General Results</h2>
+            <p>Starting from J-Bay we have tunned our ranks to avoid rd1 colision and we got an average upgrade of 3.21% in all teams. Try to avoid rd1 colision, it will make the difference on the long run (The old picks results, not avoiding colisions are on the bottom of the page)</p>
+            <table class="table  table-striped">
+                <thead class="thead-inverse">
+                    <th>
+                        <td>v1.1</td>
+                        <td>v1.2</td>
+                        <td>v1.3</td>
+                        <td>v1.4</td>
+                        <td>v1.5</td>
+                        <td>v1.6</td>
+                    </th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Gold Coast</td>
+                        <td>421.03</td>
+                        <td>492.94</td>
+                        <td>435.03</td>
+                        <td>515.86</td>
+                        <td>504.28</td>
+                        <td>418.65</td>
+
+
+                    </tr>
+                    <tr>
+                        <td>Bells Beach</td>
+                          <td>507.81</td>
+                          <td>604.53</td>
+                          <td>593.33</td>
+                          <td>542.32</td>
+                          <td>590.73</td>
+                          <td>347.77</td>
+
+                    </tr>
+                    <tr>
+                        <td>Margaret River</td>
+                        <td>465.98</td>
+                      <td>526.81</td>
+                      <td>459.12</td>
+                      <td>590.6</td>
+                      <td>550.62</td>
+                      <td>395.49</td>
+                    </tr>
+                    <tr>
+                        <td>Rio Pro</td>
+                      <td>614.59</td>
+                      <td>414.24</td>
+                      <td>524.9</td>
+                      <td>635.95</td>
+                      <td>609.97</td>
+                      <td>573.18</td>
+
+                    </tr>
+                    <tr>
+                        <td>Fiji Pro</td>
+                    <td>576.25</td>
+                    <td>482.24</td>
+                    <td>531.51</td>
+                    <td>468.9</td>
+                    <td>543.49</td>
+                    <td>539.91</td>
+
+
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                       <td>2585.66</td>
+                       <td>2520.76</td>
+                       <td>2543.89</td>
+                       <td>2753.63</td>
+                       <td>2799.09</td>
+                       <td>2275</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+        <div class="container">
+            <h1>Understand our calculation</h1>
+            <h3>Help us grow, <a href="https://twitter.com/FanSurfingTips">share</a> your thoughs :)</h3>
+            <hr class="star-primary">
+            <h3>V1.1</h3>
+            <p>The first calculation version was used in the Gold Coast Event and the <a href="events/gold-coast.html">picks</a> made 472.62 points</p>
+            <p>It was our first version and we use several parameters to help with it</p>
+            <ul>
+                <li>Actualizated position Rank</li>
+                <li>Participation in previous events</li>
+                <li>Overrall performance/event performance</li>
+                <li>Momentum</li>
+            </ul>
+            <hr class="star-primary">
+            <h3>V1.2</h3>
+            <p>The second version of the Fantasy Bot is built and we hope to do better on Bells Beach</p>
+            <p>We still use the same parameters, but we have improved the previous events participations calculation. We basically downgraded surfers that were in a descendent pattern. We will post this rank for players to be aware of it.</p>
+            <p>On Gold Coast the Fantasy Bot V1.2 has downgraded Kelly and Adam Melling for the competition. Those were the unique surfers following a downgrade pattern on Gold Coast (both were on worst possible team, we will see in the following events if it is a trend). Calculation has took Kelly out and picked John John, this would have give +71.19 points.</p>
+            <p>We use the same data we had previously on each event to calculate the points.</p>
+            <h3>V1.3</h3>
+            <p>The third version is on! A brand new way of looking at Momentum Rank</p>
+            <p>For the third version we have improved the calculations for the Momentum Rank, the rookies now start the season with medium scores for this rank and they loose it quickly by scoring bad. For the long run, there was also an improvement for the equation, our statistical analysis for the first two events detected a high importance on Momentum Rank Variables. This will be a major change for the long run. We are still analysing previous data and we have a clue that Momentum Rank has a low influence in Reef Waves, for this reason v1.3 is still unstable for Margaret River. </p>
+            <p>We are commited to play serious on version comparisons (v1.2 can ponctuate better than v1.3 in Margaret River). If you wanna choose exactly the v1.2 team, just choose overall at Fantasy Simulator and avoid RD1 matchups, this will generate exactly the v1.2 picks.</p>
+            <h3>V1.4</h3>
+            <p>The fourth version has a very important improvement. We have made some equalizations and weight balance for the ranks. This is the first mutable version we have made, it will always update ranks calculations for better as we have more historical clues.</p>
+            <h3>V1.5</h3>
+            <p>Small tune update for version 1.4 with more detailed weight balance for better calculation</p>
+            <p>The version played as average. The first time it was launched was in Fiji Pro, two upsets in this event downgraded all the versions together. Julian Wilson and Nat Young were amongst all different calculations we have made so far.</p>
+            <h3>V1.6</h3>
+            <p>Is the first try of a series of calculations based on statistical methods. We have started with the basics using a least square function. Although it shows solid results in surfers with great historical data, it remains very biased for surfers with few data.</p>
+            <p>We will go for it in the next two events as our algorithm model seem very strechted.</p>
+        </div>
+
+        <div class="container">
+            <h2>General Results (No colision handling in rd1)</h2>
             <table class="table  table-striped">
                 <thead class="thead-inverse">
                     <th>
@@ -182,37 +294,6 @@
                     </tr>
                 </tbody>
             </table>
-        </div>
-    
-        <div class="container">
-            <h1>Understand our calculation</h1>
-            <h3>Help us grow, <a href="https://twitter.com/FanSurfingTips">share</a> your thoughs :)</h3>
-            <hr class="star-primary">
-            <h3>V1.1</h3>
-            <p>The first calculation version was used in the Gold Coast Event and the <a href="events/gold-coast.html">picks</a> made 472.62 points</p>
-            <p>It was our first version and we use several parameters to help with it</p>
-            <ul>
-                <li>Actualizated position Rank</li>
-                <li>Participation in previous events</li>
-                <li>Overrall performance/event performance</li>
-                <li>Momentum</li>
-            </ul>
-            <hr class="star-primary">
-            <h3>V1.2</h3>
-            <p>The second version of the Fantasy Bot is built and we hope to do better on Bells Beach</p>
-            <p>We still use the same parameters, but we have improved the previous events participations calculation. We basically downgraded surfers that were in a descendent pattern. We will post this rank for players to be aware of it.</p>
-            <p>On Gold Coast the Fantasy Bot V1.2 has downgraded Kelly and Adam Melling for the competition. Those were the unique surfers following a downgrade pattern on Gold Coast (both were on worst possible team, we will see in the following events if it is a trend). Calculation has took Kelly out and picked John John, this would have give +71.19 points.</p>
-            <p>We use the same data we had previously on each event to calculate the points.</p>
-            <h3>V1.3</h3>
-            <p>The third version is on! A brand new way of looking at Momentum Rank</p>
-            <p>For the third version we have improved the calculations for the Momentum Rank, the rookies now start the season with medium scores for this rank and they loose it quickly by scoring bad. For the long run, there was also an improvement for the equation, our statistical analysis for the first two events detected a high importance on Momentum Rank Variables. This will be a major change for the long run. We are still analysing previous data and we have a clue that Momentum Rank has a low influence in Reef Waves, for this reason v1.3 is still unstable for Margaret River. </p>
-            <p>We are commited to play serious on version comparisons (v1.2 can ponctuate better than v1.3 in Margaret River). If you wanna choose exactly the v1.2 team, just choose overall at Fantasy Simulator and avoid RD1 matchups, this will generate exactly the v1.2 picks.</p>
-            <h3>V1.4</h3>
-            <p>The fourth version has a very important improvement. We have made some equalizations and weight balance for the ranks. This is the first mutable version we have made, it will always update ranks calculations for better as we have more historical clues.</p>
-            <h3>V1.5</h3>
-            <p>Small tune update for version 1.4 with more detailed weight balance for better calculation</p>
-            <p>The version played as average. The first time it was launched was in Fiji Pro, two upsets in this event downgraded all the versions together. Julian Wilson and Nat Young were amongst all different calculations we have made so far.</p>
-
         </div>
         
     </section>
