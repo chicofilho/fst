@@ -126,6 +126,9 @@
                 <div class="col-lg-2">        
                     <p> <input id="past_position" type="checkbox" value="past_position"/> Past Position   </p>
                 </div>
+                <div class="col-lg-2">    
+                    <p> <input id="performance" type="checkbox" value="performance" /> Performance   </p>
+                </div>
                 <div class="col-lg-2">        
                     <p> <input id="overall" type="checkbox" value="overall"/> Overall   </p>
                 </div>
@@ -406,6 +409,19 @@
                                 for (var j = momentum_rank.length - 1; j >= 0; j--) {
                                     if(momentum_rank[j][0] == picked_result[i][0]){
                                         picked_result[i][1] = picked_result[i][1] + momentum_rank[j][1]
+                                    }
+                                };
+                            };
+                            picked_result.sort(sortFunction)
+                        }   
+                    }if(document.getElementById('performance').checked || overall_checked){
+                        if(picked_result.length == 0){
+                            picked_result = performance_rank.slice()
+                        }else{
+                            for (var i = picked_result.length - 1; i >= 0; i--) {
+                                for (var j = performance_rank.length - 1; j >= 0; j--) {
+                                    if(performance_rank[j][0] == picked_result[i][0]){
+                                        picked_result[i][1] = picked_result[i][1] + performance_rank[j][1]
                                     }
                                 };
                             };
