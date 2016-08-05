@@ -36,7 +36,7 @@
 
     <meta property="og:title" content="Fantasy Surfing tips"/>
     <meta property="og:image" content="http://fantasysurfingtips.com/img/just_waves.png"/>
-    <meta property="og:description" content="We calculate the best picks for WSL Fantasy Surfing based on Stats"/>
+    
 
     
 
@@ -45,6 +45,8 @@
 
     <!-- Custom CSS -->
     <link href="http://fantasysurfingtips.com/css/freelancer.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/plug-ins/1.10.7/integration/bootstrap/3/dataTables.bootstrap.css" rel="stylesheet" />
+
 
     <!-- Custom Fonts -->
     <link href="http://fantasysurfingtips.com/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -61,8 +63,18 @@
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+
+
 </head>
 <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.6";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
 	<!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -528,6 +540,9 @@
 	    			<a href="http://fantasysurfingtips.com/surfers/spre"> Slade Prestwich</a>
 	    		</div>
 	    		<div class="col-sm-12 ">
+	    			<a href="http://fantasysurfingtips.com/surfers/ssaw"> Steven Sawyer</a>
+	    		</div>
+	    		<div class="col-sm-12 ">
 	    			<a href="http://fantasysurfingtips.com/surfers/sken"> Stuart Kennedy</a>
 	    		</div>
     				<div class="col-sm-12 ">
@@ -650,12 +665,16 @@
 
      <!-- jQuery -->
     <script src="http://fantasysurfingtips.com/js/jquery.js"></script>
+        <script src="https://cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="http://fantasysurfingtips.com/js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+
+
     <script src="http://fantasysurfingtips.com/js/classie.js"></script>
     <script src="http://fantasysurfingtips.com/js/cbpAnimatedHeader.js"></script>
 
@@ -665,6 +684,12 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="http://fantasysurfingtips.com/js/freelancer.js"></script>
+
+    <script type="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+    <script type="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>
+
+
+
 
 </body>
 </html>
