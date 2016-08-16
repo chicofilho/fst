@@ -2,7 +2,7 @@
 	"events":[{
 		"name": "Tahiti",
 		"tierA": [{"nome": "Gabriel Medina", "codigo":"gmed"}, {"nome":"John John Florence", "codigo":"jjoh"}],
-		"tierB": [{"nome":"Kelly Slater", "codigo":"ksla"}, {"nome":"Joel Parkinson", "codigo":"jpar"}, {"nome":"Wiggolly Dantas", "codigo":"wdan"}, {"nome":"Sebastian Zietz", "codigo":"szie"}],
+		"tierB": [{"nome":"Kelly Slater", "codigo":"ksla"}, {"nome":"Adrian Buchan", "codigo":"abuc"}, {"nome":"Wiggolly Dantas", "codigo":"wdan"}, {"nome":"Josh Kerr", "codigo":"jker"}],
 		"tierC": [{"nome":"Jeremy Flores", "codigo":"jflo"}, {"nome":"Kai Otton", "codigo":"kott"}] 
 		}]
 }
