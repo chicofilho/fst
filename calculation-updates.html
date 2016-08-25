@@ -113,7 +113,7 @@
     <section id="portfolio">
         <div class="container">
             <h2>General Results</h2>
-            <p>Starting from J-Bay we have tunned our ranks to avoid rd1 colision and we got an average upgrade of 3.21% in all teams. Try to avoid rd1 colision, it will make the difference on the long run (The old picks results, not avoiding colisions are on the bottom of the page)</p>
+            <p>Starting from J-Bay we have tunned our ranks to avoid rd1 colision and we got an average upgrade of 3.21% in all teams. Try to avoid rd1 colision, it will make the difference on the long run.</p>
             <table class="table  table-striped">
                 <thead class="thead-inverse">
                     <th>
@@ -123,6 +123,7 @@
                         <td>v1.4</td>
                         <td>v1.5</td>
                         <td>v1.6</td>
+                        <td>v1.7</td>
                     </th>
                 </thead>
                 <tbody>
@@ -131,9 +132,10 @@
                         <td>468.85</td>
                         <td>492.94</td>
                         <td>561.18</td>
-                        <td>512.12</td>
-                        <td>577.64</td>
+                        <td>628.54</td>
+                        <td>539.02</td>
                         <td>418.65</td>
+                        <td>466.75</td>
 
 
                     </tr>
@@ -142,28 +144,32 @@
                           <td>594.45</td>
                           <td>604.53</td>
                           <td>571.5</td>
-                          <td>578.75</td>
-                          <td>622.42</td>
+                          <td>572.43</td>
+                          <td>642.07</td>
                           <td>347.77</td>
+                          <td>664.56</td>
 
                     </tr>
                     <tr>
                         <td>Margaret River</td>
                         <td>501.08</td>
-                      <td>526.81</td>
-                      <td>501.09</td>
-                      <td>587.35</td>
-                      <td>581.59</td>
-                      <td>395.49</td>
+                          <td>526.81</td>
+                          <td>501.09</td>
+                          <td>546.29</td>
+                          <td>541.6</td>
+                          <td>395.49</td>
+                          <td>558.84</td>
+
                     </tr>
                     <tr>
                       <td>Rio Pro</td>
                       <td>499.05</td>
                       <td>414.24</td>
                       <td>449.87</td>
-                      <td>488.53</td>
-                      <td>474.65</td>
+                      <td>407.09</td>
+                      <td>512.45</td>
                       <td>573.18</td>
+                      <td>556.91</td>
 
                     </tr>
                     <tr>
@@ -171,27 +177,42 @@
                         <td>593.75</td>
                         <td>482.24</td>
                         <td>668.18</td>
-                        <td>576.81</td>
-                        <td>591.49</td>
+                        <td>563.04</td>
+                        <td>604.66</td>
                         <td>539.91</td>
+                        <td>658.12</td>
                     </tr>
                     <tr>
                         <td>J-Bay</td>
                         <td>672.91</td>
                         <td>685.21</td>
                         <td>616.43</td>
-                        <td>648.51</td>
-                        <td>602.15</td>
+                        <td>697.26</td>
+                        <td>672.91</td>
                         <td>607.39</td>
+                        <td>642.19</td>
                     </tr>
+
+                    <tr>
+                        <td>Tahiti</td>
+                        <td>613.25</td>
+                        <td>339.60</td>
+                        <td>486.34</td>
+                        <td>654.04</td>
+                        <td>651.42</td>
+                        <td>-</td>
+                        <td>690.25</td>
+                    </tr>
+
                     <tr>
                         <td>Total</td>
-                       <td>3330.09</td>
-                       <td>3205.97</td>
-                       <td>3368.25</td>
-                       <td>3392.07</td>
-                       <td>3449.94</td>
+                       <td>3943.34</td>
+                       <td>3545.57</td>
+                       <td>3854.59</td>
+                       <td>4068.66</td>
+                       <td>4254.13</td>
                        <td>2882.39</td>
+                       <td>4237.6</td>
                     </tr>
                 </tbody>
             </table>
@@ -203,7 +224,7 @@
             <hr class="star-primary">
             <h3>V1.1</h3>
             <p>The first calculation version was used in the Gold Coast Event and the <a href="events/gold-coast.html">picks</a> made 472.62 points. Today we are using more acuratte data, so all version are performing a litle better.</p>
-            <p>It was our first version and we use several parameters to help with it</p>
+            <p>It was our first version and we used several parameters to help with it</p>
             <ul>
                 <li>Actualizated position Rank</li>
                 <li>Participation in previous events</li>
@@ -214,22 +235,25 @@
             <h3>V1.2</h3>
             <p>The second version of the Fantasy Bot was built and we hoped to do better on Bells Beach. We did, but v1.2 is losing on the long run for v1.1</p>
             <p>We still use the same parameters, but we have improved the previous events participations calculation. We basically downgraded surfers that were in a descendent pattern. You can be aware of it by visiting the surfers statistic page.</p>
-            <p>On Gold Coast the Fantasy Bot V1.2 has downgraded Kelly and Adam Melling for the competition. Those were the unique surfers following a downgrade pattern on Gold Coast (both were on worst possible team, we will see in the following events if it is a trend).</p>
+            <p>On Gold Coast the Fantasy Bot V1.2 has downgraded Kelly and Adam Melling for the competition. Those were the unique surfers following a downgrade pattern on Gold Coast (both were on worst possible team, we will see in the following events if it is a trend through the year).</p>
             <p>We use the same data we had previously on each event to calculate the points.</p>
             <h3>V1.3</h3>
             <p>The third version, a brand new way of looking at Momentum Rank</p>
             <p>For the third version we have improved the calculations for the Momentum Rank, the rookies now start the season with medium scores for this rank and they loose it quickly by scoring bad. For the long run, there was also an improvement for the equation, our statistical analysis for the first two events detected a high importance on Momentum Rank Variables. This will be a major change for the long run. We are still analysing previous data and we have a clue that Momentum Rank has a low influence in Reef Waves, for this reason v1.3 was unstable for Margaret River. </p>
             <p>We are commited to play serious on version comparisons! Choosing the best calculation must be based on numbers.</p>
             <h3>V1.4</h3>
-            <p>The fourth version has a very important improvement. We have made some equalizations and weight balance for the ranks. This is the first mutable version we have made, it will always update ranks calculations for better as we have more historical clues. So, the function will learn with the events and adjust its main function.</p>
+            <p>The fourth version has a very important improvement. We have made some equalizations and weight balance for the ranks. This is the first mutable version we have made, it will always update ranks calculations for better as we have more historical clues. So, the function will learn with the events and adjust its main variables.</p>
             <h3>V1.5</h3>
             <p>Small tune update for version 1.4 with more detailed weight balance for better calculation. It gives a dramatic change, its not easy to update calculations for the better.</p>
             <p>The version played as average. The first time it was launched was in Fiji Pro, two upsets in this event downgraded all the versions together. Julian Wilson and Nat Young were amongst all different calculations we have made so far.</p>
-            <p>But not event was worst than Rio for calculations. Too many upsets at the Grumari venue.</p>
             <h3>V1.6</h3>
             <p>discontinued...</p>
             <p>It was based on statistical projections of surfers avg score, but we couldn't improve this approach.</p>
-            <p>We will still update, but it won't be our focus. We are running to collect better data. :) Help us improve, spred the word!</p>
+            <p>We wont update it anymore.</p>
+            <h3>V1.7</h3>
+            <p>Performance variables were isolated. This version does not care about anithing else except the performance numbers, EAHS, EWP, AHS-2016, AHS...</p>
+            <p>The point is that it finds the perfect balance weight between the variables regarding past events. It will always fit for the best possible scenarium regarding past events.</p>
+            <p>Like versions 1.4 and 1.5 it is mutable, calculations will change from one event to another.</p>
         </div>
         
     </section>
