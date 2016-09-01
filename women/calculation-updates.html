@@ -112,77 +112,97 @@
     <!-- Portfolio Grid Section -->
     <section id="portfolio">
         <div class="container">
-            <h2>General results for all calculation versions</h2>
-            <p>We keep the track of all versions and choose the one that performs better on the long run.</p>
-            <table class="table  table-striped">
+            <h2>General Results</h2>
+            <p>Starting from J-Bay we have tunned our ranks to avoid rd1 colision and we got an average upgrade of 3.21% in all teams. Try to avoid rd1 colision, it will make the difference on the long run.</p>
+            <table class="table table-striped table-hover">
                 <thead class="thead-inverse">
                     <th>
-                        <td>v1.1</td>
-                        <td>v1.2</td>
-                        <td>v1.3</td>
-                        <td>v1.4</td>
-                        <td>v1.5</td>
+                        <td>Gold Coast</td>
+                        <td>Bells Beach</td>
+                        <td>Margaret River</td>
+                        <td>Rio Pro</td>
+                        <td>Fiji Pro</td>
+                        <td>Huntington</td>
+                        <td>Total</td>
                     </th>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Gold Coast</td>
-                        <td>309.24</td>
+                        <td>v1.5</td>
                         <td>307.17</td>
-                        <td>309.24</td>
-                        <td>307</td>
-                        <td>307.17</td>
-                    </tr>
-                    <tr>
-                        <td>Bells Beach</td>
-                        <td>285.64</td>
                         <td>319.71</td>
-                        <td>285.64</td>
-                        <td>307.28</td>
-                        <td>307.28</td>
-                    </tr>
-                    <tr>
-                        <td>Margaret River</td>
-                        <td>297.42</td>
-                        <td>266.1</td>
-                        <td>292.61</td>
-                        <td>274.78</td>
-                        <td>274.78</td>
-                    </tr>
-                    <tr>
-                        <td>Rio Pro</td>
-                        <td>310.34</td>
-                        <td>206.42</td>
-                        <td>279.35</td>
-                        <td>300.11</td>
-                        <td>300.11</td>
-                    </tr>
-                    <tr>
-                        <td>Fiji Pro</td>
-                        <td>178.84</td>
-                        <td>266.7</td>
-                        <td>178.84</td>
-                        <td>340.26</td>
-                        <td>340.26</td>
-                    </tr>
-                    <tr>
-                        <td>Huntington</td>
-                        <td>216.20</td>
+                        <td>272.15</td>
+                        <td>280.04</td>
+                        <td class="success">358.59</td>
                         <td>250.43</td>
-                        <td>244.8</td>
-                        <td>240.82</td>
-                        <td>272.85</td>
+                        <td class="success">1788.09</td>
                     </tr>
                     <tr>
-                        <td>Total</td>
-                        <td>1381.48</td>
-                        <td>1366.1</td>
-                        <td>1345.68</td>
-                        <td>1770.25</td>
-                        <td>1802.45</td>
+                        <td>v1.7</td>
+                        <td>307.17</td>
+                        <td>301.95</td>
+                        <td>282.53</td>
+                        <td class="success">324.61</td>
+                        <td>268.63</td>
+                        <td class="success">268.78</td>
+                        <td>1753.67</td>
                     </tr>
+                    <tr>
+                        <td>v1.8</td>
+                        <td>307.17</td>
+                        <td>285.64</td>
+                        <td>278.65</td>
+                        <td>280.04</td>
+                        <td>330.74</td>
+                        <td>250.43</td>
+                        <td>1732.67</td>
+                    </tr>
+                    <tr>
+                        <td>v1.4</td>
+                        <td>307</td>
+                        <td>319.71</td>
+                        <td>280.83</td>
+                        <td>264.24</td>
+                        <td>312.53</td>
+                        <td>240.82</td>
+                        <td>1725.13</td>
+                    </tr>
+                    <tr>
+                        <td>v1.2</td>
+                        <td>307.17</td>
+                        <td>319.71</td>
+                        <td>290.69</td>
+                        <td>179.4</td>
+                        <td>250</td>
+                        <td>250.43</td>
+                        <td>1597.4</td>
+                    </tr>
+                    <tr>
+                        <td>v1.3</td>
+                        <td>273.26</td>
+                        <td>285.64</td>
+                        <td class="success">300.89</td>
+                        <td>278.78</td>
+                        <td>162.14</td>
+                        <td>244.8</td>
+                        <td>1545.51</td>   
+                    </tr>
+                   
+                    <tr>
+                        <td>v1.3</td>
+                        <td>307.17</td>
+                        <td>319.71</td>
+                        <td>255.56</td>
+                        <td>278.78</td>
+                        <td>162.14</td>
+                        <td>216.2</td>
+                        <td>1539.56</td>
+                    </tr>
+
+                    
                 </tbody>
             </table>
+            <p>E.W: Event Winner</p>
         </div>
 
         <div class="container">
@@ -211,6 +231,12 @@
             <p>The fourth version has a very important improvement. We have made some equalizations and weight balance for the ranks. This is the first mutable version we have made, it will always update ranks calculations for better as we have more historical clues.</p>
             <h3>V1.5</h3>
             <p>Small tune update for version 1.4 with more detailed weight balance for better calculation</p>
+            <h3>V1.6</h3>
+            <p>We tried to use statistical projection and base the picks only in this value. The results were very far from what we expected. We have discontinued this version</p>
+            <h3>V1.7</h3>
+            <p>We isolated the performance variables to point the ones that are more important. No variable regarding Momentum or Past Position is used</p>
+            <h3>V1.8</h3>
+            <p>Small changes, all ranks are used and the performance is tuned based on v1.7. We hoped to see an improvement based on those steps, but the results were far from our expectation.</p>
         </div>
     </section>
 
