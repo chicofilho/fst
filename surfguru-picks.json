@@ -1,8 +1,8 @@
 {
 	"events":[{
-		"name": "Tahiti",
+		"name": "Trestles",
 		"tierA": [{"nome": "Gabriel Medina", "codigo":"gmed"}, {"nome":"John John Florence", "codigo":"jjoh"}],
-		"tierB": [{"nome":"Kelly Slater", "codigo":"ksla"}, {"nome":"Adrian Buchan", "codigo":"abuc"}, {"nome":"Wiggolly Dantas", "codigo":"wdan"}, {"nome":"Josh Kerr", "codigo":"jker"}],
-		"tierC": [{"nome":"Jeremy Flores", "codigo":"jflo"}, {"nome":"Kai Otton", "codigo":"kott"}] 
+		"tierB": [{"nome":"Mick Fanning", "codigo":"mfan"}, {"nome":"Josh Kerr", "codigo":"jker"}, {"nome":"Michel Bourez", "codigo":"mbou"}, {"nome":"Filipe Toledo", "codigo":"ftol"}],
+		"tierC": [{"nome":"Jack Freestone", "codigo":"jfre"}, {"nome":"Kai Otton", "codigo":"kott"}] 
 		}]
 }
