@@ -194,6 +194,9 @@ td,
 th {
   padding: 0;
 }
+
+
+
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 @media print {
   *,
@@ -247,6 +250,7 @@ th {
   .navbar {
     display: none;
   }
+
   .btn > .caret,
   .dropup > .btn > .caret {
     border-top-color: #000 !important;
@@ -6625,6 +6629,9 @@ button.close {
     display: table-cell !important;
   }
 }
+
+
+
 @media (max-width: 767px) {
   .visible-xs-block {
     display: block !important;
@@ -7062,3 +7069,52 @@ a.list-group-item-danger.active:focus {
 .popover {
   color: #2c3e50;
 }
+
+/*=========SPONSOR=======*/
+
+@media (max-width: 767px) {
+  .sponsor-container {
+    margin-top: 55px;
+    text-align: center;
+  }
+  .sponsor-image{
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background:  url('http://fantasysurfingtips.com/img/sponsor/small.png');
+    width: 320px;
+    height: 50px;
+  }
+}
+@media (min-width: 768px) {
+  .sponsor-container {
+    margin-top: 155px;
+    text-align: center;
+  }
+  .sponsor-image{
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background:  url('http://fantasysurfingtips.com/img/sponsor/medium.png');
+    width: 767px;
+    height: 60px;
+  }
+}
+@media (min-width: 992px) {
+  .sponsor-container {
+    margin-top: 95px;
+    text-align: center;
+  }
+  .sponsor-image{
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background:  url('http://fantasysurfingtips.com/img/sponsor/large.png');
+    width: 900px;
+    height: 60px;
+  }
+}
+/*=========SPONSOR=======*/
