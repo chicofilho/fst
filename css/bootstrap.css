@@ -7074,7 +7074,7 @@ a.list-group-item-danger.active:focus {
 
 @media (max-width: 767px) {
   .sponsor-container {
-    margin-top: 55px;
+    margin-top: 70px;
     text-align: center;
   }
   .sponsor-image{
@@ -7089,7 +7089,7 @@ a.list-group-item-danger.active:focus {
 }
 @media (min-width: 768px) {
   .sponsor-container {
-    margin-top: 155px;
+    margin-top: 180px;
     text-align: center;
   }
   .sponsor-image{
@@ -7104,7 +7104,7 @@ a.list-group-item-danger.active:focus {
 }
 @media (min-width: 992px) {
   .sponsor-container {
-    margin-top: 95px;
+    margin-top: 120px;
     text-align: center;
   }
   .sponsor-image{
