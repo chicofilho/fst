@@ -1,8 +1,8 @@
 {
 	"events":[{
-		"name": "Pro France",
-		"tierA": [{"nome": "Gabriel Medina", "codigo":"gmed"}, {"nome":"John John Florence", "codigo":"jjoh"}],
-		"tierB": [{"nome":"Julian Wilson", "codigo":"jwil"}, {"nome":"Josh Kerr", "codigo":"jker"}, {"nome":"Adriano de Souza", "codigo":"asou"}, {"nome":"Filipe Toledo", "codigo":"ftol"}],
-		"tierC": [{"nome":"Jack Freestone", "codigo":"jfre"}, {"nome":"Kai Otton", "codigo":"kott"}] 
+		"name": "Portugal",
+		"tierA": [{"nome": "Gabriel Medina", "codigo":"gmed"}, {"nome":"Filipe Toledo", "codigo":"ftol"}],
+		"tierB": [{"nome":"Joel Parkinson", "codigo":"jpar"}, {"nome":"Italo Ferreira", "codigo":"ifer"}, {"nome":"Adriano de Souza", "codigo":"asou"}, {"nome":"Nat Young", "codigo":"nyou"}],
+		"tierC": [{"nome":"Alejo Muniz", "codigo":"amun"}, {"nome":"Jeremy Flores", "codigo":"jflo"}] 
 		}]
 }
