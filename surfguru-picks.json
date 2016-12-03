@@ -1,8 +1,8 @@
 {
 	"events":[{
-		"name": "Portugal",
-		"tierA": [{"nome": "Gabriel Medina", "codigo":"gmed"}, {"nome":"Filipe Toledo", "codigo":"ftol"}],
-		"tierB": [{"nome":"Joel Parkinson", "codigo":"jpar"}, {"nome":"Italo Ferreira", "codigo":"ifer"}, {"nome":"Adriano de Souza", "codigo":"asou"}, {"nome":"Nat Young", "codigo":"nyou"}],
-		"tierC": [{"nome":"Alejo Muniz", "codigo":"amun"}, {"nome":"Jeremy Flores", "codigo":"jflo"}] 
+		"name": "Pipe",
+		"tierA": [{"nome": "Gabriel Medina", "codigo":"gmed"}, {"nome":"John John Florence", "codigo":"jjoh"}],
+		"tierB": [{"nome":"Kelly Slater", "codigo":"ksla"}, {"nome":"Sebastian Ziets", "codigo":"szie"}, {"nome":"Josh Kerr", "codigo":"jker"}, {"nome":"Adrian Buchan", "codigo":"abuc"}],
+		"tierC": [{"nome":"Jeremy Flores", "codigo":"jflo"}, {"nome":"Ryan Callinan", "codigo":"rcal"}] 
 		}]
 }
