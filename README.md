@@ -1,4 +1,4 @@
-# [Fantasy Surfing Tips](http://fantasysurfingtips.com/)
+# [Fantasy Surfing Tips](https://fantasysurfingtips.com/)
 
 ## We compute fantasy data
 
