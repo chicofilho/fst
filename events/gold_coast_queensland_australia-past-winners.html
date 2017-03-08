@@ -141,39 +141,6 @@
             </div>
         </div>
         <hr/>
-        <div class="row">
-            <!-- <h4  style="text-align:center;" >Choose the data you want to analyse</h4> -->
-            <div class="col-sm-6 " style="text-align:center;">
-               <button id="past-winners" type="button" class="btn btn-primary sub-menu">Past Winners</button>
-            </div>
-            <div class="col-sm-6 " style="text-align:center;">
-               <button id="performance-table" type="button " class="btn btn-secondary sub-menu">Performance Table</button>
-            </div>
-            <!-- <div class="col-sm-4 " style="text-align:center;">
-               <button id="performance-cut" type="button" class="btn btn-secondary sub-menu">Perfomance with AHS greater than 13.46</button>
-            </div> -->
-            <script type="text/javascript"
-            >
-                $(".sub-menu").click(function(){
-                    $(".sub-menu").removeClass("btn-primary")
-                    $(".sub-menu").addClass("btn-secondary")
-                    $(this).removeClass("btn-secondary")
-                    $(this).addClass("btn-primary")
-                })
-                $("#past-winners").click(function(){
-                    $('.data-container').css('display', 'none');
-                    $('#past-winners-cont').toggle();
-                })
-                $("#performance-table").click(function(){
-                    $('.data-container').css('display', 'none');
-                    $('#performance-cont').toggle();
-                })
-                $("#performance-cut").click(function(){
-                    $('.data-container').css('display', 'none');
-                    $('#performance-cut-cont').toggle();
-                })
-            </script>
-        </div>
         <hr class="star-primary">
         <div id="past-winners-cont" class="data-container">
             <h3 style="text-align:center;" >Past Gold Coast, Queensland, Australia winners</h3>
