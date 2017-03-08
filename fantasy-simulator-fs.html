@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="We calculate the stats for creating the best teams for WLS Fantasy Surfing. Play against our computer program">
+
+    <meta name="author" content="">
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    
+    <title>Tips for WSL and Surfer Magazine fantasy games</title>
+
+    <meta property="og:title" content="Fantasy Surfing tips"/>
+    <meta property="og:image" content="https://fantasysurfingtips.com/img/just_waves.png"/>
+    <meta property="og:description" content="We calculate the best picks for WSL Fantasy Surfing based on Stats"/>
+
+    
+
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: https://bootswatch.com/flatly/ -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/freelancer.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Fantasy Surfing Tips</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Fantasy Surfing Tips</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="fantasy-simulator.html">Fantasy Simulator</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="/surfers">Surfers</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="all-events.html">All Events</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="/women">Women's</a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <!-- Header -->
+    <div class="sponsor-container">
+        <a href="http://surfteccell.com.br/a/home.asp?lingua=i" target="blank">
+            <img class="sponsor-image">
+        </a>        
+    </div>  
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio">
+        <div class="container">
+            <h1>Fantasy Surfer Simulator (Gold Coast)</h1>
+            <h3>Choose the rankings you believe the most</h3>
+            <hr class="star-primary">
+            <p> Our equation does not have the price included. We show the simulator with the best 8 picks and the cost this team would have. A more detailed explanation you find <a href="https://medium.com/surf-metrics/fantasy-surfer-projections-3c7461613624#.lfehp4ipo">here</a>.</p>
+            <p> By choosing overall the other ranks will be ignored. Only overall will be used </p>
+            <p>Help us grow, <a href="https://twitter.com/FanSurfingTips">spread</a> the word :)</p>
+            <hr/>
+            <h4>Rankings:</h4>
+            <div class="row">
+                <div class="col-lg-2">
+                    <p> <input id="momentum" type="checkbox" value="momentum"/> Momentum    </p>
+                </div>
+                <div class="col-lg-2">    
+                    <p> <input id="performance" type="checkbox" value="performance" /> Performance   </p>
+                </div>
+                <div class="col-lg-2">        
+                    <p> <input id="past_position" type="checkbox" value="past_position"/> Past Position   </p>
+                </div>
+                <div class="col-lg-2">        
+                    <p> <input id="overall" type="checkbox" value="overall"/> Overall   </p>
+                </div>
+                <div class="col-lg-2">        
+                    <p> <input id="rd1_matchups" type="checkbox" value="overall"/> Avoid RD1 Matchups    </p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <button id="generate" type="button" class="btn btn-primary">Generate</button>
+                        <button id="random" type="button" class="btn btn-secondary">Random Picks</button>
+                        
+                    </div>
+                </div>      
+            </div>
+            <hr class="star-primary">
+            <div class="row">
+                <div class="col-lg-3">
+                </div>
+                <div class="col-lg-6">
+                    <h4 style="text-align: center;">
+                    FANTASY SURFING TIPS TEAM SIMULATOR
+                    </h4>
+                </div>
+                <div class="col-lg-3">
+                </div>
+            </div>
+            <div class="row">
+                    <div class="col-lg-4">
+                    </div>
+                   
+                    <div class="col-lg-4">
+                        <h4>The super 8 surfers</h4>
+                        <div class="row">
+                            <div  class="col-lg-12">
+                                <p id="a1">John John Florence</p>
+                            </div>
+                            <div  class="col-lg-12">
+                                <p id="a2">Jordy Smith</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <p id="b1">Joel Parkinson</p>
+                            </div>
+                            <div class="col-lg-12">
+                                <p id="b2">Filipe Toledo</p>
+                            </div>
+                            <div class="col-lg-12">
+                                <p id="b3" >Adriano de Souza</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <p id="b4" >Mick Fanning</p>
+                            </div>
+                            <div class="col-lg-12">
+                                <p id="c1">Jadson Andre</p>
+                            </div>
+                            <div class="col-lg-12">
+                                <p id="c2" >Jack Freestone</p>
+                            </div>
+                        </div>
+                        <h4 id="cost_total" >Total cost: </h4>
+                    </div>
+                    <div class="col-lg-4">
+                        
+                    </div>
+            </div>
+            <hr class="star-primary">
+            <div class="row">
+                <div class="col-lg-3">
+                </div>
+                <div class="col-lg-6">
+                    <h4 style="text-align: center;">
+                    FANTASY SURFING TIPS ROUND SIMULATOR
+                    </h4>
+                    <p>The surfer in bold wins the heat. We are still improving this simulation. Follow our <a href="https://twitter.com/FanSurfingTips">Twitter</a> and check the news!</p>
+                </div>
+                <div class="col-lg-3">
+
+                </div>
+            </div>
+            <h4 style="text-align: center;">Round 1</h4>
+            <hr class="star-primary">
+            <div id="rd1" class="row">
+                <div id="rd1-container" class="row">
+                    
+                    
+                </div>
+            </div>
+            <h4 style="text-align: center;">Round 2</h4>
+            <hr class="star-primary">
+            <div id="rd2" class="row">
+                <div id="rd2-container" class="row">
+                    
+                </div>
+            </div>
+            <h4 style="text-align: center;">Round 3</h4>
+            <hr class="star-primary">
+            <div id="rd3" class="row">
+                <div id="rd3-container" class="row">
+                    
+                </div>
+            </div>
+            <h4 style="text-align: center;">Round 4</h4>
+            <hr class="star-primary">
+            <div id="rd4" class="row">
+                <div id="rd4-container" class="row">
+                    
+                </div>
+            </div>
+            <h4 style="text-align: center;">Round 5</h4>
+            <hr class="star-primary">
+            <div id="rd5" class="row">
+                <div id="rd5-container" class="row">
+                    
+                </div>
+            </div>
+            <h4 style="text-align: center;">Quarter Finals</h4>
+            <hr class="star-primary">
+            <div id="qf" class="row">
+                <div id="qf-container" class="row">
+                    
+                </div>
+            </div>
+            <h4 style="text-align: center;">Semi Finals</h4>
+            <hr class="star-primary">
+            <div id="sf" class="row">
+                <div id="sf-container" class="row">
+                    
+                </div>
+            </div>
+            <h4 style="text-align: center;">Final</h4>
+            <hr class="star-primary">
+            <div id="f" class="row">
+                <div id="f-container" class="row">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                       <h3>Meet the creators</h3>
+                       <p>Just come to surf <a href="https://goo.gl/maps/UmWhsRsU3bP2">here</a> on weekends. We are always there</p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Around the Web</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="https://twitter.com/FanSurfingTips" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Play against us on WSL Fantasy Surfing</h3>
+                        <p>Get in <a href="https://mct.fantasy.worldsurfleague.com/group/13341">the group</a> and see if you can beat us</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; Fantasy Surfing Tips 2016
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+
+   
+    <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-74337819-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+     <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/freelancer.js"></script>
+</body>
+    <script type="text/javascript">
+        jQuery(document).ready(function(){
+             
+            prices = [  ['JOHN JOHN FLORENCE', 125], 
+                        ['JORDY SMITH', 115], 
+                        ['GABRIEL MEDINA', 110], 
+                        ['KOLOHE ANDINO', 105], 
+                        ['MATT WILKINSON', 100], 
+                        ['MICHEL BOUREZ', 95], 
+                        ['KELLY SLATER', 90], 
+                        ['JULIAN WILSON', 85], 
+                        ['JOEL PARKINSON', 80], 
+                        ['FILIPE TOLEDO', 80], 
+                        ['ADRIANO DE SOUZA', 75], 
+                        ['SEBASTIAN ZIETZ', 75], 
+                        ['OWEN WRIGHT', 70], 
+                        ['JOSH KERR', 70], 
+                        ['ADRIAN BUCHAN', 65],
+                        ['ITALO FERREIRA', 65], 
+                        ['CAIO IBELLI', 60], 
+                        ['MICK FANNING', 55],
+                        ['CONNER COFFIN', 55],
+                        ['STUART KENNEDY', 50],
+                        ['KANOA IGARASHI', 45],
+                        ['WIGGOLLY DANTAS', 45], 
+                        ['MIGUEL PUPO', 40],
+                        ['CONNOR OLERY', 40],
+                        ['ETHAN EWING', 35],
+                        ['FREDERICO MORAIS', 35],
+                        ['BEDE DURBIDGE', 35],
+                        ['LEONARDO FIORAVANTI', 30],
+                        ['JEREMY FLORES', 30],
+                        ['JACK FREESTONE', 30],
+                        ['IAN GOUVEIA', 30],
+                        ['EZEKIEL LAU', 30],
+                        ['JOAN DURU', 30],
+                        ['JADSON ANDRE', 30],
+                        ['MIKEY WRIGHT', 15]]
+
+            rd1 = [
+                ['MICHEL BOUREZ', 'CONNER COFFIN',  'JADSON ANDRE'],
+                ['MATT WILKINSON', 'STUART KENNEDY', 'IAN GOUVEIA'],
+                ['KOLOHE ANDINO', 'KANOA IGARASHI',  'JACK FREESTONE'],
+                ['GABRIEL MEDINA', 'WIGGOLLY DANTAS',  'EZEKIEL LAU'],
+                ['JORDY SMITH', 'MIGUEL PUPO',  'TBD1'],
+                ['JOHN JOHN FLORENCE', 'CONNOR OLERY',  'TBD2'],
+                ['KELLY SLATER', 'MICK FANNING', 'JEREMY FLORES'],
+                ['JULIAN WILSON', 'CAIO IBELLI', 'LEONARDO FIORAVANTI'],
+                ['JOEL PARKINSON', 'ITALO FERREIRA', 'JOAN DURU' ],
+                ['FILIPE TOLEDO', 'ADRIAN BUCHAN',  'FREDERICO MORAIS'],
+                ['ADRIANO DE SOUZA', 'JOSH KERR', 'BEDE DURBIDGE'],
+                ['SEBASTIAN ZIETZ', 'OWEN WRIGHT',  'ETHAN EWING']
+            ]
+            rd_heads = ['JOHN JOHN FLORENCE', 'JORDY SMITH', 'GABRIEL MEDINA', 'KOLOHE ANDINO', 'MATT WILKINSON', 'MICHEL BOUREZ', 'KELLY SLATER', 'JULIAN WILSON', 'JOEL PARKINSON', 'FILIPE TOLEDO', 'ADRIANO DE SOUZA', 'SEBASTIAN ZIETZ', 'OWEN WRIGHT', 'JOSH KERR', 'ADRIAN BUCHAN', 'ITALO FERREIRA', 'CAIO IBELLI', 'MICK FANNING', 'CONNER COFFIN', 'STUART KENNEDY', 'KANOA IGARASHI', 'WIGGOLLY DANTAS', 'MIGUEL PUPO', 'CONNOR OLERY', 'ETHAN EWING', 'BEDE DURBIDGE', 'FREDERICO MORAIS', 'JOAN DURU', 'LEONARDO FIORAVANTI', 'JEREMY FLORES', 'JADSON ANDRE', 'IAN GOUVEIA', 'JACK FREESTONE', 'EZEKIEL LAU', 'TBD1', 'TBD2']
+            rd2 = []
+
+            rd3 = [[], [], [], [], [], [], [], [], [], [], [], []]
+            rd4 = [[], [], [], []]
+            rd5 = [[], [], [], []]
+            qf = [[], [], [], []]
+            sf = [[], []]
+            f = [[]]
+
+            past_position_rank = [['TAJ BURROW', 50.0], ['ADRIANO DE SOUZA', 46.666666666666664], ['MICK FANNING', 44.666666666666664], ['JULIAN WILSON', 41.333333333333336], ['MIGUEL PUPO', 41.333333333333336], ['JOEL PARKINSON', 38.666666666666664], ['KELLY SLATER', 36.666666666666664], ['GABRIEL MEDINA', 34.66666666666667], ['NAT YOUNG', 32.666666666666664], ['FILIPE TOLEDO', 31.333333333333336], ['FREDDY PATACCHIA JR.', 30.0], ['JOSH KERR', 30.0], ['BEDE DURBIDGE', 29.333333333333332], ['JOHN JOHN FLORENCE', 26.666666666666668], ['MATT WILKINSON', 24.666666666666668], ['OWEN WRIGHT', 24.0], ['KOLOHE ANDINO', 23.333333333333332], ['WIGGOLLY DANTAS', 23.333333333333332], ['JORDY SMITH', 23.333333333333332], ['GLENN HALL', 22.666666666666664], ['C.J. HOBGOOD', 22.0], ['DUSTY PAYNE', 21.333333333333336], ['ITALO FERREIRA', 18.666666666666668], ['TRAVIS LOGIE', 18.0], ['MATT BANTING', 18.0], ['ADAM MELLING', 18.0], ['SEBASTIAN ZIETZ', 17.333333333333336], ['MICHEL BOUREZ', 15.333333333333332], ['MITCH CREWS', 15.333333333333332], ['JEREMY FLORES', 14.000000000000002], ['DION ATKINSON', 12.666666666666668], ['TIAGO PIRES', 12.666666666666668], ['ADRIAN BUCHAN', 10.0], ['JADSON ANDRE', 8.666666666666668], ['BRETT SIMPSON', 8.666666666666668], ['ALEJO MUNIZ', 7.333333333333333], ['KAI OTTON', 7.333333333333333], ['KIEREN PERROW', 4.666666666666667], ['HEITOR ALVES', 4.666666666666667], ['YADIN NICOL', 4.666666666666667], ['RAONI MONTEIRO', 4.666666666666667], ['TAYLOR KNOX', 4.0], ['RYAN CALLINAN', 4.0], ['ALEX RIBEIRO', 4.0], ['DAMIEN HOBGOOD', 4.0], ['MITCH COLEBORN', 4.0], ['DAVEY CATHELS', 4.0], ['KEANU ASING', 4.0], ['ARITZ ARANBURU', 4.0], ['TANNER GUDAUSKAS', 4.0], ['WILLIAN CARDOSO', 4.0], ['PATRICK GUDAUSKAS', 4.0], ['RICARDO CHRISTIE', 4.0], ['JAY DAVIES', 4.0], ['KANOA IGARASHI', 0.0], ['CONNOR O&apos;LEARY', 0.0], ['LEONARDO FIORAVANTI', 0.0], ['JACK FREESTONE', 0.0], ['CAIO IBELLI', 0.0], ['FREDERICO MORAIS', 0.0], ['STUART KENNEDY', 0.0], ['ETHAN EWING', 0.0], ['CONNER COFFIN', 0.0], ['JOAN DURU', 0.0], ['EZEKIEL LAU', 0.0], ['IAN GOUVEIA', 0.0]]
+
+
+
+            //
+            momentum_rank = [['JOHN JOHN FLORENCE', 50], ['KOLOHE ANDINO', 44], ['JORDY SMITH', 43], ['JOEL PARKINSON', 36], ['KELLY SLATER', 34], ['JULIAN WILSON', 34], ['KEANU ASING', 32], ['GABRIEL MEDINA', 32], ['FILIPE TOLEDO', 27], ['SEBASTIAN ZIETZ', 24], ['ADRIANO DE SOUZA', 24], ['JOSH KERR', 24], ['MICHEL BOUREZ', 22], ['JADSON ANDRE', 22], ['CONNER COFFIN', 22], ['ADRIAN BUCHAN', 18], ['STUART KENNEDY', 18], ['ALEX RIBEIRO', 17], ['KAI OTTON', 17], ['TANNER GUDAUSKAS', 17], ['MATT BANTING', 17], ['BRETT SIMPSON', 17], ['MIGUEL PUPO', 17], ['CAIO IBELLI', 15], ['JEREMY FLORES', 15], ['NAT YOUNG', 8], ['MATT WILKINSON', 8], ['KANOA IGARASHI', 8], ['DUSTY PAYNE', 8], ['RYAN CALLINAN', 8], ['JACK FREESTONE', 8], ['ITALO FERREIRA', 8], ['DAVEY CATHELS', 8], ['ALEJO MUNIZ', 8], ['WIGGOLLY DANTAS', 8], ['MICK FANNING', 8], ['OWEN WRIGHT', 8], ['JAY DAVIES', 8], ['BEDE DURBIDGE', 8], ['ADAM MELLING', 8], ['TAJ BURROW', 8], ['LEONARDO FIORAVANTI', 5], ['STEVEN SAWYER', 5], ['BRUNO SANTOS', 5], ['TIMOTHEE BISSO', 5], ['TIM STEVENSON', 5], ['JACK ROBINSON', 5], ['BINO LOPES', 5], ['MARCO FERNANDEZ', 5], ['MASON HO', 5], ['LUCAS SILVEIRA', 5], ['JOAN DURU', 5], ['DEIVID SILVA', 5], ['JACOB WILLCOX', 5], ['MIKEY WRIGHT', 5], ['FREDDY PATACCHIA JR.', 0], ['C.J. HOBGOOD', 0], ['GLENN HALL', 0], ['RICARDO CHRISTIE', 0]]
+
+
+
+
+            
+            performance_rank = [['JOEL PARKINSON', 50.0], ['MICK FANNING', 49.6521412118648], ['KELLY SLATER', 47.48410239951242], ['FILIPE TOLEDO', 46.33054365498114], ['WIGGOLLY DANTAS', 46.32410032467901], ['STUART KENNEDY', 40.61855160418662], ['ADRIANO DE SOUZA', 39.83432941546432], ['BEDE DURBIDGE', 37.235276382398276], ['JORDY SMITH', 36.89211838869734], ['GABRIEL MEDINA', 36.80867928748925], ['MATT WILKINSON', 36.13229170212525], ['JOHN JOHN FLORENCE', 35.301547858139756], ['MIKEY WRIGHT', 34.2681835644017], ['OWEN WRIGHT', 32.82589067897303], ['MICHEL BOUREZ', 32.20145497692559], ['KOLOHE ANDINO', 29.99799810995646], ['ITALO FERREIRA', 29.898430420948035], ['MIGUEL PUPO', 28.92913471342174], ['JEREMY FLORES', 27.93868543094128], ['SEBASTIAN ZIETZ', 24.73112266317835], ['CONNER COFFIN', 23.448251547614994], ['JULIAN WILSON', 22.972093490696476], ['JOSH KERR', 22.658031793580008], ['ADRIAN BUCHAN', 20.48683210221148], ['JACK FREESTONE', 20.322831110181756], ['CAIO IBELLI', 8.636696670702872], ['JADSON ANDRE', 8.008573276469928], ['KANOA IGARASHI', 2.3503972171296947], ['IAN GOUVEIA', 0.0], ['LEONARDO FIORAVANTI', 0.0], ['JOAN DURU', 0.0], ['FREDERICO MORAIS', 0.0], ['ETHAN EWING', 0.0], ['CONNOR O&APOS;LEARY', 0.0], ['EZEKIEL LAU', 0.0]]
+
+
+            overall = [['JOEL PARKINSON', 1192.235294117647], ['KELLY SLATER', 1143.6510392426705], ['JOHN JOHN FLORENCE', 1138.3021660173754], ['JORDY SMITH', 1076.3820066747467], ['FILIPE TOLEDO', 1049.0925399536538], ['ADRIANO DE SOUZA', 1024.5089647391787], ['KOLOHE ANDINO', 1023.3349241660787], ['GABRIEL MEDINA', 1021.6310547638739], ['MICK FANNING', 960.9280944361949], ['JULIAN WILSON', 941.572370828033], ['WIGGOLLY DANTAS', 846.2698440985816], ['MIGUEL PUPO', 842.1857418325603], ['MICHEL BOUREZ', 813.4013300864478], ['JOSH KERR', 803.7458155539848], ['STUART KENNEDY', 792.2728467906209], ['BEDE DURBIDGE', 788.2939580298198], ['SEBASTIAN ZIETZ', 772.1095157333111], ['MATT WILKINSON', 759.8376841426567], ['OWEN WRIGHT', 727.4330161107573], ['JEREMY FLORES', 706.7422865255303], ['ITALO FERREIRA', 679.909403200297], ['CONNER COFFIN', 673.7401462814762], ['ADRIAN BUCHAN', 650.7932536257856], ['JADSON ANDRE', 569.1948065470528], ['JACK FREESTONE', 519.6113623445771], ['CAIO IBELLI', 477.4361523892671], ['KANOA IGARASHI', 357.85945730710847], ['LEONARDO FIORAVANTI', 309.7058823529412], ['JOAN DURU', 309.7058823529412], ['KEANU ASING', 288.0], ['IAN GOUVEIA', 264.7058823529412], ['CONNOR OLEARY', 264.7058823529412], ['ETHAN EWING', 264.7058823529412], ['FREDERICO MORAIS', 264.7058823529412], ['EZEKIEL LAU', 264.7058823529412], ['TAJ BURROW', 254.6470588235294], ['MATT BANTING', 208.58823529411765], ['NAT YOUNG', 185.8235294117647], ['BRETT SIMPSON', 171.52941176470588], ['KAI OTTON', 166.23529411764707], ['TANNER GUDAUSKAS', 153.0], ['ALEX RIBEIRO', 153.0], ['DUSTY PAYNE', 140.8235294117647], ['ADAM MELLING', 127.58823529411765], ['FREDDY PATACCHIA JR.', 103.23529411764706], ['ALEJO MUNIZ', 85.23529411764706], ['GLENN HALL', 74.11764705882352], ['RYAN CALLINAN', 72.0], ['DAVEY CATHELS', 72.0], ['JAY DAVIES', 72.0], ['C.J. HOBGOOD', 71.47058823529412], ['TRAVIS LOGIE', 55.58823529411765], ['MITCH CREWS', 45.0], ['TIAGO PIRES', 34.411764705882355], ['DION ATKINSON', 34.411764705882355], ['KIEREN PERROW', 2.6470588235294117], ['RAONI MONTEIRO', 2.6470588235294117], ['YADIN NICOL', 2.6470588235294117], ['HEITOR ALVES', 2.6470588235294117], ['TAYLOR KNOX', 0.0], ['ARITZ ARANBURU', 0.0], ['MITCH COLEBORN', 0.0], ['WILLIAN CARDOSO', 0.0], ['PATRICK GUDAUSKAS', 0.0], ['RICARDO CHRISTIE', 0.0], ['DAMIEN HOBGOOD', 0.0]]
+
+
+
+
+
+            function get_random_picks_from(arr, amount){
+                var picks = []
+                for (var i = 0; i < amount; i++) {
+                    random_pick = Math.floor(Math.random() * arr.length);
+                    while (contains.call(picks, arr[random_pick]))
+                    {
+                       random_pick = Math.floor(Math.random()*arr.length);
+                    }
+                    picks.push(arr[random_pick])
+                };
+                return picks
+
+            }
+            
+            function sortFunction(a, b) {
+                if (a[1] === b[1]) {
+                    return 0;
+                }
+                else {
+                    return (a[1] > b[1]) ? -1 : 1;
+                }
+            }
+
+            $("#generate").click(function(){
+                tierA_result = []
+                tierB_result = []
+                tierC_result = []
+                all_tiers = []
+                picked_result = []
+                overall_checked = document.getElementById('overall').checked
+                rd1_matchups = document.getElementById('rd1_matchups').checked
+                if(!overall_checked){
+                    if(document.getElementById('past_position').checked || overall_checked){
+                        if(picked_result.length == 0){
+                            for (var i = 0; i < past_position_rank.length; i++) {
+                                picked_result.push(past_position_rank[i].slice())
+                            };
+                        }else{
+
+                        }
+                        
+                    }if(document.getElementById('momentum').checked || overall_checked){
+                        if(picked_result.length == 0){
+                            picked_result = momentum_rank.slice()
+                        }else{
+                            for (var i = picked_result.length - 1; i >= 0; i--) {
+                                for (var j = momentum_rank.length - 1; j >= 0; j--) {
+                                    if(momentum_rank[j][0] == picked_result[i][0]){
+                                        picked_result[i][1] = picked_result[i][1] + momentum_rank[j][1]
+                                    }
+                                };
+                            };
+                            picked_result.sort(sortFunction)
+                        }   
+                    }if(document.getElementById('performance').checked || overall_checked){
+                        if(picked_result.length == 0){
+                            picked_result = performance_rank.slice()
+                        }else{
+                            for (var i = picked_result.length - 1; i >= 0; i--) {
+                                for (var j = performance_rank.length - 1; j >= 0; j--) {
+                                    if(performance_rank[j][0] == picked_result[i][0]){
+                                        picked_result[i][1] = picked_result[i][1] + performance_rank[j][1]
+                                    }
+                                };
+                            };
+                            picked_result.sort(sortFunction)
+                        }   
+                    }
+                }else{
+                    picked_result = []
+                    picked_result = overall.slice()
+                    
+                }
+                
+                //console.log(momentum_rank)
+                console.log(picked_result)
+                var i = 0
+                picks = []
+                while(picks.length < 9){
+                    
+                    surfer = picked_result[i][0]
+                    console.log(surfer)
+                    has_matchup = false
+                    if(rd1_matchups){
+                        has_matchup = compute_macthups(surfer, all_tiers)
+                    }
+
+                    if(!has_matchup){
+                        if(contains.call(rd_heads, surfer)){
+                            picks.push(surfer)
+                        }
+                    }
+                    
+
+                    // if(!has_matchup){
+                    //     if(contains.call(tierA, surfer)){
+                    //         if(tierA_result.length<2){
+                    //             all_tiers.push(surfer)
+                    //             tierA_result.push(surfer)    
+                    //         }
+                    //     }else if(contains.call(tierB, surfer)){
+                    //         if(tierB_result.length<4){
+                    //             all_tiers.push(surfer)
+                    //             tierB_result.push(surfer)    
+                    //         }
+                    //     }else if(contains.call(tierC, surfer)){
+                    //         console.log(tierC_result.length)
+
+                    //        if(tierC_result.length<2){
+                    //             all_tiers.push(surfer)
+                    //             tierC_result.push(surfer)    
+                    //         }
+                    //     }
+                    // }
+                    i++;
+                }                
+                updateRank(picks)
+                updateMatchup(picked_result)
+                picked_result = []
+            });
+            function compute_macthups(surfer, all_tiers){
+                var calc_matchup = false
+                var state = 0 //0 unknown heat, 1 found heat, 2 found matchup
+                for (var i = rd1.length - 1; i >= 0; i--) {
+                    rd1[i]
+                    state = 0
+                    for (var j = rd1[i].length - 1; j >= 0; j--) {
+                        if(surfer == rd1[i][j]){
+                            state = state + 1
+                        }
+                        else if(contains.call(all_tiers, rd1[i][j])){
+                            state = state + 1
+                        }
+                        
+                    };
+                    if(state == 2){
+                        calc_matchup = true
+                    }
+                };
+                return calc_matchup
+            }
+            
+            $("#random").click(function(){
+                tierA_result = get_random_picks_from(tierA, 2)
+                tierB_result = get_random_picks_from(tierB, 4)
+                tierC_result = get_random_picks_from(tierC, 2)
+                updateRank(tierA_result, tierB_result, tierC_result)
+            })
+
+            function updateRank(picked_result){
+                
+                $('#a1').html(toTitleCase(picked_result[0]))
+                $('#a2').html(toTitleCase(picked_result[1]))
+
+                $('#b1').html(toTitleCase(picked_result[2]))
+                $('#b2').html(toTitleCase(picked_result[3]))
+                $('#b3').html(toTitleCase(picked_result[4]))
+                $('#b4').html(toTitleCase(picked_result[5]))
+
+                $('#c1').html(toTitleCase(picked_result[6]))
+                $('#c2').html(toTitleCase(picked_result[7]))
+                total_value = 0
+                for (var i = 7 ; i >= 0; i--) {
+                    total_value = total_value + getValueOfSurfer(picked_result[i])
+                };
+                $('#cost_total').html("Total cost: "+numberWithCommas(total_value*100000))
+            }
+
+            function numberWithCommas(x) {
+                return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            }
+
+            function getValueOfSurfer(name){
+                value = 0
+                for (var i = prices.length - 1; i >= 0; i--) {
+                    if(prices[i][0] == name)
+                        value = prices[i][1]
+                };
+                return value
+            }
+
+            function toTitleCase(str)
+            {
+                return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+            }
+
+            var contains = function(needle) {
+                // Per spec, the way to identify NaN is that it is not equal to itself
+                var findNaN = needle !== needle;
+                var indexOf;
+
+                if(!findNaN && typeof Array.prototype.indexOf === 'function') {
+                    indexOf = Array.prototype.indexOf;
+                } else {
+                    indexOf = function(needle) {
+                        var i = -1, index = -1;
+
+                        for(i = 0; i < this.length; i++) {
+                            var item = this[i];
+
+                            if((findNaN && item !== item) || item === needle) {
+                                index = i;
+                                break;
+                            }
+                        }
+
+                        return index;
+                    };
+                }
+
+                return indexOf.call(this, needle) > -1;
+            };
+
+            function updateMatchup(picked_result){
+                html = ''
+                
+
+
+                var rd1_ordered = order_matchup(rd1, picked_result)
+                $('#rd1-container').html(generate_round_html(rd1_ordered))
+                
+                var rd2_ordered = create_round_two(rd1_ordered)
+                $('#rd2-container').html(generate_round_html(rd2_ordered))
+
+                create_round_three(rd1_ordered, rd2_ordered)
+                $('#rd3-container').html(generate_round_html(rd3))
+            
+                create_round_four(rd3)
+                $('#rd4-container').html(generate_round_html(rd4))
+            
+                create_round_five(rd4)
+                $('#rd5-container').html(generate_round_html(rd5))
+
+
+                create_qf(rd4, rd5)
+                $('#qf-container').html(generate_round_html(qf))
+
+                create_sf(qf)
+                $('#sf-container').html(generate_round_html(sf))
+
+                create_f(sf)
+                $('#f-container').html(generate_round_html(f))
+                rd3 = [[], [], [], [], [], [], [], [], [], [], [], []]
+                rd4 = [[], [], [], []]
+                rd5 = [[], [], [], []]
+                qf = [[], [], [], []]
+                sf = [[], []]
+                f = [[]]
+
+            }
+            function generate_round_html(round){
+                html = ''
+                for (var i = 0; i< round.length; i++) {
+                    html = html + apply_round(round[i], 1, i+1, picked_result)
+                };
+                return html
+            }
+
+            function order_matchup(round, picked_result){
+                console.log(round)
+                var ordered = []
+                for (var i = 0; i < round.length; i++) {
+                    var heat = []
+                    for (var j = 0; j < picked_result.length; j++) {
+                        for (var k = 0; k < round[i].length; k++) {    
+                            if(picked_result[j][0] == round[i][k]){
+                                heat.push(round[i][k])
+                            }
+                        }
+                    };
+                    ordered.push(heat)
+                };
+                return ordered
+            }
+
+            function create_round_two(surfers_ordered){
+                round2 = []
+                surfers = []
+                for (var i = 0; i < surfers_ordered.length; i++) {
+                    for (var k = 1; k < surfers_ordered[i].length; k++) {
+                        surfers.push(surfers_ordered[i][k])
+                    };
+                };
+
+                var counter = 0
+                for (var i = 0; i < rd_heads.length; i++) {
+                    rd_heads[i]
+                    for (var j = 0; j < surfers.length; j++) {
+                        
+                        if(surfers[j] == rd_heads[i]){
+                            if(round2.length<12){
+                                counter++
+                                round2.push([surfers[j]])
+                            }else{
+                                counter--
+                                console.log(round2[counter])
+                                console.log(surfers[j])
+                                round2[counter].push(surfers[j])
+                                
+                            }
+                        }
+                    };
+                };
+                order_matches(round2)
+                return round2
+            }
+
+            rd3_head_obj = {1:6, 2:7, 3:12, 4:1, 5:3, 6:10, 7:9, 8:4, 9:2, 10:11, 11:8, 12:5}
+            function create_round_three(rd1_ordered, rd2_ordered){
+                rd3_ordered = []
+                for (var i = 0; i < rd1_ordered.length; i++) {
+                    rd3_ordered.push(rd1_ordered[i][0])
+                };
+                for (var i = 0; i < rd2_ordered.length; i++) {
+                    console.log(rd2_ordered[i][0])
+                    rd3_ordered.push(rd2_ordered[i][0])
+                };
+
+                counter = 1
+                change = 0
+                for (var i = 0; i < rd_heads.length; i++) {
+                    for (var j = 0; j < rd3_ordered.length; j++) {
+                        
+                        if(rd_heads[i] == rd3_ordered[j]){
+                            console.log(rd_heads[i])
+                            console.log(rd3_head_obj[counter])
+                            console.log(counter)
+                    
+                            rd3[rd3_head_obj[counter]-1].push(rd3_ordered[j])
+                            if(change == 0){
+                                counter = counter+1    
+                            }else{
+                                counter = counter-1
+                            }
+                            
+                        }if(counter == 13){
+                            change = 1
+                            counter = 12
+                        }
+                    };
+
+                    
+                };
+                console.log('............RD3.........')
+                order_matches(rd3)
+                console.log('=====end==========')
+                console.log(rd3)
+                
+                return rd3_ordered
+            }
+
+            function order_matches(rd){
+                for (var i = 0; i < rd.length; i++) {
+                    new_heat = []
+                    for (var j = 0; j < picked_result.length; j++) {
+                        for (var k = 0; k < rd[i].length; k++) {
+                            if(picked_result[j][0] == rd[i][k]){
+                                new_heat.push(picked_result[j][0])    
+                            }
+                        };
+                        
+                    };
+                    rd[i] = new_heat
+                };
+            }
+
+            function create_round_four(rd3_ordered){
+                rd4[0].push(rd3_ordered[0][0])
+                rd4[0].push(rd3_ordered[1][0])
+                rd4[0].push(rd3_ordered[2][0])
+                rd4[1].push(rd3_ordered[3][0])
+                rd4[1].push(rd3_ordered[4][0])
+                rd4[1].push(rd3_ordered[5][0])
+                rd4[2].push(rd3_ordered[6][0])
+                rd4[2].push(rd3_ordered[7][0])
+                rd4[2].push(rd3_ordered[8][0])
+                rd4[3].push(rd3_ordered[9][0])
+                rd4[3].push(rd3_ordered[10][0])
+                rd4[3].push(rd3_ordered[11][0])
+                order_matches(rd4)
+                console.log(rd4)
+
+            }
+
+            function create_round_five(rd4_ordered){
+                rd5[0].push(rd4_ordered[0][1])
+                rd5[0].push(rd4_ordered[1][2])
+                rd5[1].push(rd4_ordered[1][1])
+                rd5[1].push(rd4_ordered[0][2])
+                rd5[2].push(rd4_ordered[2][1])
+                rd5[2].push(rd4_ordered[3][2])
+                rd5[3].push(rd4_ordered[3][1])
+                rd5[3].push(rd4_ordered[2][2])
+                order_matches(rd5)
+                console.log(rd5)
+            }
+
+            function create_qf(rd4_ordered, rd5_ordered){
+                qf[0].push(rd4_ordered[0][0])
+                qf[0].push(rd5_ordered[0][0])
+                qf[1].push(rd4_ordered[1][0])
+                qf[1].push(rd5_ordered[1][0])
+                qf[2].push(rd4_ordered[2][0])
+                qf[2].push(rd5_ordered[2][0])
+                qf[3].push(rd4_ordered[3][0])
+                qf[3].push(rd5_ordered[3][0])
+                order_matches(qf)
+                console.log(qf)
+            }
+
+            function create_sf(qf_ordered){
+                sf[0].push(qf_ordered[0][0])
+                sf[0].push(qf_ordered[1][0])
+                sf[1].push(qf_ordered[2][0])
+                sf[1].push(qf_ordered[3][0])
+                order_matches(sf)
+                console.log(sf)
+            }
+
+            function create_f(sf_ordered){
+                f[0].push(sf_ordered[0][0])
+                f[0].push(sf_ordered[1][0])
+                order_matches(f)
+                console.log(f)
+            }
+
+            function apply_round(surfers, round, heat, picked_result){
+                html = '<div id="rd'+round+'h'+heat+'" class="col-lg-3" style="height:86px;">'
+                counter = 0
+                for (var i = 0; i < surfers.length; i++) {
+                    for (var j = 0; j < picked_result.length; j++) {
+                        if(picked_result[j][0] == surfers[i]){
+                            html = html + '<div class="col-lg-4" style="overflow: hidden;text-overflow: ellipsis; padding-left:5px">'
+                            if(counter == 0){
+                                html = html + '<strong>'+picked_result[j][0]+'</strong>'
+                            }
+                            else{
+                                html = html + picked_result[j][0]
+                            }
+                            html = html + '</div>'
+                            counter = counter + 1
+                        }
+                    }
+                };
+                html = html + '</div>'
+                return html
+            }
+        });
+    </script>
+
+
+</html>
