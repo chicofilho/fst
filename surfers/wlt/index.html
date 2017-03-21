@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Fantasy Surfing Tips - Statistics</title>
+
+    
+        <meta name="description" content="Statistics and analysis of all surfers that surfed the WSL from 2012 untill now">
+
+    
+
+    <meta name="author" content="">
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
+    
+
+    <meta property="og:title" content="Fantasy Surfing tips"/>
+    <meta property="og:image" content="https://fantasysurfingtips.com/img/just_waves.png"/>
+    
+
+    
+
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: https://bootswatch.com/flatly/ -->
+    <link href="https://fantasysurfingtips.com/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="https://fantasysurfingtips.com/css/freelancer.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/plug-ins/1.10.7/integration/bootstrap/3/dataTables.bootstrap.css" rel="stylesheet" />
+
+
+    <!-- Custom Fonts -->
+    <link href="https://fantasysurfingtips.com/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+
+  
+ 
+ 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+	
+    <script src="https://code.jquery.com/jquery-2.x-git.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ujs/1.2.1/rails.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+
+
+</head>
+<body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.6";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+	<!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Fantasy Surfing Tips</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Fantasy Surfing Tips</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="/fantasy-simulator.html">Fantasy Simulator</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="/surfers">Surfers</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="/all-events.html">All Events</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="/women">Women's</a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+<!-- Header -->
+<div class="sponsor-container">
+    <a href="http://www.surfteccell.com.br/a/home.asp?lingua=i" target="blank">
+        <img class="sponsor-image">
+    </a>        
+</div>  
+
+<h1  style="text-align:center;">Surfers wlt stats</h1>
+<p style="text-align:center;">It is still under development. Those are all surfers with at least one heat on the competition (since 2012)</p>
+<p style="text-align:center;">Have any feedback? Share your thoughts with us on <a href="https://twitter.com/FanSurfingTips">Twitter</a></p>
+<hr class="star-primary"/>
+<section >
+    <div class="container">
+    	<div class="row">
+        				<div class="col-sm-12 ">
+    		    			<h3>A</h3>	
+    		    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/aogu"> Akemi Oguma</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/alit"> Alexia Litman</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/alem"> Alice Lemoigne</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/abil"> Amaia Billecoq</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/acur"> Amanda Curley</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ared"> Amy Reda</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/atru"> Amy Trujillo</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ajohn"> Angharad John</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/abar"> Anneke Barrie</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/abenn"> Ashleigh Bennetts</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/aahi"> Ashley Ahina</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/asag"> Asuka Saga</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/abat"> Atalanta Batista</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/aoot"> Aya Ootsuka</a>
+    	    		</div>
+        				<div class="col-sm-12 ">
+    		    			<h3>B</h3>	
+    		    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/bleig"> Beth Leighfield</a>
+    	    		</div>
+        				<div class="col-sm-12 ">
+    		    			<h3>C</h3>	
+    		    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/capp"> Candice Appleby</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/co&amp;ap"> Candice O&amp;apos;Donnell</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/cjor"> Candra Jordan</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/clor"> Carole Lormant</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/cthu"> Carolina Thun</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/csto"> Cate Stokes</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/cbay"> Charlotte Bayliss</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/cwill"> Chelsea Williams</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/clin"> Chen Lin Niu</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/clin"> Chia-Wei Lin</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/cike"> Chiaki Ikeda</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ccalm"> Chloe Calmon</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/cfin"> Claire Finucane</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/cnorm"> Claire Norman</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ccalm"> Clara Calmon</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/chin"> Claudia Hinostroza</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/cmen"> Coline Menard</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/cpir"> Cristiana Pires</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/cwal"> Crystal Walsh</a>
+    	    		</div>
+        				<div class="col-sm-12 ">
+    		    			<h3>D</h3>	
+    		    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dliu"> Darci Liu</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dken"> Dayna Kennerknecht</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dyou"> Denver Young</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ddem"> Devon Demaria</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dmil"> Dominique Miller</a>
+    	    		</div>
+        				<div class="col-sm-12 ">
+    		    			<h3>E</h3>	
+    		    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/eand"> Eliane Andrade</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ecam"> Emi Campbell</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/elib"> Emilie Libier</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ecur"> Emily Currie</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/eneu"> Emma Neuschwanger</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/eweb"> Emma Webb</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/elom"> Emmy Lombard</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/edar"> Erin Dark</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/enog"> Etsuko Nogami</a>
+    	    		</div>
+        				<div class="col-sm-12 ">
+    		    			<h3>F</h3>	
+    		    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/fver"> Felicia Vergara</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/fdai"> Fernanda Daichtman</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/fgru"> Frances Gruchy</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/frub"> Francesca Rubegni</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/fsee"> Frankie Seely</a>
+    	    		</div>
+        				<div class="col-sm-12 ">
+    		    			<h3>G</h3>	
+    		    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/gcla"> Geodee Clark</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/gyou"> Georgia Young</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/gneu"> Gidget Neunuebel</a>
+    	    		</div>
+        				<div class="col-sm-12 ">
+    		    			<h3>H</h3>	
+    		    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/hbin"> Hannah Bing</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/hui"> Hatsumi Ui</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/hyos"> Hiroka Yoshikawa</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/hsuzu"> Hiromi Suzuki</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/hblo"> Honolua Blomfield</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/hyun"> Hsiang Yun Shih</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/hshin"> Hsiang-Yun Shin</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/hyun"> Hsiu Yun Chang</a>
+    	    		</div>
+        				<div class="col-sm-12 ">
+    		    			<h3>I</h3>	
+    		    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/inis"> Ichigo Nishimura</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/imar"> Isabella Marchetti</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ibal"> Izumi Baldwin</a>
+    	    		</div>
+        				<div class="col-sm-12 ">
+    		    			<h3>J</h3>	
+    		    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jfos"> Jade Foster</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jdea"> Jazmine Dean</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jpen"> Jennifer Pendlebury</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jsmit"> Jennifer Smith</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jbria"> Jenny Briant</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jtu"> Jing-Fang Tu</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jpea"> Josie Pearce</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jsic"> Julie Sicuteri</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jdup"> Justine Dupont</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jmau"> Justine Mauvin</a>
+    	    		</div>
+        				<div class="col-sm-12 ">
+    		    			<h3>K</h3>	
+    		    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kbog"> Kailey Bogart</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kmag"> Kaitlin Maguire</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kmen"> Karen Mendiguetti</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kabr"> Karina Abras</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kroz"> Karina Rozunko</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kmea"> Kassia Meador</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kbarr"> Kathleen Barrigao</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/khug"> Kathryn Hughes</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kbed"> Katrina Beddoe</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kyos"> Kayo Yoshida</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kkod"> Keiko Kodaka</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kmon"> Kelia Moniz</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kkal"> Kelis Kaleopaa</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/knic"> Kelly Nicely</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ko&amp;ap"> Kelta O&amp;apos;Rourke</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kkeh"> Kirra Kehoe</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kbes"> Kirsty Best</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kako"> Kitaku Ako</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kqui"> Kristy Quirk</a>
+    	    		</div>
+        				<div class="col-sm-12 ">
+    		    			<h3>L</h3>	
+    		    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lmurp"> Lara Murphy</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lpow"> Leigh Powell</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lell"> Lily Ellis</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lste"> Lindsay Steinriede</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lpaj"> Lisa Pajot</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lsto"> Liv Stokes</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lsch"> Lola Schremmer</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lmil"> Lucie Milochau</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lsmal"> Lucy Small</a>
+    	    		</div>
+        				<div class="col-sm-12 ">
+    		    			<h3>M</h3>	
+    		    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mhin"> Mai Hino</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/myam"> Mai Yamagata</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mtho"> Maina Thompson</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mnaka"> Makiko Nakai</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mwib"> Margreet Wibbelink</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mfern"> Maria Fernanda Reyes</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mter"> Masako Teramae</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/msch"> Mason Schremmer</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mshio"> Masumi Shiokawa</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mfuj"> Maya Fujii</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mchap"> Megan Chapman</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mgod"> Megan Godinez</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mcom"> Melissa Combo</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mthom"> Mia Thompson</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mross"> Michaela Ross</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mvan"> Michelle Van Kempen</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mosh"> Midori Oshima</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mniw"> Miki Niwa</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mhays"> Miku Hayshi</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/muem"> Miku Uemura</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mhay"> Misae Hayashi</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mkab"> Misato Kabasawa</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mogu"> Mizue Oguri</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mguo"> Monica Guo</a>
+    	    		</div>
+        				<div class="col-sm-12 ">
+    		    			<h3>N</h3>	
+    		    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/nyaz"> Naoko Yazawa</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/nsmi"> Natalia Smith</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ntao"> Natsumi Taoka</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/nyoun"> Nava Young</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/nbun"> Nicola Bunt</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ndui"> Nienke Duinmeijer</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/nfur"> Nobuko Furuie</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/npoe"> Norac Poeti</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/nmats"> Nozomi Matsumoto</a>
+    	    		</div>
+        				<div class="col-sm-12 ">
+    		    			<h3>O</h3>	
+    		    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/oah-"> Oph&amp;#xC3;&amp;#xA9;lie Ah-Kouen</a>
+    	    		</div>
+        				<div class="col-sm-12 ">
+    		    			<h3>P</h3>	
+    		    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ptsa"> Pei-Cune Tsai</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/pgou"> Phoebe Gould</a>
+    	    		</div>
+        				<div class="col-sm-12 ">
+    		    			<h3>R</h3>	
+    		    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rdaw"> Rachael Dawe</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rtay"> Rachael Taylor</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rtil"> Rachael Tilly</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rhash"> Rika Hashimoto</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rkita"> Rina Kitazawa</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rsek"> Rinko Sekimoto</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rcaro"> Roisin Carolan</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rloc"> Rosie Locke</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rmash"> Ryoko Mashima</a>
+    	    		</div>
+        				<div class="col-sm-12 ">
+    		    			<h3>S</h3>	
+    		    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/snaga"> Sachiko Nagata</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/scoh"> Sally Cohen</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ssue"> Samantha Suendermann</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/svan"> Samantha Vanderford</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/suke"> Satoko Ukeguchi</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/skawa"> Satomi Kawabe</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/sbol"> Shannon Bolotin</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/soka"> Shiho Okazawa</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/syon"> Shiu Yon Chang</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/sler"> Sierra Lerback</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/srob"> Simone Robb</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/serr"> Soleil Errico</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/sbart"> Sophia Bartlow</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/sski"> Sophie Skinner</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/sahi"> Stacia Ahina</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ssch"> Stephanie Schechter</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/sivy"> Summer Ivy</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/srome"> Summer Romero</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/schi"> Szu Chi Tseng</a>
+    	    		</div>
+        				<div class="col-sm-12 ">
+    		    			<h3>T</h3>	
+    		    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tknu"> Tabatha Knudson</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/thel"> Tamara Helbling</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/thos"> Tara Hossack</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tkyt"> Tarryn Kyte</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/think"> Tehani Hinkley</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tbas"> Thiara Basso</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tber"> Tina Beresford</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/thay"> Tomoko Hayashi</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tori"> Tomoko Orikasa</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tgil"> Tory Gilkerson</a>
+    	    		</div>
+        				<div class="col-sm-12 ">
+    		    			<h3>V</h3>	
+    		    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/vitc"> Vahineura Itchner</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/vverg"> Victoria Vergara</a>
+    	    		</div>
+        				<div class="col-sm-12 ">
+    		    			<h3>W</h3>	
+    		    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/wcho"> Wen-Ling Chou</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/wpau"> Wini Paul</a>
+    	    		</div>
+        				<div class="col-sm-12 ">
+    		    			<h3>Y</h3>	
+    		    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ywei"> Yen-Yi Wei</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/yjum"> Yi Jum Tseng</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ywan"> Yijen Wang</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/yhua"> Yingyijing Huang</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ykawa"> Yoko Kawano</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/yuke"> Yoshiko Ukeguchi</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/yhuan"> Yu Huan Chen</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ytera"> Yuka Terauchi</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/yasu"> Yukari Asumi</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ysuz"> Yuki Suzuki</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ykur"> Yuko Kurita</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/yshim"> Yuko Shimajiri</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/yuts"> Yumiko Utsumi</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/yho"> Yvonne Ho</a>
+    	    		</div>
+        				<div class="col-sm-12 ">
+    		    			<h3>Z</h3>	
+    		    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/zcla"> Zoe Clarke</a>
+    	    		</div>
+    	</div>
+    </div>
+</section>
+
+
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                       <h3>Meet the creators</h3>
+                       <p>Just come to surf <a href="https://goo.gl/maps/UmWhsRsU3bP2">here</a> on weekends. We are always there</p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Around the Web</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="https://twitter.com/FanSurfingTips" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Play against us on WSL Fantasy Surfing</h3>
+                        <p>Get in <a href="http://mct.fantasy.worldsurfleague.com/group/32752">the group</a> and see if you can beat us</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; Fantasy Surfing Tips 2016
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+
+   
+    <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-74337819-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+     <!-- jQuery -->
+    <script src="https://fantasysurfingtips.com/js/jquery.js"></script>
+        <script src="https://cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://fantasysurfingtips.com/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+
+
+    <script src="https://fantasysurfingtips.com/js/classie.js"></script>
+    <script src="https://fantasysurfingtips.com/js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="https://fantasysurfingtips.com/js/jqBootstrapValidation.js"></script>
+    <script src="https://fantasysurfingtips.com/js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="https://fantasysurfingtips.com/js/freelancer.js"></script>
+
+    <script type="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+    <script type="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>
+
+
+
+
+</body>
+</html>

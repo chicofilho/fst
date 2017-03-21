@@ -1,0 +1,3998 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Fantasy Surfing Tips - Statistics</title>
+
+    
+        <meta name="description" content="Statistics and analysis of all surfers that surfed the WSL from 2012 untill now">
+
+    
+
+    <meta name="author" content="">
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
+    
+
+    <meta property="og:title" content="Fantasy Surfing tips"/>
+    <meta property="og:image" content="https://fantasysurfingtips.com/img/just_waves.png"/>
+    
+
+    
+
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: https://bootswatch.com/flatly/ -->
+    <link href="https://fantasysurfingtips.com/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="https://fantasysurfingtips.com/css/freelancer.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/plug-ins/1.10.7/integration/bootstrap/3/dataTables.bootstrap.css" rel="stylesheet" />
+
+
+    <!-- Custom Fonts -->
+    <link href="https://fantasysurfingtips.com/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+
+  
+ 
+ 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+	
+    <script src="https://code.jquery.com/jquery-2.x-git.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ujs/1.2.1/rails.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+
+
+</head>
+<body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.6";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+	<!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Fantasy Surfing Tips</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Fantasy Surfing Tips</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="/fantasy-simulator.html">Fantasy Simulator</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="/surfers">Surfers</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="/all-events.html">All Events</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="/women">Women's</a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+<!-- Header -->
+<div class="sponsor-container">
+    <a href="http://www.surfteccell.com.br/a/home.asp?lingua=i" target="blank">
+        <img class="sponsor-image">
+    </a>        
+</div>  
+
+<h1  style="text-align:center;">Surfers mjun stats</h1>
+<p style="text-align:center;">It is still under development. Those are all surfers with at least one heat on the competition (since 2012)</p>
+<p style="text-align:center;">Have any feedback? Share your thoughts with us on <a href="https://twitter.com/FanSurfingTips">Twitter</a></p>
+<hr class="star-primary"/>
+<section >
+    <div class="container">
+    	<div class="row">
+        				<div class="col-sm-12 ">
+    		    			<h3>A</h3>	
+    		    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/akel"> Aaron Kelly</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/aauf"> Adam Auffay</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/aper"> Adam Perica</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/avar"> Adam Varvaressos</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/amil"> Addison Miles</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/amas"> Adin Masencamp</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/agar"> Adrian Garcia</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/azor"> Adrian Zorriketa</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/aama"> Adur Amatriain</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/aant"> Afonso Antunes</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/alew"> Aidan Lewand-Parsons</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/aari"> Aipitaroi Ariihohoa</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ade"> Airam De Juan P&amp;#xC9;rez</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ade"> Airam De Juan Perez</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/afuen"> Aitor Fuentes Pav&amp;#xF3;n</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/afue"> Aitor Fuentes Pavon</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/acle"> Alan Cleland</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/amarc"> Alan Marcos Guerreiro</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/asoa"> Alax Soares</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/acho"> Alban Chovet</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/anet"> Alcides Neto</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/achi"> Aldo Chirinos</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/agod"> Aldric God</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/amart"> Alejandro Martinez Barona Jordan</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/abau"> Alex Bauduin</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ahay"> Alex Hayes</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/airio"> Alex Iriondo</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/amcg"> Alex McGuffin</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/apen"> Alex Pendleton</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/abro"> Alexander Brooks</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/avan"> Alexander Van Rijswijck</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/acorr"> Alonso Correa</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/aruiz"> Alonso Ruiz</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/afro"> Alvaro Frojan Corral</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/alin"> Amando Lins</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/aida"> Ander Idarraga</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ajun"> Anderson Junior</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/afar"> Andre Faria</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ade"> Andres De La Cru</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/aech"> Andres Echecopar</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/amele"> Andres Melendez</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/amon"> Andres Mondo Prados</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/acas"> Andrew Castillo</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/afra"> Andrew Fraser-Mackenzie</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/agil"> Andrew Gill</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ajac"> Andrew Jacobson</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/aros"> Andrew Rose</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/aesp"> Andrews Espinoza</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/aanwa"> Andri Anwar</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/acri"> Andy Criere</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/afau"> Angelo Faulkner</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/asco"> Angus Scotney</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/adua"> Antonio Duarte</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/agam"> Antonio Gamero</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ahir"> Antonio Hirsch Blanco</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/arodr"> Antonio Rodrigues</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ashim"> Aoto Shimada</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/akat"> Arashi Kato</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/amur"> Arashi Murata</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/atef"> Ariihoe Tefaafana</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/amart"> Arnau Martinez</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/aber"> Arne Bergwinkl</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/acox"> Aron Cox</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/astr"> Arran Strong</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/aalv"> Arthur Alves</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/alas"> Arthur Lassee</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/airi"> Asier Iriondo</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/arui"> Asier Ruiz De Gauna</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ahar"> Assad Harakat</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/agon"> Attilio Goncalves</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/adef"> Atzert Defoort Kilian</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/aarr"> Augustin Arriv&amp;#xE9;</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/abuf"> Aurelien Buffet</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/apri"> Aurelio Prieto</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/aneu"> Austin Neumann</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/aorti"> Austin Ortiz</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/agarr"> Axe Garrett</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/alop"> Axel Lopetegi</a>
+    	    		</div>
+        				<div class="col-sm-12 ">
+    		    			<h3>B</h3>	
+    		    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/bmam"> Barron Mamiya</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/bgau"> Batiste Gaud</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/bthom"> Bayley Thomas</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/bcof"> Ben Coffey</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/bdun"> Ben Duncan</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/bhow"> Ben Howard</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/bpen"> Ben Penny</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/bspe"> Ben Spence</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/bbuc"> Benjamin Buckpitt</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/bdan"> Benjamin Dancaster</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/bhuc"> Benjamin Hucker</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/bzin"> Benjamin Zinn</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/bbra"> Benji Brand</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/bwill"> Bevan Willis</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/bharr"> Billy Harrison</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/brob"> Blaine Robinson</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/bmand"> Blair Mandall</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/bnek"> Blake Neka</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/bsaw"> Blake Sawtell</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/bspei"> Blake Speir</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/bray"> Bo Raynor</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/bsmi"> Bodi Smith</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/bmal"> Borja Malvar</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/bphi"> Boston Phillips</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/bflo"> Brad Flora</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/bjone"> Braden Jones</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/bben"> Brandon Benjamin</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/bman"> Brandon Manguso</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/bmitc"> Brandon Mitchell</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/btem"> Brayden Templeton</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/bsil"> Brayner Silva</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/bhay"> Brendan Hay</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/bcas"> Brenno Castro</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/btay"> Breyden Taylor</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/bcou"> Brian Coutu</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/bcro"> Brock Crouch</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/bsal"> Brodi Sale</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/bpan"> Brogie Panesi</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/bwhee"> Bronson Wheelan</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/bjas"> Bruno Jassir</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/bpic"> Bryan Picon</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/bmar"> Bryce Marino</a>
+    	    		</div>
+        				<div class="col-sm-12 ">
+    		    			<h3>C</h3>	
+    		    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/cbla"> Caelum Blandford</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/cbar"> Caina Barletta</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/cibe"> Caio Ibelli</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/crap"> Caleb Rapson</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ctan"> Caleb Tancred</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/cchu"> Callum Chuter</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/crobs"> Callum Robson</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/cgoo"> Calvin Goor</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/cric"> Cam Richards</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/cfar"> Cameron Faris</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ccas"> Carlito Casadebaigt</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/cand"> Carlos Andre</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ccarp"> Carlos Carpenter</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/cgre"> Carlos Green</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/cmun"> Carlos Munoz</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/creyn"> Carlos Reynaud</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ctor"> Carlos Torres</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/cvaz"> Carlos vazquez</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ccli"> Chad Clifton</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/celk"> Chad Elkins</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/cnor"> Chandler Norton</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/cbrop"> Charlie Brophy</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/cfaw"> Charlie Fawcett</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/crio"> Charlie Rio</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/cqui"> Charly Quivront</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/cter"> Charly Termeau</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/cmod"> Chase Modelski</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/crobi"> Chauncey Robinson</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/call"> Che Allan</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/crobe"> Chris Robertson</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/czaf"> Chris Zaffis</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/crioz"> Christian Riozzi-Bodine</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/cblu"> Christopher Bluthardt</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/cker"> Christopher Kervin</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/cgit"> Cobie Gittner</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/crob"> Cody Robinson</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/cyou"> Cody Young</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/calv"> Cole Alves</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ccarl"> Cole Carlton</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/cfry"> Cole Frye</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/chou"> Cole Houshmand</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/cyam"> Cole Yamakawa</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/cdev"> Colin Deveze</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/cdoy"> Colin Doyez</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/cmor"> Colin Moran</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/cward"> Colt Ward</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/csar"> Colton Sarlo</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ccof"> Conner Coffin</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/cles"> Conner Lester</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/clyo"> Connor Lyons</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/cken"> Conor Kennedy</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ccha"> Cooper Chapman</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/cdav"> Cooper Davies</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/cfor"> Cooper Fortney</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/chow"> Corey Howell</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/cpor"> Cristian Portelli</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/cde"> Cristobal De Col</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ccol"> Crosby Colapinto</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/cbra"> Curtio Brathwaite</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ccox"> Cyrus Cox</a>
+    	    		</div>
+        				<div class="col-sm-12 ">
+    		    			<h3>D</h3>	
+    		    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dmak"> Daichi Makino</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dmats"> Daiki Matsunaga</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dtan"> Daiki Tanaka</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dyam"> Daisuke Yamaguchi</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dbru"> Damon Bruwer</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dgre"> Dan Greig</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dmac"> Dane MacKie</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dara"> Daniel Araujo</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dedg"> Daniel Edghill</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dfar"> Daniel Farr</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dgle"> Daniel Glenn</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/d(ha"> Daniel-Reid (Ha&amp;apos;a) Aikau</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dcer"> Danilo Cerda</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dber"> Danny Berk</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dsilv"> Dante Silva</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dcru"> Darcy Crump</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dde"> Darcy De Clouett</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dpil"> Darcy Piltz</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dsob"> Davi Sobrinho</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ddor"> David Dorne</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/deco"> David Economos</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dnoy"> David Noy</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dvan"> David Van Zyl</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dyax"> David Yaxkin Munoz Ponnet</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dvand"> Dean Vandewalle</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dhil"> Deane Hill</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dsil"> Deivid Silva</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dgom"> Derek Gomes</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dhorl"> Derek Horlock</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dmarc"> Derek Marcio</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dwhi"> Devin Whitehead</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dmus"> Dextar Muskens</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dsant"> Deyvson Santos</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dalo"> Diego Alonso</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dalv"> Diego Alvarez Lourido</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dedw"> Diego Edwards</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dgar"> Diego Garcia</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dmig"> Diego Mignot</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dsua"> Diego Suarez Diaz</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dfer"> Dillon Fernandez</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dnaj"> Dillon Najor</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dapp"> Diogo Appleton</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dzak"> Diran Zakarian</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dwic"> Donovan Wichmann</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dbla"> Dorian Blanchard</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dgome"> Dorian Gomez</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dsilv"> Douglas Silva</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dkel"> Duke Kelleher</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dnag"> Duke Nagtzaam</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ddow"> Dylan Downie</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dfra"> Dylan Franzmann</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dgro"> Dylan Groen</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dhor"> Dylan Hord</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dkow"> Dylan Kowalski</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dlig"> Dylan Lightfoot</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dmof"> Dylan Moffat</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dpre"> Dylan Preston</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/drod"> Dylan Rodgers</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/dtot"> Dylan Totten</a>
+    	    		</div>
+        				<div class="col-sm-12 ">
+    		    			<h3>E</h3>	
+    		    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ejam"> E&amp;#xF1;o James</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/este"> Eala Stewart</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/eaub"> Ed Aubrey</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ehat"> Ed Hatcher</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/eham"> Eddy Hamaty</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/erei"> Edher Reis</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/epap"> Edoardo Papa</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/edam"> Edouard Damestoy</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/evol"> Egor Volkov</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/eosb"> Eithan Osborne</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/eike"> Eito Ikeda</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ebeu"> Eli Beukes</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ehan"> Eli Hanneman</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/eols"> Eli Olson</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/estee"> Eli Steele</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/efox"> Elijah Fox</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/egat"> Elijah Gates</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/enap"> Eliott Napias</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/esan"> Elivelton Santos</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/eiva"> Elliot Ivarra</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/epae"> Elliot Paerata-Reid</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ejoh"> Elton John</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ecas"> Ely Cassirer</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ealm"> Emanoel Almeida De Lima</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/egar"> Endika Garai</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ecav"> Enzo Cavallini</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/epou"> Enzo Poulat</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/esaf"> Erik Safstrom</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/eurr"> Eritz Urrusolo</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/eexa"> Eros Exarhou</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/eblo"> Erwan Blouin</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ecro"> Esteban Cross</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ecar"> Ethan Carlston</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/eegi"> Ethan Egiguren</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/eewi"> Ethan Ewing</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/efle"> Ethan Fletcher</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/egra"> Ethan Grant</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ehar"> Ethan Hartge</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/emud"> Ethan Mudge</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ebro"> Evan Brownell</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/emol"> Evan Moll</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/elau"> Ezekiel Lau</a>
+    	    		</div>
+        				<div class="col-sm-12 ">
+    		    			<h3>F</h3>	
+    		    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/fper"> Fabio Pereira</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/farr"> Facundo Arreyes</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/fcher"> Fall Cherif</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/fde"> Felipe De Souza</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/foli"> Felipe Oliveira</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/fsua"> Felipe Suarez</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/flea"> Felix Leaver</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/fmora"> Felix Morau</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/fjun"> Fernando Junior</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/fjam"> Finley James</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/fhil"> Finn Hill</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/fmcg"> Finn McGill</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/flla"> Fletcher Llanwarne</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/fvan"> Ford Van Jaarsveldt</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/falm"> Francisco Almeida</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/falv"> Francisco Alves</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/fcam"> Francisco Cambim</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/fcarr"> Francisco Carrasco</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/fda"> Francisco Da Silva Duarte</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/fmoro"> Francisco Morosini</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/fbri"> Franco Brino</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/fdov"> Fraser Dovell</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/fmag"> Frederico Magalhaes</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/fmil"> Fynnlee Miller Cooley</a>
+    	    		</div>
+        				<div class="col-sm-12 ">
+    		    			<h3>G</h3>	
+    		    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/gley"> Gabe Ley</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/gand"> Gabriel Andre</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/gart"> Gabriel Arturo Vargas Corcuera</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/gbaz"> Gabriel Bazarello</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/gfar"> Gabriel Farias</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/gmede"> Gabriel Medeiros</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/gmed"> Gabriel Medina</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/gmor"> Gabriel Morvil</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/gpit"> Gabriel Pitanoe</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/gribe"> Gabriel Ribeiro</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/gzeg"> Gabriel Zegarra</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/gjim"> Gael Jimenez</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ghou"> Gaizka Housset Ezponda</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/gtei"> Gaspar Teixeira</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/glars"> Gaspard Larsonneur</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/gdel"> Gatien Delahaye</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ghog"> Gavin Hogan</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/gmcd"> Gearoid McDaid</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/gazu"> Gen Azuchi</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ghud"> George Hudson</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/gnic"> George Nickoll</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/gpitt"> George Pittar</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/gres"> Gilles Rese</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ggom"> Giorgio Gomez</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/gpon"> Giovani Pontes</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/gvie"> Gon&amp;#xE7;alo Vieira</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ggut"> Gonzalo Gutierrez</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/gcol"> Griffin Colapinto</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/gfoy"> Griffin Foy</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/gfons"> Guilherme Fonseca</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/grib"> Guilherme Ribeiro</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/gsil"> Guilherme Silva</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/gday"> Gunner Day</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/gbor"> Gustavo Borges</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/gcos"> Gustavo Costa</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/gram"> Gustavo Ramos</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/gsato"> Guy Sato</a>
+    	    		</div>
+        				<div class="col-sm-12 ">
+    		    			<h3>H</h3>	
+    		    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/hjohn"> Hagan Johnson</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/hren"> Hamish Renwick</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/hros"> Harley Ross - Webster</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/hkas"> Harmon Kassulke</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/hful"> Harrison Fulton</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/hgre"> Harrison Green</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/hman"> Harrison Mann</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/hmar"> Harrison Martin</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/hshe"> Harrison Sheldon</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/hste"> Harrison Steele</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/hwhi"> Harrison Whiteside</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/hbry"> Harry Bryant</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/hcarp"> Harry Carpenter</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/hcle"> Harry Clements</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/hde"> Harry De Roth</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/hmus"> Harry Musgrove</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/hphi"> Harry Phillips</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/htim"> Harry Timson</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/hmor"> Haru Morishita</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/hnai"> Haruka Naito</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/hshi"> Haruyoshi Shibutani</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/hbui"> Heimana Buisson</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/hpyr"> Henrique Pyrrait</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/hmore"> Herbert Moreno</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/haiz"> Hinata Aizawa</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/hara"> Hiroto Arai</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/hohh"> Hiroto Ohhara</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/hmiw"> Hiroya Miwa</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/hlud"> Horoi Ludovic</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/hcar"> Hugo Cardoso</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/hde"> Hugo De Jesus</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/htos"> Hugo Tosetti</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/hjoh"> Hunter Johnson</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/hfuj"> Hyuusei Fujita</a>
+    	    		</div>
+        				<div class="col-sm-12 ">
+    		    			<h3>I</h3>	
+    		    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/icra"> Ian Crane</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ifon"> Ian Fontaine</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/igen"> Ian Gentil</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/isim"> Ian Simmons</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/itav"> Ian Tavares</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/iyarr"> Ibon Yarritu</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/iyar"> Ibon Yarritu Zarraga</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/igui"> Ignacio Guisasola Gonzalez</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/itou"> Ignacio Touzon</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/imor"> Igor Moraes</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/isan"> Ihgor Santana</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/iama"> Iker Amatriain</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/idev"> Imaikalani Devault</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/igel"> Imanol Geledan</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/iyer"> Imanol Yeregi</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/iill"> Inaxio Illarramendi</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ikett"> Isaac Kettle</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/imon"> Isaiah Moniz</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ijuni"> Israel Junior</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/iaup"> Issam Auptel</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ifer"> Italo Ferreira</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/imesi"> Italo Mesinas</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/iflo"> Ivan Florence</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/isilv"> Ivan Silva</a>
+    	    		</div>
+        				<div class="col-sm-12 ">
+    		    			<h3>J</h3>	
+    		    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jdug"> Jack Duggan</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jhas"> Jack Haslau</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jhend"> Jack Hendee</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jkee"> Jack Keenan</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jmur"> Jack Murray</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jreg"> Jack Reginato</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jrob"> Jack Robinson</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jscol"> Jack Scollard</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jtea"> Jack Teague</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jthom"> Jack Thomas</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jver"> Jack Verbraeken</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jbak"> Jackson Baker</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jbun"> Jackson Bunch</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jbut"> Jackson Butler</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jcare"> Jackson Carey</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jcof"> Jackson Coffey</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jgil"> Jackson Giles</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jrobe"> Jackson Roberts</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jrod"> Jackson Rodrigues</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jstar"> Jackson Starling</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jburk"> Jacob Burke</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jcon"> Jacob Connelly</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jfol"> Jacob Folsom</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jsze"> Jacob Szekely</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jwill"> Jacob Willcox</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jcorr"> Jacome Correia</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jbart"> Jaggar Bartholmew</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jpom"> Jaime Pombo</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jcons"> Jake Constantinidis</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jdavi"> Jake Davis</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jedw"> Jake Edwards</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jelk"> Jake Elkington</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jhal"> Jake Halstead</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jkel"> Jake Kelley</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jmars"> Jake Marshall</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jric"> Jake Riccobuano</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jsco"> Jake Scott</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jsne"> Jake Snellgrove</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jsyl"> Jake Sylvester</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jthom"> Jake Thompson</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jvin"> Jake Vincent</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jlil"> Jakob Lilienweiss</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jeva"> Jamai Evans</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jhog"> James Hogan</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jmcm"> James McMorland</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jnew"> James Newman</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jkru"> Jamie Krups</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jthom"> Jamie Thomson</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jerr"> Jao Errera</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jhic"> Jared Hickel</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jvel"> Jarred Veldhuis</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jszel"> Jarrod Szele</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jhar"> Jason Harris</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jknel"> Jason Knell</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jbro"> Jay Brown</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jchr"> Jay Christenson</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jgla"> Jay Gladman</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jyou"> Jeames Young</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jpie"> Jean Pierre Quiroz</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jfas"> Jed Fasso</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jmatt"> Jed Mattinson</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jkne"> Jeff Knell</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jde"> Jelle De Roode</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jane"> Jeronimo Ane</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jvan"> Jerry Van Wyk</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jhor"> Jesse Horner</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jmen"> Jesse Mendes</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jschi"> Jett Schilling</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jroc"> Jhone Rocha Borges</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jcorz"> Jhonny Corzo</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jguer"> Jhonny Guerrero Yauri</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jsuz"> Jin Suzuki</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jandr"> Jo&amp;#xC3;&amp;#xA3;o Andr&amp;#xC3;&amp;#xA9;</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jmend"> Jo&amp;#xE3;o Mendon&amp;#xE7;a</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jabr"> Joao Abreu</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jchi"> Joao Chianca</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jkop"> Joao Kopke</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jmarc"> Joao Marco Maffini</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jmore"> Joao Moreira</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jneto"> Joao Neto</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jvid"> Joao Vidal</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jchav"> Joaquim Chaves</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jdel"> Joaquin Del Castillo</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jjua"> Joaquin Juarez</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jharr"> Jobe Harriss</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jkeo"> Joe Keogh</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jsed"> Joe Sedlak</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jvan"> Joe Van Dijk</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jbux"> Joel Buxton</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jcle"> Joel Clegg</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jpax"> Joel Paxton</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jvau"> Joel Vaughan</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jwood"> Joel Wood</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jjohn"> Joey Johnston</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jput"> Joey Putnall</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jazu"> Joh Azuchi</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jmce"> John McElgunn</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jmel"> John Mel</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jkei"> Johnnie Keith</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jleq"> Jolan Lequertier</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jcart"> Jonah Carter</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jbac"> Jonas Bachan</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jtaw"> Jonas Tawharu</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jcoh"> Jonatan Cohen</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jcoff"> Jonathan Coffey</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jfow"> Jordan Fowler</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jhea"> Jordan Heaselgrave</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jlaw"> Jordan Lawler</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jcoll"> Jordy Collins</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jgib"> Jordy Gibson</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jmare"> Jordy Maree</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jcou"> Jorgann Couzinet</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jsot"> Jorge Soto</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jmarq"> Jos&amp;#xE9; Marques Correia</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/janto"> Jose Antonio Espejo</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jdomi"> Jose Domingo Requena</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jgun"> Jose Gundesen</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jlop"> Jose Lopez</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jnet"> Jose Neto</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jweb"> Joseph Webster</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jbenj"> Josh Benjoya</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jbur"> Josh Burke</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jburr"> Josh Burrows</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jhay"> Josh Hay</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jket"> Josh Kettle</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jvan"> Josh Van Niekerk</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jfau"> Joshe Faulkner</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jbrad"> Joshua Braddock</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jcat"> Joshua Cattlin</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jches"> Joshua Chester</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jfar"> Joshua Farr</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jmon"> Joshua Moniz</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jsmit"> Joshua Smit</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jsto"> Joshua Stow</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jdia"> Juan Diaz-Teran</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jfern"> Juan Fernandez</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jign"> Juan Ignacio Sebastia Roman</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jrug"> Juan Ruggiero</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jyan"> Juan Yanez</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jcla"> Jude Clark</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jegi"> Julen Egiguren</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jelo"> Julen Elorza</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jitu"> Julian Iturralde</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jser"> Julian Serres</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jcamb"> Julien Cambon</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jurc"> Juninho Urcia</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jbec"> Justin Becret</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/jlew"> Jyiell Lewis</a>
+    	    		</div>
+        				<div class="col-sm-12 ">
+    		    			<h3>K</h3>	
+    		    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kmats"> Kade Matson</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kpan"> Kadin Panesi</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kmed"> Kadu Medeiros</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kfar"> Kael Farber</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kwal"> Kael Walsh</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kawa"> Kai Awada</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kham"> Kai Hamase</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/khin"> Kai Hing</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kmats"> Kai Matsumoto</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kmci"> Kai McIntyre</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kmori"> Kai Mori</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ktand"> Kai Tandler</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kwar"> Kai Warner</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/keli"> Kaikea Elias</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kyama"> Kaiki Yamanaka</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kjaq"> Kaimana Jaquias</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kdal"> Kain Daly</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kkato"> Kainaru Kato</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/khun"> Kainehe Hunt</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/knoro"> Kairi Noro</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ktaka"> Kairi Takamatsu</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kkawa"> Kaito Kawamata</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kkin"> Kaito Kino</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kmur"> Kakeru Murata</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kgra"> Kala Grace</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kwil"> Kala Willard</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kbal"> Kalani Ball</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kda"> Kalani Da Silva</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kdav"> Kalani David</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kriv"> Kalani Rivero</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kwat"> Kan Watanabe</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kiga"> Kanoa Igarashi</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ksha"> Kanoa Shannon</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ktur"> Kasperi Turkia</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ktake"> Katsuto Takeuchi</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kapo"> Kaulana Apo</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kvaa"> Kauli Vaast</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ksek"> Kazuma Sekiguchi</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/knai"> Keala Naihe</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kasi"> Keanu Asing</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kkam"> Keanu Kamiyama</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kmil"> Keanu Miller</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kkob"> Kei Kobayashi</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/khiro"> Keigo Hirota</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/knish"> Keijiro Nishi</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/knis"> Keisuke Nishiguchi</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kfuj"> Keitaro Fujinuma</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/knor"> Kelly Norris</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/klau"> Kelson Lau</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kpic"> Keoni Picollo</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kyan"> Keoni Yan</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ksch"> Kevin Schulz</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kwill"> Khi Williams</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kcon"> Kieran Conway</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ksua"> Kike Suarez</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/knel"> Kiko Nelsen</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kgod"> Kilian God</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kmath"> Kim Matheus Marcondes</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kcad"> Kipp Caddy</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kwei"> Kirk Weissinger</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/klud"> Kiron Ludwig</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kgre"> Kirra Green</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kinn"> Kit Innes</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kharr"> Knox Harris</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ksmi"> Koa Smith</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kyok"> Koa Yokota</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kobe"> Koby Oberholzer</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/koli"> Kona Oliveira</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/khut"> Korbin Hutchings</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ksaw"> Kosei Sawamura</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/koka"> Kosuke Okamura</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kiid"> Kota Iida</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kkato"> Koudai Kato</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kyou"> Kuio Young</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kher"> Kurtis Herman</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kvau"> Kurtis Vaughan</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ktana"> Kusuma Tanabe</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/keng"> Kye Engel</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kstu"> Kyen Stuart</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kbro"> Kyle Brown</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ktes"> Kyle Tester</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kgue"> Kyllian Guerin</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/kking"> Kyuss King</a>
+    	    		</div>
+        				<div class="col-sm-12 ">
+    		    			<h3>L</h3>	
+    		    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lmin"> Lahikiola Minamishin</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lmye"> Laird Myers</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ldavi"> Lander Davila</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lmcn"> Landon McNamara</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lrir"> Lee Ririnui</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ljen"> Lenni Jensen</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lche"> Lennox Chell</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lara"> Lens Arancibia Avila</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lpau"> Leo Paul Etienne</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lgla"> Leon Glatzer</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lfio"> Leonardo Fioravanti</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lguim"> Leonardo Guimaraes</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lzam"> Leonardo Zambrano Sabates</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lyou"> Levi Young</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/llead"> Lewis Leadbetter</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lde"> Liam De Villiers</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lgloy"> Liam Gloyd</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lmct"> Liam McTigue</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lmur"> Liam Murray Strout</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lo&amp;a"> Liam O&amp;apos;Brien</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ltur"> Liam Turner</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/llog"> Lincoln Logie</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lmor"> Lliam Mortensen</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lng"> Loa Ng</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lbed"> Logan Bediamol</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lhay"> Logan Hayes</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lkam"> Logan Kamen</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ldub"> Lorenzo Dubois</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lpic"> Lorenzo Picco</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lbie"> Louis Bienabe</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lgil"> Louis Gillick</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lalv"> Lourenco Alves</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lpon"> Loyan Pons De Vier</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lfon"> Luan Fontenla Piazera Gauze</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lhan"> Luan Hanada</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lwoo"> Luan Wood</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lcarl"> Luca Carlisle</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ldio"> Luca Dioguardi</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/leld"> Luca Elder</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/laub"> Lucas Aubron</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lber"> Lucas Bernard</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lbua"> Lucas Buatois Figueroa</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lchi"> Lucas Chianca</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ldesm"> Lucas Desmoucelle</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ldes"> Lucas Dessaune</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ldir"> Lucas Dirkse</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lfig"> Lucas Figueroa</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ljan"> Lucas Jannier</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lpae"> Lucas Paes</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lsil"> Lucas Silveira</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lsol"> Lucas Solar</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ltau"> Lucas Taub</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lvic"> Lucas Vicente</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lwri"> Lucas Wrice</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lmes"> Lucca Mesinas</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lsal"> Lucca Saldivar Alvarez-Calderon</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lhoro"> Ludovic Horoi</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lans"> Luis Ansin</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ldia"> Luis Diaz</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lperl"> Luis Perloiro</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lrey"> Luis Rey Contreras</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lbra"> Luke Bramble</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lcon"> Luke Condon</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ldil"> Luke Dillon</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lglo"> Luke Glover</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lgor"> Luke Gordon</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lgyo"> Luke Gyory</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lham"> Luke Hamilton</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lhyn"> Luke Hynd</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lmal"> Luke Malherbe</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lmark"> Luke Marks</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lshe"> Luke Shepardson</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lsli"> Luke Slijpen</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/lswan"> Luke Swanson</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/larm"> Luy Arman</a>
+    	    		</div>
+        				<div class="col-sm-12 ">
+    		    			<h3>M</h3>	
+    		    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mfox"> Mac Fox</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mchr"> MacKenzie Christie</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mjob"> Maddy Job</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mcos"> Madson Costa</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mdau"> Mael Dauguet</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mmcl"> Mahorahora McLeod</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mdud"> Maixent Dudezert</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mmcn"> Makai McNamara</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mpan"> Makana Pang</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mmart"> Malakai Martinez</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mberh"> Malik Berho</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mjez"> Malo Jezequel</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mvar"> Manarii Varuamana</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mgra"> Manatea Gras</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mpoc"> Manolo Pochiero</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mlau"> Manuarii Lau</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/msam"> Manuel Sampaio</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mtei"> Manuel Teixeira</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mwill"> Marc Williams</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mmign"> Marco Mignot</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mteic"> Marco Teichner</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mcorr"> Marcos Correa</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mhoo"> Marcos Hootman</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mpug"> Marley Puglielli</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mpau"> Martim Paulino</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mcap"> Martin Capriglioni</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mcore"> Martin Coret</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mcor"> Martin Cortijo Gonzalez</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mgro"> Martin Grossmann</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mjer"> Martin Jeri</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mfara"> Maruan Farah</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/msek"> Masahiro Sekiguchi</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mspo"> Massimiliano Spolverini</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mhiq"> Mateia Hiquily</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mpou"> Mateo Poulot</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mpri"> Mateo Prias</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mher"> Mateus Herdy</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/msen"> Mateus Sena</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mfari"> Matheus Faria</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mherd"> Matheus Herdy</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mnav"> Matheus Navarro</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mcore"> Mathieu Coret</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mcro"> Mathis Crozon</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mcant"> Matias Canto</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mnob"> Matias Nobrega</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mban"> Matt Banting</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mpas"> Matt Passaquindici</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mwill"> Matt Williams</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mgle"> Matthew Glenn</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mmcg"> Matthew McGillivray</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/msil"> Matthew Sills</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mmoul"> Matthieu Moulia</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mpoi"> Mattia Poirier</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mkin"> Matty King</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mrai"> Mauiki Raioha</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mmarc"> Maurice Marc Meyerwestphal</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mdiaz"> Mauricio Diaz</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mbea"> Max Beach</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/melk"> Max Elkington</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mkea"> Max Kearney</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mmcgu"> Max McGuigan</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mself"> Max Self</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mbob"> Maxime Bobet</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mdos"> Maxime Dos Anjos</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mlel"> Maxime Leleu</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mrat"> Maxime Ratia</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mtob"> Maximilian Tobin</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mbow"> McKenzie Bowden</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mcroz"> Micah Crozier</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mcant"> Micha Cantor</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mfeb"> Michael February</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mgum"> Michael Gumina</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mmonk"> Michael Monk</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mrodr"> Michael Rodrigues</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mrom"> Michael Romano</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/msan"> Michael Sanborn</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mvana"> Michael Vanaman</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mven"> Michael Venter</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mzau"> Michael Zaugg</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mcla"> Micky Clarke</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mrob"> Micky Robinson</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mbet"> Miguel Betegon</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mbla"> Miguel Blanco</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mcas"> Miguel Castrillon</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mmad"> Miguel Madeira</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mper"> Miguel Perez-Moneo</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mtud"> Miguel Tudela</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mbra"> Mihimana Braye</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mclay"> Mike Clayton-Brown</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mmcd"> Mikey McDonagh</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mlee"> Miles Lee-Hargreaves</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/miva"> Mirko Ivan Manduca</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mgri"> Mitch Griffiths</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mken"> Mitch Kennedy</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mpar"> Mitch Parkinson</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mtru"> Mitch Trueman</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/msal"> Mitchell Salazar</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mfur"> Miyu Furukawa</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mdomi"> Moises Dominguez Requena</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mtsu"> Momoto Tsuzuki</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/myah"> Monnojo Yahagi</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mtai"> Monty Tait</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mcib"> Morgan Cibilic</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mlea"> Morgan Leavel</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mle"> Moses Le Grice</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/mlai"> Myles Laine-Toner</a>
+    	    		</div>
+        				<div class="col-sm-12 ">
+    		    			<h3>N</h3>	
+    		    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/nnog"> N&amp;#xE9;mo Nogues</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/nrom"> Nacho Roman</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/nsan"> Nacho sanchis</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ndav"> Nainoa David</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ndou"> Nalu Doutres</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/nbal"> Nanook Ballerin</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/nkob"> Naomi Kobayashi</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/nawa"> Naru Awada</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ncara"> Nate Carabba</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ndor"> Nate Dorman</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/nbeh"> Nathan Behl</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/nche"> Nathan Chester</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/nkaw"> Nathan Kawani</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/nroh"> Nathan Rohr</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/nspe"> Nathan Specht</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/nyoun"> Nathan Young</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ngon"> Natxo Gonzalez</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/nsma"> Ned Smart</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/nclo"> Nelson Cloarec</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ngar"> Nestor Garcia</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/nhde"> Nic Hdez</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/njon"> Nic Jones</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/nram"> Nicholas Ramirez</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/nbrad"> Nick Brady</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ncal"> Nick Callister</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/nmars"> Nick Marshall</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ncha"> Nicolas Chalonec</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ngui"> Nicolas Guimond</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/nmul"> Nicolas Muller</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/nvar"> Nicolas Vargas</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/npan"> Nikita Pandelos</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ndes"> Nils Despouy</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ndup"> Noa Dupouy</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/nish"> Noa Ishii</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/nmiz"> Noa Mizuno</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/nbes"> Noah Beschen</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/nbie"> Noah Biersack</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ncol"> Noah Collins</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ncoo"> Noah Cooney</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/nhil"> Noah Hill</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/nkea"> Noah Kearney</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/nmun"> Noah Munro</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/nschw"> Noah Schweizer</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/nsto"> Noah Stocca</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/nled"> Noe Ledee</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/nmar"> Noe Mar McGonagle</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/nfut"> Nohea Futrell</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/nrap"> Nolan Rapoza</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/nmig"> Nomme Mignot</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/npeu"> Norman Peuron</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/nmsi"> Ntando Msibi</a>
+    	    		</div>
+        				<div class="col-sm-12 ">
+    		    			<h3>O</h3>	
+    		    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/omas"> O&amp;apos;Neill Massin</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/omac"> Ocean Macedo</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/oaiz"> Oihan Aizpuru</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ohar"> Oliver Hartkopp</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ocas"> Olivier Cassaigne</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/oanw"> Oney Anwar</a>
+    	    		</div>
+        				<div class="col-sm-12 ">
+    		    			<h3>P</h3>	
+    		    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/pazp"> Pablo Azpiroz</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/pfer"> Pablo Fernandez</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/pgon"> Pablo Goncalves</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/pdav"> Pamatatau Davies</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/pgio"> Paolo Giorgi</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/pcof"> Parker Coffin</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/pcoh"> Parker Cohn</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/psaw"> Parker Sawyer</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/pswo"> Parker Swoish</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/phut"> Pascal Hutchinson</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/psch"> Pat Schmidt</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/pcur"> Patrick Curren</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/plan"> Patrick Langdon-Dark</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/pmai"> Patrick Mainstone</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ppar"> Patrick Parker</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/pces"> Paul Cesar Distinguin</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/pmonb"> Paul Monborne</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/pluca"> Paulo Lucas Lima</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/para"> Pedro Araujo</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/pbir"> Pedro Birne Calheiros</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/pcoe"> Pedro Coelho</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/pdib"> Pedro Dib</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/pmigu"> Pedro Miguel</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/pnev"> Pedro Neves</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/pnog"> Pedro Nogueira</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/prua"> Pedro Rua</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/pfern"> Pepe Fern&amp;#xE1;ndez</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/psig"> Perry Siganos</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/pcoff"> Peter Coffey</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/pcha"> Phillippe Chagas</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/prol"> Pierre Rollet</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/prai"> Pj Raia</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/paul"> Pono Auld</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/pdex"> Preston Dexter</a>
+    	    		</div>
+        				<div class="col-sm-12 ">
+    		    			<h3>Q</h3>	
+    		    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/qgre"> Quentin Grenard</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/qtur"> Quentin Turko</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/qbru"> Quinn Bruce</a>
+    	    		</div>
+        				<div class="col-sm-12 ">
+    		    			<h3>R</h3>	
+    		    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/raim"> Rafael Aimar-Debierre</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rda"> Rafael Da Mata</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rda"> Rafael Da Silva</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rtei"> Rafael Teixeira</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rven"> Rafael Venuto</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rfau"> Raiarii Faufau</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rmas"> Raiki Masuda</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rbou"> Ramzi Boukhiam</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rurc"> Randu Urcia</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rhans"> Raul Hans Werth Lorenzo</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rquei"> Raul Queiroz</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rrei"> Raul Reis</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rdoi"> Reef Doig</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rhea"> Reef Heazlewood</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rtsu"> Reef Tsutsui</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rjub"> Remy Juboori</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rmur"> Ren Murakami</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rgra"> Renan Grainville</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rhan"> Renan Hanada</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rpere"> Renan Peres</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rina"> Reo Inaba</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rwat"> Resi Wattimena</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rabe"> Rewaldo Abersalie</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/raus"> Rhamon Austin</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rbar"> Rhys Barfield</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rson"> Rian Son</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rito"> Riaru Ito</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rleo"> Ric Leon Herz</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rcru"> Ricardo Cruzado</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rdie"> Ricardo Diego</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rwil"> Ricardo Williams</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rluc"> Riccardo Lucibella</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rkid"> Richard Kidd</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rviv"> Riel Viviers</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rhor"> Riki Horikoshi</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rlai"> Riley Laing</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rooo"> Rinta Oooto</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rwai"> Rio Waida</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rgoo"> Robbie Goodwin</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rmer"> Robbie Merrell</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rric"> Robbie Rickard</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rgri"> Robert Grilho</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rara"> Roberto Araki</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rd&amp;a"> Roberto D&amp;apos;Amico</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rlet"> Roberto Letemendia</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rgar"> Rodrigo Garc&amp;#xED;a</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rkana"> Roi Kanazawa</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rvita"> Ruben Vita</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rvit"> Ruben Vitoria</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rchi"> Rudy Chiara</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rhori"> Rui Horikoshi</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rcro"> Ryan Croteau</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rdon"> Ryan Donohoe</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rhuc"> Ryan Huckabee</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rhun"> Ryan Hunt</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rsla"> Ryan Slattery</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rgue"> Ryder Guest</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rrub"> Ryland Rubens</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rkob"> Ryo Kobayashi</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rkod"> Ryo Kodama</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rmiu"> Ryo Miura</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rmat"> Ryota Matsushita</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rfuj"> Ryousyun Fujita</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rnis"> Ryunosuke Nishida</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/rkand"> Ryusei Kanda</a>
+    	    		</div>
+        				<div class="col-sm-12 ">
+    		    			<h3>S</h3>	
+    		    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/sda"> Sa&amp;#xFA;l Da Silva</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/slevy"> Sacha Levy-Agami</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/sbur"> Sage Burke</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/sgub"> Sage Gubbay</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/stut"> Sage Tutterow</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/susa"> Salaberria Usandizaga</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/smed"> Salomon Medina Recasens</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/scout"> Salvador Couto</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/sval"> Salvador Valdez</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/schr"> Sam Christianson</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/slag"> Sam Lagadec</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/slit"> Sam Littlechild</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/smor"> Sam Morgan</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/snei"> Sam Neiger</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/spite"> Sam Piter</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/srei"> Sam Reichel</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/sgra"> Sammy Gray</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/scou"> Samson Coulter</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/sbah"> Samuel Bahillo</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/sigo"> Samuel Igo De Souza</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/spup"> Samuel Pupo</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/swhi"> Sandon Whittaker</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/shart"> Santiago Hart</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/skawa"> Sasuke Kawatani</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/sfra"> Saul Francisco Torres Ruano</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/sran"> Saxton Randall</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/sfoe"> Sean Foerster</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/sgun"> Sean Gunning</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/sket"> Sean Kettle</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/smaw"> Sean Mawson</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/swoo"> Sean Woods</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/sram"> Sebasti&amp;#xE3;o Ramirez</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/sbyr"> Sebastian Byrne</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/scor"> Sebastian Correa</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/smar"> Sebastian Martinez</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/smen"> Sebastian Mendes</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/soli"> Sebastian Oliva</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/srau"> Sebastian Raubenheimer</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/sven"> Sebastian Ventura</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/swil"> Sebastian Williams</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/sbar"> Selim Barkat</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/smon"> Seth Moniz</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/slah"> Shadi Lahrioui</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/sbor"> Shane Borland</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/scamp"> Shane Campbell</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ssyk"> Shane Sykes</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/sman"> Shaun Manners</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/spac"> Shayden Pacarro</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/spai"> Sheldon Paishon</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ssim"> Sheldon Simkus</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/snag"> Shimba Nagano</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/sshu"> Shinji Shuya</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/skert"> Shnae Kertesz</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/smat"> Sho Matsubara</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/shara"> Shogo Harad</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ssai"> Shogo Saito</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/skat"> Shohei Kato</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/stsu"> Shoma Tsutsumi</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/skon"> Shotaro Konishi</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/stak"> Shuhei Takahashi</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/snis"> Shuji Nishi</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/smur"> Shun Murakami</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/sgry"> Silas Grygier</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/spen"> Simao Penha</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/stei"> Simao Teixeira</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/sabe"> Simon Abeger</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/shet"> Simon Hetrick</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/stum"> Sjoerd Tummers</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/smcc"> Skip McCullough</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/slaw"> Skylar Lawson</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/spre"> Slade Prestwich</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/sbai"> Soli Bailey</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/shir"> Soma Hirahara</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/shas"> Sota Hasegawa</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/sish"> Sou Ishihara</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/syuk"> Souichiro Yuki</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/sbri"> Spencer Bridges</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/snor"> Stanley Norman</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/sburr"> Steff Burrows</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/sbob"> Stellio Bobet</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/sfos"> Sterling Foster</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ssaw"> Steven Sawyer</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/spit"> Stevie Pittman</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/szau"> Swen Zaugg</a>
+    	    		</div>
+        				<div class="col-sm-12 ">
+    		    			<h3>T</h3>	
+    		    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tsan"> Taaroa Sanford</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ttav"> Tahiti Tavita</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tgar"> Tai Garrett</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/thag"> Taichi Hagita</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/twaki"> Taichi Wakita</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tkar"> Taiki Karube</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tkum"> Taishi Kume</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tbra"> Taj Bramah</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tric"> Taj Richmond</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tsle"> Taj Sleeman</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/twats"> Taj Watson</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tnak"> Takumi Nakamura</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tyas"> Takumi Yasui</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/toht"> Takuto Ohta</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/thon"> Takuya Hongo</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tara"> Tales Araujo</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tbow"> Tane Bowden</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/twal"> Tane Wallis</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tstr"> Tanner Strohmenger</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/trah"> Tarik Rahim</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/twata"> Taro Watanabe</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tgra"> Tas Grainger</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tpou"> Taua Pou</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tcla"> Taylor Clark</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/thut"> Taylor Hutchison</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tmat"> Taylor Mathiesen</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tmcca"> Taylor McCarthy</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tkni"> Taz Knight</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tkeh"> Te Kehukehu Butler</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/trap"> Te Rapai Barbarich-Love</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/trob"> Teague Robinson</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/taub"> Teofan Aubriot</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tbouc"> Teva Bouchgua</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/thar"> Tezu Harrison</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tmck"> Thelen McKinna-Worrell</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tfre"> Theo Fresia</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tjul"> Theo Julitte</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/trod"> Theo Rodriguez</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tsto"> Thiago Stockler</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tman"> Thibault Manson</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tcarv"> Thomas Carvalho</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tdeb"> Thomas Debierre</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tdel"> Thomas Delplace</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tdou"> Thomas Doumenjou</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tharr"> Thomas Harrison</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tled"> Thomas Ledee</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tpro"> Thomas Prout</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tcarr"> Tiago Carrique</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tsant"> Tiago Santos</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tire"> Tide-Lee Ireland</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tbis"> Timothee Bisso</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tbout"> Tinitua Bouteau</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tboy"> Titouan Boyer</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tcan"> Titouan Canevet</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tdef"> Titouan Deffarges</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tdubo"> Titouan Dubos</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tves"> Titouan Veschambre</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tmacd"> Toa MacDonald</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/torte"> Tobias Ortells</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tbish"> Toby Bishop</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tmos"> Toby Mossop</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tboe"> Tom Boelsma</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tclo"> Tom Cloarec</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tdix"> Tom Dixon-Smith</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tking"> Tom King</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tsim"> Tom SIMON</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/twri"> Tom Wright</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tde"> Tom&amp;#xC3;&amp;#xA1;s De Col Navarro-Grau</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tabr"> Tom&amp;#xE1;s Abreu</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tagr"> Tomas Agra Amorim Magalhes Ferreir</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/temi"> Tomas Emilio</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tfer"> Tomas Fernandes</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tferr"> Tomas Ferreira</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tkin"> Tomas King</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tlac"> Tomas Lacerda</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tlop"> Tomas Lopez Moreno</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/trib"> Tomas Ribeiro</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ttud"> Tomas Tudela</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tzar"> Tomas Zarra</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tlini"> Tomer Linivker</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tbou"> Tommy Boucaut</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tcol"> Tommy Coleman</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tmcke"> Tommy McKeown</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tnun"> Tony Nunez</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ttan"> Toy Tanaka</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tthor"> Trevor Thornton</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tfor"> Tristan Forras</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tlev"> Tristan Lev</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tthom"> Tristan Thompson</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tosa"> Troy Osada</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tcow"> Tukea Cowan</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/twyl"> Tully Wylie</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tari"> Turo Ariitu</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tgam"> Txaber Gaminde</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tsimp"> Ty Simpson-Kane</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tkoo"> Tye Koolis</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tfau"> Tyler Faulkner</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tgun"> Tyler Gunter</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tjam"> Tyler James</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tkil"> Tyler Killeen</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tmorr"> Tyler Morris</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/tgon"> Tyron Gonzalez</a>
+    	    		</div>
+        				<div class="col-sm-12 ">
+    		    			<h3>U</h3>	
+    		    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/urob"> Ugo Robin</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/unap"> Ulualoha Napeahi</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ucui"> Ulysee Cuitot</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ubra"> Uraeva Braye</a>
+    	    		</div>
+        				<div class="col-sm-12 ">
+    		    			<h3>V</h3>	
+    		    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/vroc"> Vaimanu Rochet</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/vver"> Valentin Verpoote</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/vdin"> Vasco Diniz</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/vmon"> Vasco Monica</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/vrib"> Vasco Ribeiro</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/vvel"> Vasco Veloso</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/vpru"> Vehiatua Prunier</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/vber"> Victor Bernardo</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/vdos"> Victor Dos Santos</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/vmen"> Victor Mendes</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/vsan"> Victor Santos</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/vval"> Victor Vallauri</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/vcla"> Vincent Claunch</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/vfei"> Vincent Feillon</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/vvan"> Vincent Vandeputte</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/vleo"> Vincenzo Leonelli</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/vfer"> Vitor Ferreira</a>
+    	    		</div>
+        				<div class="col-sm-12 ">
+    		    			<h3>W</h3>	
+    		    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/wcle"> Wade Clemens</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/wgar"> Wade Garin</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/wsim"> Wade Simkiss</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/wjun"> Wallace Junior</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/wbla"> Walter Blas</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/whia"> Walter Hiatt</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/wwano"> Waretini Wano</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/wpeck"> Warren Peckett</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/whib"> Wataru Hibino</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/wsant"> Welton Santos</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/wlei"> Wesley Leite</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/wsan"> Wesley Santos</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/wdant"> Weslley Dantas</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/wrei"> Wil Reid</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/wban"> Wilem Banks</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/wdav"> Will Davey</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/wgro"> Will Grossarth</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/whar"> Will Harbison</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/wali"> William Aliotti</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/wpec"> William Peckett</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/wsal"> William Saldana Diaz</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/wwer"> Wolf Wertheimer</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/wmch"> Wyatt McHale</a>
+    	    		</div>
+        				<div class="col-sm-12 ">
+    		    			<h3>X</h3>	
+    		    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/xlop"> Xabier Lopez</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/xhux"> Xavier Huxtable</a>
+    	    		</div>
+        				<div class="col-sm-12 ">
+    		    			<h3>Y</h3>	
+    		    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ypen"> Yael Pena</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/yarau"> Yage Araujo</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ydor"> Yago Dora</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/yvaz"> Yago Vaz</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ydab"> Yan Daberkow</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ygal"> Yannis Galissaire</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/yfer"> Yeray Ferrera</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ygar"> Yeray Garcia Ferrera</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/yabe"> Ylan Abeger</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ycon"> Youri Conradi</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ykaw"> Yugo Kawabata</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ymor"> Yuji Mori</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ynis"> Yuji Nishi</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ymir"> Yuri Miranda</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/yoga"> Yuri Ogasawara</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/yiga"> Yusuke Igari</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ytsuk"> Yuta Tsukamoto</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/ynak"> Yuuki Nakashio</a>
+    	    		</div>
+        				<div class="col-sm-12 ">
+    		    			<h3>Z</h3>	
+    		    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/zmic"> Zac Michael</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/zpat"> Zac Paterson</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/zwig"> Zac Wightman</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/zmcc"> Zach McCormick</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/zmans"> Zachary Mansfield</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/zvau"> Zachary Vaughan</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/zmcm"> Zack McMahon</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/zrobe"> Zack Roberts</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/zcon"> Zak Condon</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/zven"> Zander Venezia</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/zass"> Zane Assink</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/zboo"> Zane Booth</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/zcli"> Zane Clifford</a>
+    	    		</div>
+    	    		<div class="col-sm-12 ">
+    	    			<a href="http://fantasysurfingtips.com/surfers/zle"> Zephyr Le Rougetel</a>
+    	    		</div>
+    	</div>
+    </div>
+</section>
+
+
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                       <h3>Meet the creators</h3>
+                       <p>Just come to surf <a href="https://goo.gl/maps/UmWhsRsU3bP2">here</a> on weekends. We are always there</p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Around the Web</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="https://twitter.com/FanSurfingTips" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Play against us on WSL Fantasy Surfing</h3>
+                        <p>Get in <a href="http://mct.fantasy.worldsurfleague.com/group/32752">the group</a> and see if you can beat us</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; Fantasy Surfing Tips 2016
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+
+   
+    <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-74337819-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+     <!-- jQuery -->
+    <script src="https://fantasysurfingtips.com/js/jquery.js"></script>
+        <script src="https://cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://fantasysurfingtips.com/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+
+
+    <script src="https://fantasysurfingtips.com/js/classie.js"></script>
+    <script src="https://fantasysurfingtips.com/js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="https://fantasysurfingtips.com/js/jqBootstrapValidation.js"></script>
+    <script src="https://fantasysurfingtips.com/js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="https://fantasysurfingtips.com/js/freelancer.js"></script>
+
+    <script type="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+    <script type="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>
+
+
+
+
+</body>
+</html>
