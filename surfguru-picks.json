@@ -1,8 +1,8 @@
 {
 	"events":[{
-		"name": "Gold Coast",
-		"tierA": [{"nome": "Gabriel Medina", "codigo":"gmed"}, {"nome":"John John Florence", "codigo":"jjoh"}],
-		"tierB": [{"nome":"Joel Parkinson", "codigo":"jpar"}, {"nome":"Filipe Toledo", "codigo":"ftol"}, {"nome":"Adriano de Souza", "codigo":"asou"}, {"nome":"Mick Fanning", "codigo":"mfan"}],
-		"tierC": [{"nome":"Jadson Andre", "codigo":"jand"}, {"nome":"Jack Freestone", "codigo":"jfree"}] 
+		"name": "Margaret River",
+		"tierA": [{"nome": "John John Florence", "codigo":"jjoh"}, {"nome":"Kelly Slater", "codigo":"ksla"}],
+		"tierB": [{"nome":"Julian Wilson", "codigo":"jwil"}, {"nome":"Jordy Smith", "codigo":"jsmi"}, {"nome":"Adriano de Souza", "codigo":"asou"}, {"nome":"Sebastian Ziets", "codigo":"szie"}],
+		"tierC": [{"nome":"Josh Kerr", "codigo":"jker"}, {"nome":"Adrian Buchan", "codigo":"abuc"}] 
 		}]
 }
