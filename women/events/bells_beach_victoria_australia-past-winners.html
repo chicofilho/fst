@@ -65,7 +65,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
 
-
+    <script src="https://www.w3schools.com/lib/w3data.js"></script>
 </head>
 <body>
     <div id="fb-root"></div>
@@ -77,50 +77,11 @@
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
 	<!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Fantasy Surfing Tips</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/">Fantasy Surfing Tips</a>
-            </div>
+    <div w3-include-html="https://fantasysurfingtips.com/layout/header.html"></div>
+    
+    <!-- Header -->
+<div w3-include-html="https://fantasysurfingtips.com/layout/sponsor.html"></div> 
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="/fantasy-simulator.html">Fantasy Simulator</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="/surfers">Surfers</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="/all-events.html">All Events</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="/women">Women's</a>
-                    </li>
-
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-<!-- Header -->
-<div class="sponsor-container">
-    <a href="http://www.surfteccell.com.br/a/home.asp?lingua=i" target="blank">
-        <img class="sponsor-image">
-    </a>        
-</div>  
 <section >
     <div class="container">
         <div class="row">
@@ -132,7 +93,7 @@
         </div>
         <div class="row">
             <div class="col-sm-12 ">
-                <p style="text-align:center;" >Bells Beach, Victoria, Australia has an AHS (average heat score) of <strong>13.19</strong></p style="text-align:center;" >
+                <p style="text-align:center;" >Bells Beach, Victoria, Australia has an AHS (average heat score) of <strong>13.13</strong></p style="text-align:center;" >
                 <div  style="text-align:center;">
                     <a href="https://twitter.com/share" class="" data-via="fansurfingtips"><i class="fa fa-twitter"></i> Share on Twitter</i></a> <br/>
                     
@@ -147,6 +108,54 @@
             <div class="row">
                 
                 
+                    <div class="col-sm-12">
+                        <table class="table table-responsive">
+                            <tr>
+                                <th>Year</th>
+                                <th>Winner</th>
+                                <th>Runner-up</th>
+                                <th>Semifinals</th>
+                                <th>Quaterfinals</th>
+                                    <th>Rd4</th>
+                                
+                            </tr>   
+
+                                <tr>
+                                    <td>2017</td>
+                                    <td><a href="http://fantasysurfingtips.com/surfers/wct/ccon">Courtney Conlogue</a></td>
+                                    <td><a href="http://fantasysurfingtips.com/surfers/wct/sgilm">Stephanie Gilmore</a></td>
+                                    <td><a href="http://fantasysurfingtips.com/surfers/wct/lpet">Lakey Peterson</a></td>
+                                    <td><a href="http://fantasysurfingtips.com/surfers/wct/jdef">Johanne Defay</a></td>
+                                    <td><a href="http://fantasysurfingtips.com/surfers/wct/slim">Silvana Lima</a></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="http://fantasysurfingtips.com/surfers/wct/twrig">Tyler Wright</a></td>
+                                    <td><a href="http://fantasysurfingtips.com/surfers/wct/sfit">Sally Fitzgibbons</a></td>
+                                    <td><a href="http://fantasysurfingtips.com/surfers/wct/twes">Tatiana Weston-Webb</a></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="http://fantasysurfingtips.com/surfers/wct/cho">Coco Ho</a></td>
+                                    <td>
+                                    <a href="http://fantasysurfingtips.com/surfers/wct/seri">Sage Erickson</a></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="http://fantasysurfingtips.com/surfers/wct/cmoo">Carissa Moore</a></td>
+                                    <td><a href="http://fantasysurfingtips.com/surfers/wct/nvan">Nikki Van Dijk</a></td>
+                                </tr>
+                        </table>
+                        <hr/>
+                    </div>
                     <div class="col-sm-12">
                         <table class="table table-responsive">
                             <tr>
@@ -399,56 +408,24 @@
 </section>
 
 
-
     <!-- Footer -->
-    <footer class="text-center">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-4">
-                       <h3>Meet the creators</h3>
-                       <p>Just come to surf <a href="https://goo.gl/maps/UmWhsRsU3bP2">here</a> on weekends. We are always there</p>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Around the Web</h3>
-                        <ul class="list-inline">
-                            <li>
-                                <a href="https://twitter.com/FanSurfingTips" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Play against us on WSL Fantasy Surfing</h3>
-                        <p>Get in <a href="http://mct.fantasy.worldsurfleague.com/group/32752">the group</a> and see if you can beat us</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy; Fantasy Surfing Tips 2016
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    
+    <div w3-include-html="https://fantasysurfingtips.com/layout/footer.html"></div>
 
    
     <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-74337819-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        try {
+          var pageTracker = _gat._getTracker("UA-74337819-1");
+        pageTracker._trackPageview();
+        } catch(err) {}
+    </script>
 
+    <script>
+        w3IncludeHTML();
+    </script>
      <!-- jQuery -->
     <script src="https://fantasysurfingtips.com/js/jquery.js"></script>
         <script src="https://cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
