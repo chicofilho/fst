@@ -1,8 +1,8 @@
 {
 	"events":[{
-		"name": "Margaret River",
-		"tierA": [{"nome": "John John Florence", "codigo":"jjoh"}, {"nome":"Kelly Slater", "codigo":"ksla"}],
-		"tierB": [{"nome":"Julian Wilson", "codigo":"jwil"}, {"nome":"Jordy Smith", "codigo":"jsmi"}, {"nome":"Adriano de Souza", "codigo":"asou"}, {"nome":"Sebastian Ziets", "codigo":"szie"}],
-		"tierC": [{"nome":"Josh Kerr", "codigo":"jker"}, {"nome":"Adrian Buchan", "codigo":"abuc"}] 
+		"name": "Rio Pro",
+		"tierA": [{"nome": "John John Florence", "codigo":"jjoh"}, {"nome":"Filipe Toledo", "codigo":"ftol"}],
+		"tierB": [{"nome":"Gabriel Medina", "codigo":"gmed"}, {"nome":"Sebastian Ziets", "codigo":"szie"}, {"nome":"Matt Wilkinson", "codigo":"mwil"}, {"nome":"Kelly Slater", "codigo":"ksla"}],
+		"tierC": [{"nome":"Bede Durbidge", "codigo":"bdur"}, {"nome":"Nat Young", "codigo":"nyou"}] 
 		}]
 }
