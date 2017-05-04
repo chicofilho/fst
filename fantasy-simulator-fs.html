@@ -62,7 +62,7 @@
     <!-- Portfolio Grid Section -->
     <section id="portfolio">
         <div class="container">
-            <h1>Fantasy Surfer Simulator (Bells Beach)</h1>
+            <h1>Fantasy Surfer Simulator (Rio Pro)</h1>
             <h3>Choose the rankings you believe the most</h3>
             <hr class="star-primary">
             <p> Our equation does not have the price included. We show the simulator with the best 8 picks and the cost this team would have. A more detailed explanation you find <a href="https://medium.com/surf-metrics/fantasy-surfer-projections-3c7461613624#.lfehp4ipo">here</a>.</p>
@@ -111,7 +111,7 @@
                     </div>
                    
                     <div class="col-lg-4">
-                        <h4>The super 8 surfers</h4>
+                        <h4>Result:</h4>
                         <div class="row">
                             <div  class="col-lg-12">
                                 <p id="a1">John John Florence</p>
@@ -284,7 +284,7 @@
                         ['CONNER COFFIN', 55],
                         ['ADRIAN BUCHAN', 52.5],
                         ['MICK FANNING', 52.5],
-                        ['CONNOR OLERY', 50],
+                        ['CONNOR OLEARY', 50],
                         ['JOSH KERR', 47.5], 
                         ['EZEKIEL LAU', 40],
                         ['FREDERICO MORAIS', 40],
@@ -420,20 +420,49 @@
                 console.log(picked_result)
                 var i = 0
                 picks = []
+
                 while(picks.length < 9){
                     
                     surfer = picked_result[i][0]
-                    console.log(surfer)
+                    //console.log(surfer)
+                    console.log(picks)
                     has_matchup = false
                     if(rd1_matchups){
                         has_matchup = compute_macthups(surfer, all_tiers)
                     }
 
                     if(!has_matchup){
-                        if(contains.call(rd_heads, surfer)){
+                        if(contains.call(rd_heads, surfer) && 
+                            !contains.call(picks, surfer) ){
                             picks.push(surfer)
+                            //i = 0
                         }
                     }
+
+
+                   
+                    console.log(picks)
+
+                    if(sumSurfersPrice(picks)>500){
+                        value = 0
+                        for (var j = picks.length - 1; j >= 0; j--) {
+                            picks[j]
+                            if(parseFloat(getValueOfSurfer(picks[j]))>62.5){
+                                value = j
+                                break;
+                            }
+                        };
+                        picks.splice(j, 1)
+                    }
+
+                    if(i == picked_result.length-1){
+                        
+                        //break;
+                    }
+                    console.log(picks)
+                    
+                    
+                           
                     
 
                     // if(!has_matchup){
@@ -456,7 +485,7 @@
                     //         }
                     //     }
                     // }
-                    i++;
+                    i = (i + 1)%picked_result.length
                 }                
                 updateRank(picks)
                 updateMatchup(picked_result)
@@ -503,11 +532,16 @@
 
                 $('#c1').html(toTitleCase(picked_result[6]))
                 $('#c2').html(toTitleCase(picked_result[7]))
+                total_value = sumSurfersPrice(picked_result)
+                $('#cost_total').html("Total cost: "+numberWithCommas(total_value*100000))
+            }
+
+            function sumSurfersPrice(picked_result){
                 total_value = 0
-                for (var i = 7 ; i >= 0; i--) {
+                for (var i = picked_result.length ; i >= 0; i--) {
                     total_value = total_value + getValueOfSurfer(picked_result[i])
                 };
-                $('#cost_total').html("Total cost: "+numberWithCommas(total_value*100000))
+                return total_value
             }
 
             function numberWithCommas(x) {
