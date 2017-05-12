@@ -87,7 +87,378 @@
 <hr class="star-primary"/>
 <section >
     <div class="container">
-    	<div class="row">
+        <div class="row">
+            <div class="col-sm-12">
+                <p>Only the top 40 surfers are shown on stats. But you can still find the surfer by the alphabetical sorting</p>
+                <div class="btn-group center" data-toggle="buttons">
+                  <label class="btn btn-primary active">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Top Stats
+                  </label>
+                  <label class="btn btn-primary">
+                    <input type="radio" name="options" id="option2" autocomplete="off"> All Surfers by Name
+                  </label>
+                </div>    
+            </div>
+            <script type="text/javascript">
+                $('document').ready(function(){
+                    console.log("....")
+                    console.log($('#option1'))
+                    $('#option1').change(function(){
+                        console.log('blah')
+                        $('.container_page').hide();
+                        $('#stats').show();
+                    })
+
+                    $('#option2').change(function(){
+                        $('.container_page').hide();
+                        $('#surfer_name').show();
+                    })
+                })
+            </script>
+        </div>
+        <hr/>
+        <div id="stats" class="row container_page" >
+            <div class="col-sm-12 ">
+                <h1>Top Stats</h1>
+                  <table class="table table-striped">
+      <thead>
+          <tr>
+            <th>Stat Rank</th>  
+            <th>Name</th>
+            <th>Average Heat Score</th>
+            <th>Winning Percentage</th>
+            <th>Stat Points</th>
+            
+          </tr>
+      </thead>
+      <tbody>
+              <tr>                    
+                  <td>#1</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mjun/bmam">Barron Mamiya</a> </td>
+                  <td>14.51</td>
+                  <td>100.0%</td>
+                  <td>100.0</td>
+              </tr>
+              <tr>                    
+                  <td>#2</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mjun/rhea">Reef Heazlewood</a> </td>
+                  <td>14.02</td>
+                  <td>86.11%</td>
+                  <td>91.35</td>
+              </tr>
+              <tr>                    
+                  <td>#3</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mjun/tjul">Theo Julitte</a> </td>
+                  <td>12.68</td>
+                  <td>90.0%</td>
+                  <td>88.7</td>
+              </tr>
+              <tr>                    
+                  <td>#4</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mjun/rrub">Ryland Rubens</a> </td>
+                  <td>12.28</td>
+                  <td>87.5%</td>
+                  <td>86.07</td>
+              </tr>
+              <tr>                    
+                  <td>#5</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mjun/eewi">Ethan Ewing</a> </td>
+                  <td>12.76</td>
+                  <td>83.33%</td>
+                  <td>85.64</td>
+              </tr>
+              <tr>                    
+                  <td>#6</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mjun/kvaa">Kauli Vaast</a> </td>
+                  <td>12.29</td>
+                  <td>85.71%</td>
+                  <td>85.21</td>
+              </tr>
+              <tr>                    
+                  <td>#7</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mjun/swhi">Sandon Whittaker</a> </td>
+                  <td>13.42</td>
+                  <td>75.76%</td>
+                  <td>84.14</td>
+              </tr>
+              <tr>                    
+                  <td>#8</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mjun/mmcd">Mikey McDonagh</a> </td>
+                  <td>12.63</td>
+                  <td>81.25%</td>
+                  <td>84.13</td>
+              </tr>
+              <tr>                    
+                  <td>#9</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mjun/tkeh">Te Kehukehu Butler</a> </td>
+                  <td>13.15</td>
+                  <td>75.0%</td>
+                  <td>82.81</td>
+              </tr>
+              <tr>                    
+                  <td>#10</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mjun/lgor">Luke Gordon</a> </td>
+                  <td>12.98</td>
+                  <td>75.0%</td>
+                  <td>82.22</td>
+              </tr>
+              <tr>                    
+                  <td>#11</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mjun/rwai">Rio Waida</a> </td>
+                  <td>13.44</td>
+                  <td>70.59%</td>
+                  <td>81.6</td>
+              </tr>
+              <tr>                    
+                  <td>#12</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mjun/lwri">Lucas Wrice</a> </td>
+                  <td>12.11</td>
+                  <td>79.17%</td>
+                  <td>81.33</td>
+              </tr>
+              <tr>                    
+                  <td>#13</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mjun/fmcg">Finn McGill</a> </td>
+                  <td>12.24</td>
+                  <td>77.78%</td>
+                  <td>81.09</td>
+              </tr>
+              <tr>                    
+                  <td>#14</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mjun/tcol">Tommy Coleman</a> </td>
+                  <td>12.58</td>
+                  <td>75.0%</td>
+                  <td>80.84</td>
+              </tr>
+              <tr>                    
+                  <td>#15</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mjun/mher">Mateus Herdy</a> </td>
+                  <td>12.94</td>
+                  <td>68.75%</td>
+                  <td>78.97</td>
+              </tr>
+              <tr>                    
+                  <td>#16</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mjun/areg">Alister Reginato</a> </td>
+                  <td>11.87</td>
+                  <td>75.0%</td>
+                  <td>78.39</td>
+              </tr>
+              <tr>                    
+                  <td>#17</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mjun/kobe">Koby Oberholzer</a> </td>
+                  <td>11.02</td>
+                  <td>80.0%</td>
+                  <td>77.98</td>
+              </tr>
+              <tr>                    
+                  <td>#18</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mjun/lpau">Leo Paul Etienne</a> </td>
+                  <td>11.69</td>
+                  <td>75.0%</td>
+                  <td>77.78</td>
+              </tr>
+              <tr>                    
+                  <td>#19</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mjun/lo&a">Liam O&apos;Brien</a> </td>
+                  <td>12.32</td>
+                  <td>70.0%</td>
+                  <td>77.44</td>
+              </tr>
+              <tr>                    
+                  <td>#20</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mjun/cyou">Cody Young</a> </td>
+                  <td>12.35</td>
+                  <td>69.23%</td>
+                  <td>77.19</td>
+              </tr>
+              <tr>                    
+                  <td>#21</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mjun/mmign">Marco Mignot</a> </td>
+                  <td>11.66</td>
+                  <td>73.33%</td>
+                  <td>76.84</td>
+              </tr>
+              <tr>                    
+                  <td>#22</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mjun/rvit">Ruben Vitoria</a> </td>
+                  <td>11.29</td>
+                  <td>75.0%</td>
+                  <td>76.41</td>
+              </tr>
+              <tr>                    
+                  <td>#23</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mjun/jelk">Jake Elkington</a> </td>
+                  <td>11.16</td>
+                  <td>75.0%</td>
+                  <td>75.97</td>
+              </tr>
+              <tr>                    
+                  <td>#24</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mjun/kwal">Kael Walsh</a> </td>
+                  <td>12.18</td>
+                  <td>66.67%</td>
+                  <td>75.31</td>
+              </tr>
+              <tr>                    
+                  <td>#25</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mjun/dmus">Dextar Muskens</a> </td>
+                  <td>11.96</td>
+                  <td>68.18%</td>
+                  <td>75.29</td>
+              </tr>
+              <tr>                    
+                  <td>#26</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mjun/iama">Iker Amatriain</a> </td>
+                  <td>10.56</td>
+                  <td>77.78%</td>
+                  <td>75.27</td>
+              </tr>
+              <tr>                    
+                  <td>#27</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mjun/dmof">Dylan Moffat</a> </td>
+                  <td>12.32</td>
+                  <td>65.0%</td>
+                  <td>74.94</td>
+              </tr>
+              <tr>                    
+                  <td>#28</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mjun/nmiz">Noa Mizuno</a> </td>
+                  <td>10.85</td>
+                  <td>75.0%</td>
+                  <td>74.88</td>
+              </tr>
+              <tr>                    
+                  <td>#29</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mjun/lsli">Luke Slijpen</a> </td>
+                  <td>12.42</td>
+                  <td>62.5%</td>
+                  <td>74.04</td>
+              </tr>
+              <tr>                    
+                  <td>#30</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mjun/hros">Harley Ross - Webster</a> </td>
+                  <td>10.6</td>
+                  <td>75.0%</td>
+                  <td>74.01</td>
+              </tr>
+              <tr>                    
+                  <td>#31</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mjun/kking">Kyuss King</a> </td>
+                  <td>11.67</td>
+                  <td>66.67%</td>
+                  <td>73.56</td>
+              </tr>
+              <tr>                    
+                  <td>#32</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mjun/kkob">Kei Kobayashi</a> </td>
+                  <td>11.57</td>
+                  <td>66.67%</td>
+                  <td>73.19</td>
+              </tr>
+              <tr>                    
+                  <td>#33</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mjun/jbon">Jolan Bonelli</a> </td>
+                  <td>11.47</td>
+                  <td>66.67%</td>
+                  <td>72.85</td>
+              </tr>
+              <tr>                    
+                  <td>#34</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mjun/wmch">Wyatt McHale</a> </td>
+                  <td>11.41</td>
+                  <td>66.67%</td>
+                  <td>72.67</td>
+              </tr>
+              <tr>                    
+                  <td>#35</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mjun/ccox">Cyrus Cox</a> </td>
+                  <td>12.29</td>
+                  <td>60.0%</td>
+                  <td>72.35</td>
+              </tr>
+              <tr>                    
+                  <td>#36</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mjun/ndou">Nalu Doutres</a> </td>
+                  <td>10.52</td>
+                  <td>71.43%</td>
+                  <td>71.98</td>
+              </tr>
+              <tr>                    
+                  <td>#37</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mjun/gcol">Griffin Colapinto</a> </td>
+                  <td>11.17</td>
+                  <td>66.67%</td>
+                  <td>71.82</td>
+              </tr>
+              <tr>                    
+                  <td>#38</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mjun/rgue">Ryder Guest</a> </td>
+                  <td>11.07</td>
+                  <td>66.67%</td>
+                  <td>71.49</td>
+              </tr>
+              <tr>                    
+                  <td>#39</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mjun/tgol">Tommy Golsby-Smith</a> </td>
+                  <td>10.97</td>
+                  <td>66.67%</td>
+                  <td>71.13</td>
+              </tr>
+              <tr>                    
+                  <td>#40</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mjun/mcant">Micha Cantor</a> </td>
+                  <td>10.96</td>
+                  <td>66.67%</td>
+                  <td>71.1</td>
+              </tr>
+      </tbody>
+  </table>
+
+            </div>
+        </div>
+    	<div id="surfer_name" class="row container_page">
+            <h1>Sufers by name</h1>
         				<div class="col-sm-12 ">
     		    			<h3>A</h3>	
     		    		</div>

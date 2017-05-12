@@ -87,7 +87,378 @@
 <hr class="star-primary"/>
 <section >
     <div class="container">
-    	<div class="row">
+        <div class="row">
+            <div class="col-sm-12">
+                <p>Only the top 40 surfers are shown on stats. But you can still find the surfer by the alphabetical sorting</p>
+                <div class="btn-group center" data-toggle="buttons">
+                  <label class="btn btn-primary active">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Top Stats
+                  </label>
+                  <label class="btn btn-primary">
+                    <input type="radio" name="options" id="option2" autocomplete="off"> All Surfers by Name
+                  </label>
+                </div>    
+            </div>
+            <script type="text/javascript">
+                $('document').ready(function(){
+                    console.log("....")
+                    console.log($('#option1'))
+                    $('#option1').change(function(){
+                        console.log('blah')
+                        $('.container_page').hide();
+                        $('#stats').show();
+                    })
+
+                    $('#option2').change(function(){
+                        $('.container_page').hide();
+                        $('#surfer_name').show();
+                    })
+                })
+            </script>
+        </div>
+        <hr/>
+        <div id="stats" class="row container_page" >
+            <div class="col-sm-12 ">
+                <h1>Top Stats</h1>
+                  <table class="table table-striped">
+      <thead>
+          <tr>
+            <th>Stat Rank</th>  
+            <th>Name</th>
+            <th>Average Heat Score</th>
+            <th>Winning Percentage</th>
+            <th>Stat Points</th>
+            
+          </tr>
+      </thead>
+      <tbody>
+              <tr>                    
+                  <td>#1</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/wqs/jdef">Johanne Defay</a> </td>
+                  <td>14.09</td>
+                  <td>91.67%</td>
+                  <td>91.18</td>
+              </tr>
+              <tr>                    
+                  <td>#2</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/wqs/mman">Malia Manuel</a> </td>
+                  <td>14.02</td>
+                  <td>90.0%</td>
+                  <td>90.14</td>
+              </tr>
+              <tr>                    
+                  <td>#3</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/wqs/twrig">Tyler Wright</a> </td>
+                  <td>15.53</td>
+                  <td>80.0%</td>
+                  <td>90.0</td>
+              </tr>
+              <tr>                    
+                  <td>#4</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/wqs/mcal">Macy Callaghan</a> </td>
+                  <td>14.16</td>
+                  <td>84.62%</td>
+                  <td>87.89</td>
+              </tr>
+              <tr>                    
+                  <td>#5</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/wqs/inic">Isabella Nichols</a> </td>
+                  <td>13.79</td>
+                  <td>80.0%</td>
+                  <td>84.37</td>
+              </tr>
+              <tr>                    
+                  <td>#6</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/wqs/ssto">Savanna Stone</a> </td>
+                  <td>10.47</td>
+                  <td>100.0%</td>
+                  <td>83.69</td>
+              </tr>
+              <tr>                    
+                  <td>#7</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/wqs/hwaw">Holly Wawn</a> </td>
+                  <td>13.83</td>
+                  <td>76.92%</td>
+                  <td>82.96</td>
+              </tr>
+              <tr>                    
+                  <td>#8</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/wqs/lcos">Lucia Cosoleto</a> </td>
+                  <td>13.81</td>
+                  <td>75.0%</td>
+                  <td>81.96</td>
+              </tr>
+              <tr>                    
+                  <td>#9</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/wqs/twes">Tatiana Weston-Webb</a> </td>
+                  <td>13.79</td>
+                  <td>75.0%</td>
+                  <td>81.9</td>
+              </tr>
+              <tr>                    
+                  <td>#10</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/wqs/sfit">Sally Fitzgibbons</a> </td>
+                  <td>14.18</td>
+                  <td>71.43%</td>
+                  <td>81.35</td>
+              </tr>
+              <tr>                    
+                  <td>#11</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/wqs/seri">Sage Erickson</a> </td>
+                  <td>13.71</td>
+                  <td>71.43%</td>
+                  <td>79.85</td>
+              </tr>
+              <tr>                    
+                  <td>#12</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/wqs/bmaca">Bronte Macaulay</a> </td>
+                  <td>13.53</td>
+                  <td>71.43%</td>
+                  <td>79.26</td>
+              </tr>
+              <tr>                    
+                  <td>#13</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/wqs/cbev">Claire Bevilacqua</a> </td>
+                  <td>12.63</td>
+                  <td>76.92%</td>
+                  <td>79.1</td>
+              </tr>
+              <tr>                    
+                  <td>#14</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/wqs/dbaro">Dominic Barona</a> </td>
+                  <td>13.01</td>
+                  <td>71.43%</td>
+                  <td>77.58</td>
+              </tr>
+              <tr>                    
+                  <td>#15</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/wqs/pado">Pauline Ado</a> </td>
+                  <td>12.36</td>
+                  <td>75.0%</td>
+                  <td>77.27</td>
+              </tr>
+              <tr>                    
+                  <td>#16</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/wqs/jdup">Justine Dupont</a> </td>
+                  <td>13.06</td>
+                  <td>70.0%</td>
+                  <td>77.02</td>
+              </tr>
+              <tr>                    
+                  <td>#17</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/wqs/kandr">Keely Andrew</a> </td>
+                  <td>12.79</td>
+                  <td>71.43%</td>
+                  <td>76.89</td>
+              </tr>
+              <tr>                    
+                  <td>#18</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/wqs/smccu">Sophie McCulloch</a> </td>
+                  <td>13.45</td>
+                  <td>66.67%</td>
+                  <td>76.64</td>
+              </tr>
+              <tr>                    
+                  <td>#19</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/wqs/lcal">Lucy Callister</a> </td>
+                  <td>12.49</td>
+                  <td>72.73%</td>
+                  <td>76.57</td>
+              </tr>
+              <tr>                    
+                  <td>#20</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/wqs/dsto">Dimity Stoyle</a> </td>
+                  <td>12.94</td>
+                  <td>68.75%</td>
+                  <td>76.03</td>
+              </tr>
+              <tr>                    
+                  <td>#21</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/wqs/aqui">Alessa Quizon</a> </td>
+                  <td>13.19</td>
+                  <td>66.67%</td>
+                  <td>75.79</td>
+              </tr>
+              <tr>                    
+                  <td>#22</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/wqs/ctua">Chelsea Tuach</a> </td>
+                  <td>13.12</td>
+                  <td>66.67%</td>
+                  <td>75.57</td>
+              </tr>
+              <tr>                    
+                  <td>#23</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/wqs/pande">Philippa Anderson</a> </td>
+                  <td>12.79</td>
+                  <td>68.75%</td>
+                  <td>75.53</td>
+              </tr>
+              <tr>                    
+                  <td>#24</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/wqs/slim">Silvana Lima</a> </td>
+                  <td>13.05</td>
+                  <td>66.67%</td>
+                  <td>75.35</td>
+              </tr>
+              <tr>                    
+                  <td>#25</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/wqs/phar">Paige Hareb</a> </td>
+                  <td>13.22</td>
+                  <td>64.29%</td>
+                  <td>74.7</td>
+              </tr>
+              <tr>                    
+                  <td>#26</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/wqs/nomu">Nao Omura</a> </td>
+                  <td>13.44</td>
+                  <td>62.5%</td>
+                  <td>74.51</td>
+              </tr>
+              <tr>                    
+                  <td>#27</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/wqs/chen">Carol Henrique</a> </td>
+                  <td>11.46</td>
+                  <td>75.0%</td>
+                  <td>74.39</td>
+              </tr>
+              <tr>                    
+                  <td>#28</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/wqs/bhen">Brisa Hennessy</a> </td>
+                  <td>11.45</td>
+                  <td>75.0%</td>
+                  <td>74.34</td>
+              </tr>
+              <tr>                    
+                  <td>#29</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/wqs/ssin">Stephanie Single</a> </td>
+                  <td>12.12</td>
+                  <td>69.23%</td>
+                  <td>73.61</td>
+              </tr>
+              <tr>                    
+                  <td>#30</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/wqs/ssib">Samantha Sibley</a> </td>
+                  <td>12.5</td>
+                  <td>66.67%</td>
+                  <td>73.58</td>
+              </tr>
+              <tr>                    
+                  <td>#31</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/wqs/mgre">Mikaela Greene</a> </td>
+                  <td>12.61</td>
+                  <td>65.0%</td>
+                  <td>73.1</td>
+              </tr>
+              <tr>                    
+                  <td>#32</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/wqs/sgilm">Stephanie Gilmore</a> </td>
+                  <td>14.89</td>
+                  <td>50.0%</td>
+                  <td>72.91</td>
+              </tr>
+              <tr>                    
+                  <td>#33</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/wqs/ccass">Camila Cassia</a> </td>
+                  <td>12.13</td>
+                  <td>66.67%</td>
+                  <td>72.39</td>
+              </tr>
+              <tr>                    
+                  <td>#34</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/wqs/gfis">Georgia Fish</a> </td>
+                  <td>12.67</td>
+                  <td>62.5%</td>
+                  <td>72.02</td>
+              </tr>
+              <tr>                    
+                  <td>#35</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/wqs/cmark">Caroline Marks</a> </td>
+                  <td>12.43</td>
+                  <td>63.64%</td>
+                  <td>71.84</td>
+              </tr>
+              <tr>                    
+                  <td>#36</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/wqs/fpal">Felicity Palmateer</a> </td>
+                  <td>12.24</td>
+                  <td>64.29%</td>
+                  <td>71.54</td>
+              </tr>
+              <tr>                    
+                  <td>#37</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/wqs/kenri">Kobie Enright</a> </td>
+                  <td>12.0</td>
+                  <td>64.71%</td>
+                  <td>70.98</td>
+              </tr>
+              <tr>                    
+                  <td>#38</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/wqs/agom">Anali Gomez</a> </td>
+                  <td>11.64</td>
+                  <td>66.67%</td>
+                  <td>70.79</td>
+              </tr>
+              <tr>                    
+                  <td>#39</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/wqs/bbui">Bianca Buitendag</a> </td>
+                  <td>12.63</td>
+                  <td>60.0%</td>
+                  <td>70.67</td>
+              </tr>
+              <tr>                    
+                  <td>#40</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/wqs/mle">Maud Le Car</a> </td>
+                  <td>11.98</td>
+                  <td>63.64%</td>
+                  <td>70.38</td>
+              </tr>
+      </tbody>
+  </table>
+
+            </div>
+        </div>
+    	<div id="surfer_name" class="row container_page">
+            <h1>Sufers by name</h1>
         				<div class="col-sm-12 ">
     		    			<h3>A</h3>	
     		    		</div>

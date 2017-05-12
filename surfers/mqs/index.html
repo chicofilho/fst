@@ -87,7 +87,378 @@
 <hr class="star-primary"/>
 <section >
     <div class="container">
-    	<div class="row">
+        <div class="row">
+            <div class="col-sm-12">
+                <p>Only the top 40 surfers are shown on stats. But you can still find the surfer by the alphabetical sorting</p>
+                <div class="btn-group center" data-toggle="buttons">
+                  <label class="btn btn-primary active">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Top Stats
+                  </label>
+                  <label class="btn btn-primary">
+                    <input type="radio" name="options" id="option2" autocomplete="off"> All Surfers by Name
+                  </label>
+                </div>    
+            </div>
+            <script type="text/javascript">
+                $('document').ready(function(){
+                    console.log("....")
+                    console.log($('#option1'))
+                    $('#option1').change(function(){
+                        console.log('blah')
+                        $('.container_page').hide();
+                        $('#stats').show();
+                    })
+
+                    $('#option2').change(function(){
+                        $('.container_page').hide();
+                        $('#surfer_name').show();
+                    })
+                })
+            </script>
+        </div>
+        <hr/>
+        <div id="stats" class="row container_page" >
+            <div class="col-sm-12 ">
+                <h1>Top Stats</h1>
+                  <table class="table table-striped">
+      <thead>
+          <tr>
+            <th>Stat Rank</th>  
+            <th>Name</th>
+            <th>Average Heat Score</th>
+            <th>Winning Percentage</th>
+            <th>Stat Points</th>
+            
+          </tr>
+      </thead>
+      <tbody>
+              <tr>                    
+                  <td>#1</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mqs/tcam">Thiago Camarao</a> </td>
+                  <td>14.85</td>
+                  <td>92.86%</td>
+                  <td>93.75</td>
+              </tr>
+              <tr>                    
+                  <td>#2</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mqs/szie">Sebastian Zietz</a> </td>
+                  <td>16.97</td>
+                  <td>80.0%</td>
+                  <td>93.08</td>
+              </tr>
+              <tr>                    
+                  <td>#3</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mqs/kasi">Keanu Asing</a> </td>
+                  <td>15.37</td>
+                  <td>84.21%</td>
+                  <td>90.63</td>
+              </tr>
+              <tr>                    
+                  <td>#4</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mqs/akat">Arashi Kato</a> </td>
+                  <td>14.67</td>
+                  <td>85.71%</td>
+                  <td>89.37</td>
+              </tr>
+              <tr>                    
+                  <td>#5</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mqs/gzub">Gony Zubizarreta</a> </td>
+                  <td>14.06</td>
+                  <td>88.89%</td>
+                  <td>89.3</td>
+              </tr>
+              <tr>                    
+                  <td>#6</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mqs/atef">Ariihoe Tefaafana</a> </td>
+                  <td>13.66</td>
+                  <td>87.5%</td>
+                  <td>87.36</td>
+              </tr>
+              <tr>                    
+                  <td>#7</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mqs/mfeb">Michael February</a> </td>
+                  <td>13.8</td>
+                  <td>85.71%</td>
+                  <td>86.8</td>
+              </tr>
+              <tr>                    
+                  <td>#8</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mqs/jwil">Julian Wilson</a> </td>
+                  <td>15.63</td>
+                  <td>75.0%</td>
+                  <td>86.45</td>
+              </tr>
+              <tr>                    
+                  <td>#9</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mqs/ade">Adriano de Souza</a> </td>
+                  <td>14.56</td>
+                  <td>80.0%</td>
+                  <td>85.97</td>
+              </tr>
+              <tr>                    
+                  <td>#10</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mqs/wcarm">Wade Carmichael</a> </td>
+                  <td>15.07</td>
+                  <td>75.0%</td>
+                  <td>84.8</td>
+              </tr>
+              <tr>                    
+                  <td>#11</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mqs/hohh">Hiroto Ohhara</a> </td>
+                  <td>14.46</td>
+                  <td>77.42%</td>
+                  <td>84.29</td>
+              </tr>
+              <tr>                    
+                  <td>#12</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mqs/pcri">Peterson Crisanto</a> </td>
+                  <td>13.68</td>
+                  <td>80.95%</td>
+                  <td>83.89</td>
+              </tr>
+              <tr>                    
+                  <td>#13</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mqs/rtei">Rafael Teixeira</a> </td>
+                  <td>14.55</td>
+                  <td>76.0%</td>
+                  <td>83.78</td>
+              </tr>
+              <tr>                    
+                  <td>#14</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mqs/kiga">Kanoa Igarashi</a> </td>
+                  <td>14.65</td>
+                  <td>75.0%</td>
+                  <td>83.56</td>
+              </tr>
+              <tr>                    
+                  <td>#15</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mqs/egei">Evan Geiselman</a> </td>
+                  <td>14.27</td>
+                  <td>76.92%</td>
+                  <td>83.46</td>
+              </tr>
+              <tr>                    
+                  <td>#16</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mqs/btho">Blake Thornton</a> </td>
+                  <td>14.54</td>
+                  <td>75.0%</td>
+                  <td>83.22</td>
+              </tr>
+              <tr>                    
+                  <td>#17</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mqs/tcer">Thomas Cervi</a> </td>
+                  <td>13.23</td>
+                  <td>81.25%</td>
+                  <td>82.74</td>
+              </tr>
+              <tr>                    
+                  <td>#18</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mqs/gram">Gustavo Ramos</a> </td>
+                  <td>14.38</td>
+                  <td>75.0%</td>
+                  <td>82.74</td>
+              </tr>
+              <tr>                    
+                  <td>#19</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mqs/afill">Anthony Fillingim</a> </td>
+                  <td>13.28</td>
+                  <td>80.0%</td>
+                  <td>82.2</td>
+              </tr>
+              <tr>                    
+                  <td>#20</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mqs/tmac">Tim Macdonald</a> </td>
+                  <td>12.62</td>
+                  <td>83.33%</td>
+                  <td>82.04</td>
+              </tr>
+              <tr>                    
+                  <td>#21</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mqs/jcou">Jorgann Couzinet</a> </td>
+                  <td>13.75</td>
+                  <td>77.14%</td>
+                  <td>82.04</td>
+              </tr>
+              <tr>                    
+                  <td>#22</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mqs/psta">Perth Standlick</a> </td>
+                  <td>14.13</td>
+                  <td>75.0%</td>
+                  <td>82.03</td>
+              </tr>
+              <tr>                    
+                  <td>#23</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mqs/mhiq">Mateia Hiquily</a> </td>
+                  <td>14.72</td>
+                  <td>71.43%</td>
+                  <td>81.84</td>
+              </tr>
+              <tr>                    
+                  <td>#24</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mqs/hbet">Hizunome Bettero</a> </td>
+                  <td>14.02</td>
+                  <td>75.0%</td>
+                  <td>81.69</td>
+              </tr>
+              <tr>                    
+                  <td>#25</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mqs/hbat">Halley Batista</a> </td>
+                  <td>14.02</td>
+                  <td>75.0%</td>
+                  <td>81.68</td>
+              </tr>
+              <tr>                    
+                  <td>#26</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mqs/rcal">Ryan Callinan</a> </td>
+                  <td>14.66</td>
+                  <td>71.43%</td>
+                  <td>81.65</td>
+              </tr>
+              <tr>                    
+                  <td>#27</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mqs/hluc">Heremoana Luciani</a> </td>
+                  <td>13.24</td>
+                  <td>78.57%</td>
+                  <td>81.33</td>
+              </tr>
+              <tr>                    
+                  <td>#28</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mqs/kgar">Kilian Garland</a> </td>
+                  <td>13.84</td>
+                  <td>75.0%</td>
+                  <td>81.16</td>
+              </tr>
+              <tr>                    
+                  <td>#29</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mqs/rwai">Rio Waida</a> </td>
+                  <td>13.49</td>
+                  <td>76.47%</td>
+                  <td>80.93</td>
+              </tr>
+              <tr>                    
+                  <td>#30</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mqs/jsha">Jayke Sharp</a> </td>
+                  <td>13.4</td>
+                  <td>76.92%</td>
+                  <td>80.91</td>
+              </tr>
+              <tr>                    
+                  <td>#31</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mqs/kkym">Krystian Kymerson</a> </td>
+                  <td>13.74</td>
+                  <td>75.0%</td>
+                  <td>80.86</td>
+              </tr>
+              <tr>                    
+                  <td>#32</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mqs/lwoo">Luan Wood</a> </td>
+                  <td>13.7</td>
+                  <td>75.0%</td>
+                  <td>80.75</td>
+              </tr>
+              <tr>                    
+                  <td>#33</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mqs/jwat">Jordin Watson</a> </td>
+                  <td>12.75</td>
+                  <td>80.0%</td>
+                  <td>80.64</td>
+              </tr>
+              <tr>                    
+                  <td>#34</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mqs/jmen">Jesse Mendes</a> </td>
+                  <td>12.5</td>
+                  <td>81.25%</td>
+                  <td>80.58</td>
+              </tr>
+              <tr>                    
+                  <td>#35</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mqs/atoy">Adrien Toyon</a> </td>
+                  <td>13.87</td>
+                  <td>73.33%</td>
+                  <td>80.35</td>
+              </tr>
+              <tr>                    
+                  <td>#36</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mqs/arib">Alex Ribeiro</a> </td>
+                  <td>13.98</td>
+                  <td>72.73%</td>
+                  <td>80.35</td>
+              </tr>
+              <tr>                    
+                  <td>#37</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mqs/fmor">Frederico Morais</a> </td>
+                  <td>13.49</td>
+                  <td>75.0%</td>
+                  <td>80.14</td>
+              </tr>
+              <tr>                    
+                  <td>#38</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mqs/lfio">Leonardo Fioravanti</a> </td>
+                  <td>14.13</td>
+                  <td>71.43%</td>
+                  <td>80.1</td>
+              </tr>
+              <tr>                    
+                  <td>#39</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mqs/mfer">Marco Fernandez</a> </td>
+                  <td>14.02</td>
+                  <td>71.43%</td>
+                  <td>79.77</td>
+              </tr>
+              <tr>                    
+                  <td>#40</td>
+
+                  <td><a href="http://fantasysurfingtips.com/surfers/mqs/bdor">Brent Dorrington</a> </td>
+                  <td>14.23</td>
+                  <td>70.0%</td>
+                  <td>79.62</td>
+              </tr>
+      </tbody>
+  </table>
+
+            </div>
+        </div>
+    	<div id="surfer_name" class="row container_page">
+            <h1>Sufers by name</h1>
         				<div class="col-sm-12 ">
     		    			<h3>A</h3>	
     		    		</div>
