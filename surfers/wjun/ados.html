@@ -85,10 +85,10 @@
 <section >
     <div class="container">
     	<div class="row">
-    		<div class="col-sm-4 ">
-    			<div class="col-sm-3 ">
+    		<div class="col-sm-3 ">
+    			<div class="col-sm-2 ">
     			</div>
-    			<div class="col-sm-6 ">
+    			<div class="col-sm-8 ">
 	                <!-- <img src="http://fantasysurfingtips.com/img/surfers/ados.png" class="img-responsive" alt=""> -->
 	                <h3 style="text-align:center;">Anne Dos Santos</h3>
 
@@ -97,32 +97,44 @@
 					<a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Ffantasysurfingtips.com%2Fsurfers%2Fados&amp;src=sdkpreparse"><i class="fa fa-facebook"></i> Share on Facebook</a>
 	               
                 </div>
-                <div class="col-sm-3 ">
+                <div class="col-sm-2 ">
     			</div>
             </div>
-            <div class="col-sm-4 portfolio-item">
+            <div class="col-sm-3 portfolio-item">
+            </div>
+            <div class="col-sm-3 portfolio-item">
               	<h6 style="text-align:center;">Avg Heat Score (FST DATA)</h6>
-                <h1 style="text-align:center;">5.27</h1>
+                <h1 style="text-align:center;">8.53</h1>
+            </div>
+            <div class="col-sm-3 portfolio-item">
+              	<h6 style="text-align:center;">Avg Heat Score (2017)</h6>
+                <h2 style="text-align:center;">11.8</h2>
             </div>
     	</div>
     	
+    		<hr/>
     		<h4 style="text-align:center;" >Competitions</h4>
-    		<div class="row">
-    				<div class="col-sm-6">
-    					 <p style="text-align:center;"><a href="http://fantasysurfingtips.com/surfers/wjun/ados">wjun</a>
-    					</p>
-    				</div>
-    				<div class="col-sm-6">
-    					 <p style="text-align:center;"><a href="http://fantasysurfingtips.com/surfers/wqs/ados">wqs</a>
-    					</p>
-    				</div>
-    		</div>
+					<div class="row">
+						<div class="col-sm-4">
+							<h4 style="text-align:center;">
+								<a href="http://fantasysurfingtips.com/surfers/wjun/ados">wjun</a>
+							</h4>
+						</div>
+						<div class="col-sm-4">
+							<h6 style="text-align:center;">Stat Rank</h6>
+							<p style="text-align:center;">#11</p>
+						</div>
+						<div class="col-sm-4">
+							<h6 style="text-align:center;">Stat Points</h6>
+							<p style="text-align:center;">81.31</p>
+						</div>
+					</div>
+					<hr/>
 
-	    		<hr/>
 	    		<h4 style="text-align:center;" >Epic Battles</h4>
 	    		<div class="row">
 	    			<div class="col-sm-6 ">
-		                <p style="text-align:center;">Surfed <b>1</b> heats against <a href="http://fantasysurfingtips.com/surfers/wjun/ktea.html"> Kea Tea Kapuhuia Smith</a> <br/> <b>won 1</b> and <b>lost 0</b></p>
+		                <p style="text-align:center;">Surfed <b>2</b> heats against <a href="http://fantasysurfingtips.com/surfers/wjun/ktea.html"> Kea Tea Kapuhuia Smith</a> <br/> <b>won 2</b> and <b>lost 0</b></p>
 		                
 	                </div>
 	                <div class="col-sm-6 ">
@@ -135,15 +147,31 @@
     	<div  class="row">
     		<div class="col-sm-4 portfolio-item">
               	<h6 style="text-align:center;">Heats</h6>
-                <h2 style="text-align:center;">3</h2>
+                <h2 style="text-align:center;">6</h2>
             </div>
               <div class="col-sm-4 portfolio-item">
               	<h6 style="text-align:center;">Heat wins</h6>
-                <h2 style="text-align:center;">1</h2>
+                <h2 style="text-align:center;">3</h2>
             </div>
             <div class="col-sm-4 portfolio-item">
               	<h6 style="text-align:center;">HEAT WINS PERCENTAGE</h6>
-                <h2 style="text-align:center;">33.33%</h2>
+                <h2 style="text-align:center;">50.0%</h2>
+            </div>
+    	</div>
+    	<hr/>
+    	<h4 style="text-align:center;">Heat Stats (2017)</h4>
+    	<div class="row">
+    		<div class="col-sm-4 portfolio-item">
+              	<h6 class="font-small" style="text-align:center;">HEATS</h6>
+                <h2 class="large" style="text-align:center;">3</h2>
+            </div>
+              <div class="col-sm-4 portfolio-item">
+              	<h6 style="text-align:center;">HEAT WINS</h6>
+                <h2 style="text-align:center;">2</h2>
+            </div>
+            <div class="col-sm-4 portfolio-item">
+              	<h6 style="text-align:center;">HEAT WINS PERCENTAGE</h6>
+                <h2 style="text-align:center;">66.67%</h2>
             </div>
     	</div>
     	<hr/>
@@ -213,7 +241,7 @@
 		  element: 'avg_chart',
 		  // Chart data records -- each entry in this array corresponds to a point on
 		  // the chart.
-		  data: [{"year":"2016","avg":5.27,"avg_all":5.27}],
+		  data: [{"year":"2016","avg":5.27,"avg_all":8.53},{"year":"2017","avg":11.8,"avg_all":8.53}],
 
 		  // The name of the data record attribute that contains x-values.
 		  xkey: 'year',
@@ -229,7 +257,7 @@
 		  element: 'heat_chart',
 		  // Chart data records -- each entry in this array corresponds to a point on
 		  // the chart.
-		  data: [{"year":"2016","heats":3,"wins":1,"percs":"33.33%"}],
+		  data: [{"year":"2016","heats":3,"wins":1,"percs":"33.33%"},{"year":"2017","heats":3,"wins":2,"percs":"66.67%"}],
 
 		  // The name of the data record attribute that contains x-values.
 		  xkey: 'year',
