@@ -421,7 +421,7 @@
                 var i = 0
                 picks = []
 
-                while(picks.length < 9){
+                while(picks.length < 8){
                     
                     surfer = picked_result[i][0]
                     //console.log(surfer)
@@ -433,7 +433,8 @@
 
                     if(!has_matchup){
                         if(contains.call(rd_heads, surfer) && 
-                            !contains.call(picks, surfer) ){
+                            !contains.call(picks, surfer) &&
+                            picks.length < 8){
                             picks.push(surfer)
                             //i = 0
                         }
@@ -443,11 +444,11 @@
                    
                     console.log(picks)
 
-                    if(sumSurfersPrice(picks)>500){
+                    if(sumSurfersPrice(picks)>500 && picks.length < 9){
                         value = 0
                         for (var j = picks.length - 1; j >= 0; j--) {
                             picks[j]
-                            if(parseFloat(getValueOfSurfer(picks[j]))>62.5){
+                            if(parseFloat(getValueOfSurfer(picks[j]))>=62.5){
                                 value = j
                                 break;
                             }
@@ -521,7 +522,8 @@
             })
 
             function updateRank(picked_result){
-                
+                console.log(";;;;;")
+                console.log(picked_result)
                 $('#a1').html(toTitleCase(picked_result[0]))
                 $('#a2').html(toTitleCase(picked_result[1]))
 
