@@ -60,169 +60,168 @@
     <div w3-include-html="https://fantasysurfingtips.com/layout/sponsor.html"></div> 
 
     <!-- Portfolio Grid Section -->
-    <section id="portfolio">
-        <div class="container">
-            <h1 class="text-center">WSL Fantasy Simulator (Outerknown Fiji)</h1>
-            <h3>Choose the rankings you believe the most</h3>
-            <hr class="star-primary">
-            <!-- <p>It may change, the official tier division is not yet published at wsl</p> -->
-            <p>The positions in the picks reflect the position ranks. Sometimes the tier picks stay the same, but surfers change positions, that reflects the rankings. </p>
-            <p> By choosing overall the other ranks will be ignored. Only overall will be used </p>
-            <p>Help us grow, <a href="https://twitter.com/FanSurfingTips">spread</a> the word :)</p>
-            <hr/>
-            <h4>Rankings:</h4>
+    <div class="container">
+        <h1 class="text-center">Outerknown Fiji</h1>
+        <h3 class="text-center">WSL Fantasy Simulator</h3>
+        <h5 class="text-center">Choose the rankings you believe the most</h5>
+        <hr class="star-primary">
+        <!-- <p>It may change, the official tier division is not yet published at wsl</p> -->
+        <p class="small">The positions in the picks reflect the position ranks. Sometimes the tier picks stay the same, but surfers change positions, that reflects the rankings. </p>
+        <p class="small"> By choosing overall the other ranks will be ignored. Only overall will be used </p>
+        <p class="small">Help us grow, <a href="https://twitter.com/FanSurfingTips">spread</a> the word :)</p>
+        <hr/>
+        <h4>Rankings:</h4>
+        <div class="row">
+            <div class="col-lg-2">
+                <p> <input id="momentum" type="checkbox" value="momentum"/> Momentum    </p>
+            </div>
+            <div class="col-lg-2">    
+                <p> <input id="performance" type="checkbox" value="performance" /> Performance   </p>
+            </div>
+            <div class="col-lg-2">        
+                <p> <input id="past_position" type="checkbox" value="past_position"/> Past Position   </p>
+            </div>
+            <div class="col-lg-2">        
+                <p> <input id="overall" type="checkbox" value="overall"/> Overall   </p>
+            </div>
+            <div class="col-lg-2">        
+                <p> <input id="rd1_matchups" type="checkbox" value="overall"/> Avoid RD1 Matchups    </p>
+            </div>
             <div class="row">
                 <div class="col-lg-2">
-                    <p> <input id="momentum" type="checkbox" value="momentum"/> Momentum    </p>
-                </div>
-                <div class="col-lg-2">    
-                    <p> <input id="performance" type="checkbox" value="performance" /> Performance   </p>
-                </div>
-                <div class="col-lg-2">        
-                    <p> <input id="past_position" type="checkbox" value="past_position"/> Past Position   </p>
-                </div>
-                <div class="col-lg-2">        
-                    <p> <input id="overall" type="checkbox" value="overall"/> Overall   </p>
-                </div>
-                <div class="col-lg-2">        
-                    <p> <input id="rd1_matchups" type="checkbox" value="overall"/> Avoid RD1 Matchups    </p>
-                </div>
-                <div class="row">
-                    <div class="col-lg-2">
-                        <button id="generate" type="button" class="btn btn-primary">Generate</button>
-                        <button id="random" type="button" class="btn btn-secondary">Random Picks</button>
-                        
-                    </div>
-                </div>      
-            </div>
-            <hr class="star-primary">
-            <div class="row">
-                <div class="col-lg-3">
-                </div>
-                <div class="col-lg-6">
-                    <h4 style="text-align: center;">
-                    FANTASY SURFING TIPS TEAM SIMULATOR
-                    </h4>
-                </div>
-                <div class="col-lg-3">
-                </div>
-            </div>
-            <div class="row">
-                    <div class="col-lg-4">
-                    </div>
-                   
-                    <div class="col-lg-4">
-                        <h4>Tier A</h4>
-                        <div class="row">
-                            <div  class="col-lg-6">
-                                <p id="a1">John John Florence</p>
-                            </div>
-                            <div  class="col-lg-6">
-                                <p id="a2">Adriano de Souza</p>
-                            </div>
-                        </div>
-                        <h4>Tier B</h4>
-                        <div class="row">
-                            <div class="col-lg-3">
-                                <p id="b1">Gabriel Medina</p>
-                            </div>
-                            <div class="col-lg-3">
-                                <p id="b2">Sebastian Ziets</p>
-                            </div>
-                            <div class="col-lg-3">
-                                <p id="b3" >Jack Freestone</p>
-                            </div>
-                            <div class="col-lg-3">
-                                <p id="b4" >Matt Wilkinson</p>
-                            </div>
-                        </div>
-                        <h4>Tier C</h4>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <p id="c1">Nat Young</p>
-                            </div>
-                            <div class="col-lg-6">
-                                <p id="c2" >Bede Durbidge</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        
-                    </div>
-            </div>
-            <hr class="star-primary">
-            <div class="row">
-                <div class="col-lg-3">
-                </div>
-                <div class="col-lg-6">
-                    <h4 style="text-align: center;">
-                    FANTASY SURFING TIPS ROUND SIMULATOR
-                    </h4>
-                    <p>The surfer in bold wins the heat. We are still improving this simulation. Follow our <a href="https://twitter.com/FanSurfingTips">Twitter</a> and check the news!</p>
-                </div>
-                <div class="col-lg-3">
-
-                </div>
-            </div>
-            <h4 style="text-align: center;">Round 1</h4>
-            <hr class="star-primary">
-            <div id="rd1" class="row">
-                <div id="rd1-container" class="row">
-                    
+                    <button id="generate" type="button" class="btn btn-primary">Generate</button>
+                    <button id="random" type="button" class="btn btn-secondary">Random Picks</button>
                     
                 </div>
+            </div>      
+        </div>
+        <hr class="star-primary">
+        <div class="row">
+            <div class="col-lg-3">
             </div>
-            <h4 style="text-align: center;">Round 2</h4>
-            <hr class="star-primary">
-            <div id="rd2" class="row">
-                <div id="rd2-container" class="row">
-                    
-                </div>
+            <div class="col-lg-6">
+                <h4 style="text-align: center;">
+                FANTASY SURFING TIPS TEAM SIMULATOR
+                </h4>
             </div>
-            <h4 style="text-align: center;">Round 3</h4>
-            <hr class="star-primary">
-            <div id="rd3" class="row">
-                <div id="rd3-container" class="row">
-                    
-                </div>
-            </div>
-            <h4 style="text-align: center;">Round 4</h4>
-            <hr class="star-primary">
-            <div id="rd4" class="row">
-                <div id="rd4-container" class="row">
-                    
-                </div>
-            </div>
-            <h4 style="text-align: center;">Round 5</h4>
-            <hr class="star-primary">
-            <div id="rd5" class="row">
-                <div id="rd5-container" class="row">
-                    
-                </div>
-            </div>
-            <h4 style="text-align: center;">Quarter Finals</h4>
-            <hr class="star-primary">
-            <div id="qf" class="row">
-                <div id="qf-container" class="row">
-                    
-                </div>
-            </div>
-            <h4 style="text-align: center;">Semi Finals</h4>
-            <hr class="star-primary">
-            <div id="sf" class="row">
-                <div id="sf-container" class="row">
-                    
-                </div>
-            </div>
-            <h4 style="text-align: center;">Final</h4>
-            <hr class="star-primary">
-            <div id="f" class="row">
-                <div id="f-container" class="row">
-                    
-                </div>
+            <div class="col-lg-3">
             </div>
         </div>
-    </section>
+        <div class="row">
+                <div class="col-lg-4">
+                </div>
+               
+                <div class="col-lg-4">
+                    <h4>Tier A</h4>
+                    <div class="row">
+                        <div  class="col-lg-6">
+                            <p id="a1"></p>
+                        </div>
+                        <div  class="col-lg-6">
+                            <p id="a2"></p>
+                        </div>
+                    </div>
+                    <h4>Tier B</h4>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <p id="b1"></p>
+                        </div>
+                        <div class="col-lg-3">
+                            <p id="b2"></p>
+                        </div>
+                        <div class="col-lg-3">
+                            <p id="b3" ></p>
+                        </div>
+                        <div class="col-lg-3">
+                            <p id="b4" ></p>
+                        </div>
+                    </div>
+                    <h4>Tier C</h4>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <p id="c1"></p>
+                        </div>
+                        <div class="col-lg-6">
+                            <p id="c2" ></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    
+                </div>
+        </div>
+        <hr class="star-primary">
+        <div class="row">
+            <div class="col-lg-3">
+            </div>
+            <div class="col-lg-6">
+                <h4 style="text-align: center;">
+                FANTASY SURFING TIPS ROUND SIMULATOR
+                </h4>
+                <p>The surfer in bold wins the heat. We are still improving this simulation. Follow our <a href="https://twitter.com/FanSurfingTips">Twitter</a> and check the news!</p>
+            </div>
+            <div class="col-lg-3">
+
+            </div>
+        </div>
+        <h4 style="text-align: center;">Round 1</h4>
+        <hr class="star-primary">
+        <div id="rd1" class="row">
+            <div id="rd1-container" class="row">
+                
+                
+            </div>
+        </div>
+        <h4 style="text-align: center;">Round 2</h4>
+        <hr class="star-primary">
+        <div id="rd2" class="row">
+            <div id="rd2-container" class="row">
+                
+            </div>
+        </div>
+        <h4 style="text-align: center;">Round 3</h4>
+        <hr class="star-primary">
+        <div id="rd3" class="row">
+            <div id="rd3-container" class="row">
+                
+            </div>
+        </div>
+        <h4 style="text-align: center;">Round 4</h4>
+        <hr class="star-primary">
+        <div id="rd4" class="row">
+            <div id="rd4-container" class="row">
+                
+            </div>
+        </div>
+        <h4 style="text-align: center;">Round 5</h4>
+        <hr class="star-primary">
+        <div id="rd5" class="row">
+            <div id="rd5-container" class="row">
+                
+            </div>
+        </div>
+        <h4 style="text-align: center;">Quarter Finals</h4>
+        <hr class="star-primary">
+        <div id="qf" class="row">
+            <div id="qf-container" class="row">
+                
+            </div>
+        </div>
+        <h4 style="text-align: center;">Semi Finals</h4>
+        <hr class="star-primary">
+        <div id="sf" class="row">
+            <div id="sf-container" class="row">
+                
+            </div>
+        </div>
+        <h4 style="text-align: center;">Final</h4>
+        <hr class="star-primary">
+        <div id="f" class="row">
+            <div id="f-container" class="row">
+                
+            </div>
+        </div>
+    </div>
 
 
 
