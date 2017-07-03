@@ -1,8 +1,8 @@
 {
 	"events":[{
-		"name": "Outerknown Fiji",
+		"name": "Corona Open J-Bay",
 		"tierA": [{"nome": "John John Florence", "codigo":"jjoh"}, {"nome":"Owen Wright", "codigo":"owri"}],
-		"tierB": [{"nome":"Gabriel Medina", "codigo":"gmed"}, {"nome":"Mick Fanning", "codigo":"mfan"}, {"nome":"Adrian Buchan", "codigo":"abuc"}, {"nome":"Julian Wilson", "codigo":"jwil"}],
-		"tierC": [{"nome":"Bede Durbidge", "codigo":"bdur"}, {"nome":"Nat Young", "codigo":"nyou"}] 
+		"tierB": [{"nome":"Gabriel Medina", "codigo":"gmed"}, {"nome":"Mick Fanning", "codigo":"mfan"}, {"nome":"Kelly Slater", "codigo":"ksla"}, {"nome":"Michel Bourez", "codigo":"mbou"}],
+		"tierC": [{"nome":"Jadson Andre", "codigo":"jand"}, {"nome":"Jack Freestone", "codigo":"jfre"}] 
 		}]
 }
