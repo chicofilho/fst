@@ -118,11 +118,11 @@
 						</div>
 						<div class="col-sm-4">
 							<h6 style="text-align:center;">Stat Rank</h6>
-							<p style="text-align:center;">#95</p>
+							<p style="text-align:center;">#22</p>
 						</div>
 						<div class="col-sm-4">
 							<h6 style="text-align:center;">Stat Points</h6>
-							<p style="text-align:center;">74.51</p>
+							<p style="text-align:center;">80.48</p>
 						</div>
 					</div>
 					<hr/>
@@ -154,6 +154,518 @@
                 <h2 style="text-align:center;">21.43%</h2>
             </div>
     	</div>
+    	
+	    	<hr/>
+<h4 style="text-align:center;">Progression through seasons</h4>
+	<p class="small" style="text-align:center;">You can choose a championship and a metric to analyze how the surfer is progressing through the season. </p>
+	<div class="row">
+			<div class="col-sm-12" style="margin-bottom:10px;">
+				<div class="dropdown">
+				  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Choose Event
+				  <span class="caret"></span></button>
+				  <ul class="dropdown-menu" style="z-index:999;">
+				  			<li href="#" id="event-quiksilver-pro-gold-coast" class="event-picker">Gold Coast, Queensland, Australia</li>
+				  			<li href="#" id="event-rip-curl-pro-bells-beach" class="event-picker">Bells Beach, Victoria, Australia</li>
+				  			<li href="#" id="event-volcom-fiji-pro" class="event-picker">Namotu, Tavarua, Fiji</li>
+				  			<li href="#" id="event-billabong-pro-teahupoo" class="event-picker">Teahupoʻo, Tahiti</li>
+				  </ul>
+				</div>	
+			</div>
+			
+			<div class="col-sm-12">
+				<div class="dropdown">
+				  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Choose Metric
+				  <span class="caret"></span></button>
+				  <ul class="dropdown-menu" style="z-index:999;">
+				  			<li href="#" id="graph-0" class="graph-picker">Average Heat Score</li>
+				  			<li href="#" id="graph-1" class="graph-picker">Winning Percentage</li>
+				  			<li href="#" id="graph-2" class="graph-picker">WSL Fantasy Points</li>
+				  			<li href="#" id="graph-3" class="graph-picker">FS Fantasy Surfer Points</li>
+				  </ul>
+				</div>
+			</div>
+		
+	</div>
+
+
+		<div class="row season-graph graph-0 event-quiksilver-pro-gold-coast">
+			<h5 style="text-align:center;">quiksilver-pro-gold-coast</h5>
+	
+			<h6 style="text-align:center;">Average Heat Score</h6>
+			<div id="season_events_quiksilver-pro-gold-coast_0"  style="height: 250px;"></div>
+		
+			<script type="text/javascript">
+				$('document').ready(function(){
+					new Morris.Line({
+					  // ID of the element in which to draw the chart.
+					  element: 'season_events_quiksilver-pro-gold-coast_0',
+					  // Chart data records -- each entry in this array corresponds to a point on
+					  // the chart.
+					  data: [{"year":"2013","y":14.05}],
+
+					  // The name of the data record attribute that contains x-values.
+					  xkey: 'year',
+					  // A list of names of data record attributes that contain y-values.
+					  ykeys: 'y',
+					  // Labels for the ykeys -- will be displayed when you hover over the
+					  // chart.
+					  labels: ['Average Heat Score']
+					});
+
+				});
+			</script>
+		</div>
+		
+		<div class="row season-graph graph-1 event-quiksilver-pro-gold-coast">
+			<h5 style="text-align:center;">quiksilver-pro-gold-coast</h5>
+	
+			<h6 style="text-align:center;">Winning Percentage</h6>
+			<div id="season_events_quiksilver-pro-gold-coast_1"  style="height: 250px;"></div>
+		
+			<script type="text/javascript">
+				$('document').ready(function(){
+					new Morris.Line({
+					  // ID of the element in which to draw the chart.
+					  element: 'season_events_quiksilver-pro-gold-coast_1',
+					  // Chart data records -- each entry in this array corresponds to a point on
+					  // the chart.
+					  data: [{"year":"2013","y":0.0}],
+
+					  // The name of the data record attribute that contains x-values.
+					  xkey: 'year',
+					  // A list of names of data record attributes that contain y-values.
+					  ykeys: 'y',
+					  // Labels for the ykeys -- will be displayed when you hover over the
+					  // chart.
+					  labels: ['Winning Percentage']
+					});
+
+				});
+			</script>
+		</div>
+		
+		<div class="row season-graph graph-2 event-quiksilver-pro-gold-coast">
+			<h5 style="text-align:center;">quiksilver-pro-gold-coast</h5>
+	
+			<h6 style="text-align:center;">WSL Fantasy Points</h6>
+			<div id="season_events_quiksilver-pro-gold-coast_2"  style="height: 250px;"></div>
+		
+			<script type="text/javascript">
+				$('document').ready(function(){
+					new Morris.Line({
+					  // ID of the element in which to draw the chart.
+					  element: 'season_events_quiksilver-pro-gold-coast_2',
+					  // Chart data records -- each entry in this array corresponds to a point on
+					  // the chart.
+					  data: [{"year":"2013","y":45.1}],
+
+					  // The name of the data record attribute that contains x-values.
+					  xkey: 'year',
+					  // A list of names of data record attributes that contain y-values.
+					  ykeys: 'y',
+					  // Labels for the ykeys -- will be displayed when you hover over the
+					  // chart.
+					  labels: ['WSL Fantasy Points']
+					});
+
+				});
+			</script>
+		</div>
+		
+		<div class="row season-graph graph-3 event-quiksilver-pro-gold-coast">
+			<h5 style="text-align:center;">quiksilver-pro-gold-coast</h5>
+	
+			<h6 style="text-align:center;">FS Fantasy Surfer Points</h6>
+			<div id="season_events_quiksilver-pro-gold-coast_3"  style="height: 250px;"></div>
+		
+			<script type="text/javascript">
+				$('document').ready(function(){
+					new Morris.Line({
+					  // ID of the element in which to draw the chart.
+					  element: 'season_events_quiksilver-pro-gold-coast_3',
+					  // Chart data records -- each entry in this array corresponds to a point on
+					  // the chart.
+					  data: [{"year":"2013","y":43}],
+
+					  // The name of the data record attribute that contains x-values.
+					  xkey: 'year',
+					  // A list of names of data record attributes that contain y-values.
+					  ykeys: 'y',
+					  // Labels for the ykeys -- will be displayed when you hover over the
+					  // chart.
+					  labels: ['FS Fantasy Surfer Points']
+					});
+
+				});
+			</script>
+		</div>
+		
+		<div class="row season-graph graph-0 event-rip-curl-pro-bells-beach">
+			<h5 style="text-align:center;">rip-curl-pro-bells-beach</h5>
+	
+			<h6 style="text-align:center;">Average Heat Score</h6>
+			<div id="season_events_rip-curl-pro-bells-beach_0"  style="height: 250px;"></div>
+		
+			<script type="text/javascript">
+				$('document').ready(function(){
+					new Morris.Line({
+					  // ID of the element in which to draw the chart.
+					  element: 'season_events_rip-curl-pro-bells-beach_0',
+					  // Chart data records -- each entry in this array corresponds to a point on
+					  // the chart.
+					  data: [{"year":"2013","y":15.76}],
+
+					  // The name of the data record attribute that contains x-values.
+					  xkey: 'year',
+					  // A list of names of data record attributes that contain y-values.
+					  ykeys: 'y',
+					  // Labels for the ykeys -- will be displayed when you hover over the
+					  // chart.
+					  labels: ['Average Heat Score']
+					});
+
+				});
+			</script>
+		</div>
+		
+		<div class="row season-graph graph-1 event-rip-curl-pro-bells-beach">
+			<h5 style="text-align:center;">rip-curl-pro-bells-beach</h5>
+	
+			<h6 style="text-align:center;">Winning Percentage</h6>
+			<div id="season_events_rip-curl-pro-bells-beach_1"  style="height: 250px;"></div>
+		
+			<script type="text/javascript">
+				$('document').ready(function(){
+					new Morris.Line({
+					  // ID of the element in which to draw the chart.
+					  element: 'season_events_rip-curl-pro-bells-beach_1',
+					  // Chart data records -- each entry in this array corresponds to a point on
+					  // the chart.
+					  data: [{"year":"2013","y":75.0}],
+
+					  // The name of the data record attribute that contains x-values.
+					  xkey: 'year',
+					  // A list of names of data record attributes that contain y-values.
+					  ykeys: 'y',
+					  // Labels for the ykeys -- will be displayed when you hover over the
+					  // chart.
+					  labels: ['Winning Percentage']
+					});
+
+				});
+			</script>
+		</div>
+		
+		<div class="row season-graph graph-2 event-rip-curl-pro-bells-beach">
+			<h5 style="text-align:center;">rip-curl-pro-bells-beach</h5>
+	
+			<h6 style="text-align:center;">WSL Fantasy Points</h6>
+			<div id="season_events_rip-curl-pro-bells-beach_2"  style="height: 250px;"></div>
+		
+			<script type="text/javascript">
+				$('document').ready(function(){
+					new Morris.Line({
+					  // ID of the element in which to draw the chart.
+					  element: 'season_events_rip-curl-pro-bells-beach_2',
+					  // Chart data records -- each entry in this array corresponds to a point on
+					  // the chart.
+					  data: [{"year":"2013","y":100.05}],
+
+					  // The name of the data record attribute that contains x-values.
+					  xkey: 'year',
+					  // A list of names of data record attributes that contain y-values.
+					  ykeys: 'y',
+					  // Labels for the ykeys -- will be displayed when you hover over the
+					  // chart.
+					  labels: ['WSL Fantasy Points']
+					});
+
+				});
+			</script>
+		</div>
+		
+		<div class="row season-graph graph-3 event-rip-curl-pro-bells-beach">
+			<h5 style="text-align:center;">rip-curl-pro-bells-beach</h5>
+	
+			<h6 style="text-align:center;">FS Fantasy Surfer Points</h6>
+			<div id="season_events_rip-curl-pro-bells-beach_3"  style="height: 250px;"></div>
+		
+			<script type="text/javascript">
+				$('document').ready(function(){
+					new Morris.Line({
+					  // ID of the element in which to draw the chart.
+					  element: 'season_events_rip-curl-pro-bells-beach_3',
+					  // Chart data records -- each entry in this array corresponds to a point on
+					  // the chart.
+					  data: [{"year":"2013","y":126}],
+
+					  // The name of the data record attribute that contains x-values.
+					  xkey: 'year',
+					  // A list of names of data record attributes that contain y-values.
+					  ykeys: 'y',
+					  // Labels for the ykeys -- will be displayed when you hover over the
+					  // chart.
+					  labels: ['FS Fantasy Surfer Points']
+					});
+
+				});
+			</script>
+		</div>
+		
+		<div class="row season-graph graph-0 event-volcom-fiji-pro">
+			<h5 style="text-align:center;">volcom-fiji-pro</h5>
+	
+			<h6 style="text-align:center;">Average Heat Score</h6>
+			<div id="season_events_volcom-fiji-pro_0"  style="height: 250px;"></div>
+		
+			<script type="text/javascript">
+				$('document').ready(function(){
+					new Morris.Line({
+					  // ID of the element in which to draw the chart.
+					  element: 'season_events_volcom-fiji-pro_0',
+					  // Chart data records -- each entry in this array corresponds to a point on
+					  // the chart.
+					  data: [{"year":"2012","y":5.5}],
+
+					  // The name of the data record attribute that contains x-values.
+					  xkey: 'year',
+					  // A list of names of data record attributes that contain y-values.
+					  ykeys: 'y',
+					  // Labels for the ykeys -- will be displayed when you hover over the
+					  // chart.
+					  labels: ['Average Heat Score']
+					});
+
+				});
+			</script>
+		</div>
+		
+		<div class="row season-graph graph-1 event-volcom-fiji-pro">
+			<h5 style="text-align:center;">volcom-fiji-pro</h5>
+	
+			<h6 style="text-align:center;">Winning Percentage</h6>
+			<div id="season_events_volcom-fiji-pro_1"  style="height: 250px;"></div>
+		
+			<script type="text/javascript">
+				$('document').ready(function(){
+					new Morris.Line({
+					  // ID of the element in which to draw the chart.
+					  element: 'season_events_volcom-fiji-pro_1',
+					  // Chart data records -- each entry in this array corresponds to a point on
+					  // the chart.
+					  data: [{"year":"2012","y":0.0}],
+
+					  // The name of the data record attribute that contains x-values.
+					  xkey: 'year',
+					  // A list of names of data record attributes that contain y-values.
+					  ykeys: 'y',
+					  // Labels for the ykeys -- will be displayed when you hover over the
+					  // chart.
+					  labels: ['Winning Percentage']
+					});
+
+				});
+			</script>
+		</div>
+		
+		<div class="row season-graph graph-2 event-volcom-fiji-pro">
+			<h5 style="text-align:center;">volcom-fiji-pro</h5>
+	
+			<h6 style="text-align:center;">WSL Fantasy Points</h6>
+			<div id="season_events_volcom-fiji-pro_2"  style="height: 250px;"></div>
+		
+			<script type="text/javascript">
+				$('document').ready(function(){
+					new Morris.Line({
+					  // ID of the element in which to draw the chart.
+					  element: 'season_events_volcom-fiji-pro_2',
+					  // Chart data records -- each entry in this array corresponds to a point on
+					  // the chart.
+					  data: [{"year":"2012","y":27.0}],
+
+					  // The name of the data record attribute that contains x-values.
+					  xkey: 'year',
+					  // A list of names of data record attributes that contain y-values.
+					  ykeys: 'y',
+					  // Labels for the ykeys -- will be displayed when you hover over the
+					  // chart.
+					  labels: ['WSL Fantasy Points']
+					});
+
+				});
+			</script>
+		</div>
+		
+		<div class="row season-graph graph-3 event-volcom-fiji-pro">
+			<h5 style="text-align:center;">volcom-fiji-pro</h5>
+	
+			<h6 style="text-align:center;">FS Fantasy Surfer Points</h6>
+			<div id="season_events_volcom-fiji-pro_3"  style="height: 250px;"></div>
+		
+			<script type="text/javascript">
+				$('document').ready(function(){
+					new Morris.Line({
+					  // ID of the element in which to draw the chart.
+					  element: 'season_events_volcom-fiji-pro_3',
+					  // Chart data records -- each entry in this array corresponds to a point on
+					  // the chart.
+					  data: [{"year":"2012","y":37}],
+
+					  // The name of the data record attribute that contains x-values.
+					  xkey: 'year',
+					  // A list of names of data record attributes that contain y-values.
+					  ykeys: 'y',
+					  // Labels for the ykeys -- will be displayed when you hover over the
+					  // chart.
+					  labels: ['FS Fantasy Surfer Points']
+					});
+
+				});
+			</script>
+		</div>
+		
+		<div class="row season-graph graph-0 event-billabong-pro-teahupoo">
+			<h5 style="text-align:center;">billabong-pro-teahupoo</h5>
+	
+			<h6 style="text-align:center;">Average Heat Score</h6>
+			<div id="season_events_billabong-pro-teahupoo_0"  style="height: 250px;"></div>
+		
+			<script type="text/javascript">
+				$('document').ready(function(){
+					new Morris.Line({
+					  // ID of the element in which to draw the chart.
+					  element: 'season_events_billabong-pro-teahupoo_0',
+					  // Chart data records -- each entry in this array corresponds to a point on
+					  // the chart.
+					  data: [{"year":"2012","y":8.77}],
+
+					  // The name of the data record attribute that contains x-values.
+					  xkey: 'year',
+					  // A list of names of data record attributes that contain y-values.
+					  ykeys: 'y',
+					  // Labels for the ykeys -- will be displayed when you hover over the
+					  // chart.
+					  labels: ['Average Heat Score']
+					});
+
+				});
+			</script>
+		</div>
+		
+		<div class="row season-graph graph-1 event-billabong-pro-teahupoo">
+			<h5 style="text-align:center;">billabong-pro-teahupoo</h5>
+	
+			<h6 style="text-align:center;">Winning Percentage</h6>
+			<div id="season_events_billabong-pro-teahupoo_1"  style="height: 250px;"></div>
+		
+			<script type="text/javascript">
+				$('document').ready(function(){
+					new Morris.Line({
+					  // ID of the element in which to draw the chart.
+					  element: 'season_events_billabong-pro-teahupoo_1',
+					  // Chart data records -- each entry in this array corresponds to a point on
+					  // the chart.
+					  data: [{"year":"2012","y":0.0}],
+
+					  // The name of the data record attribute that contains x-values.
+					  xkey: 'year',
+					  // A list of names of data record attributes that contain y-values.
+					  ykeys: 'y',
+					  // Labels for the ykeys -- will be displayed when you hover over the
+					  // chart.
+					  labels: ['Winning Percentage']
+					});
+
+				});
+			</script>
+		</div>
+		
+		<div class="row season-graph graph-2 event-billabong-pro-teahupoo">
+			<h5 style="text-align:center;">billabong-pro-teahupoo</h5>
+	
+			<h6 style="text-align:center;">WSL Fantasy Points</h6>
+			<div id="season_events_billabong-pro-teahupoo_2"  style="height: 250px;"></div>
+		
+			<script type="text/javascript">
+				$('document').ready(function(){
+					new Morris.Line({
+					  // ID of the element in which to draw the chart.
+					  element: 'season_events_billabong-pro-teahupoo_2',
+					  // Chart data records -- each entry in this array corresponds to a point on
+					  // the chart.
+					  data: [{"year":"2012","y":35.53}],
+
+					  // The name of the data record attribute that contains x-values.
+					  xkey: 'year',
+					  // A list of names of data record attributes that contain y-values.
+					  ykeys: 'y',
+					  // Labels for the ykeys -- will be displayed when you hover over the
+					  // chart.
+					  labels: ['WSL Fantasy Points']
+					});
+
+				});
+			</script>
+		</div>
+		
+		<div class="row season-graph graph-3 event-billabong-pro-teahupoo">
+			<h5 style="text-align:center;">billabong-pro-teahupoo</h5>
+	
+			<h6 style="text-align:center;">FS Fantasy Surfer Points</h6>
+			<div id="season_events_billabong-pro-teahupoo_3"  style="height: 250px;"></div>
+		
+			<script type="text/javascript">
+				$('document').ready(function(){
+					new Morris.Line({
+					  // ID of the element in which to draw the chart.
+					  element: 'season_events_billabong-pro-teahupoo_3',
+					  // Chart data records -- each entry in this array corresponds to a point on
+					  // the chart.
+					  data: [{"year":"2012","y":42}],
+
+					  // The name of the data record attribute that contains x-values.
+					  xkey: 'year',
+					  // A list of names of data record attributes that contain y-values.
+					  ykeys: 'y',
+					  // Labels for the ykeys -- will be displayed when you hover over the
+					  // chart.
+					  labels: ['FS Fantasy Surfer Points']
+					});
+
+				});
+			</script>
+		</div>
+		
+<hr/>
+<script type="text/javascript">
+	event_season = 'event-quiksilver-pro-gold-coast'
+	graph = 'graph-0'
+	
+	
+
+	$('document').ready(function(){
+		function show_season_graphs(){
+			$('.season-graph').hide()
+			$('.'+event_season + '.'+graph).show()
+		}
+
+		$('.graph-picker').click(function(){
+			graph = $(this).attr('id')
+			show_season_graphs()
+		})
+		$('.event-picker').click(function(){
+			console.log($(this).attr('id'))
+			event_season = $(this).attr('id')
+			show_season_graphs()
+		})
+
+		
+
+		show_season_graphs()
+		
+	})
+</script>
+
     	<hr/>
 		<h4 style="text-align:center;">Avg Heat Score progression</h4>
 		<div id="avg_chart" style="height: 250px;"></div>
@@ -374,7 +886,7 @@
 		  element: 'avg_chart',
 		  // Chart data records -- each entry in this array corresponds to a point on
 		  // the chart.
-		  data: [{"year":"2013","avg":14.23,"avg_all":11.49},{"year":"2012","avg":7.85,"avg_all":11.49}],
+		  data: [{"year":"2012","avg":7.85,"avg_all":11.49},{"year":"2013","avg":14.23,"avg_all":11.49}],
 
 		  // The name of the data record attribute that contains x-values.
 		  xkey: 'year',
@@ -390,7 +902,7 @@
 		  element: 'heat_chart',
 		  // Chart data records -- each entry in this array corresponds to a point on
 		  // the chart.
-		  data: [{"year":"2013","heats":8,"wins":3,"percs":"37.5%"},{"year":"2012","heats":6,"wins":0,"percs":"0.0%"}],
+		  data: [{"year":"2012","heats":6,"wins":0,"percs":"0.0%"},{"year":"2013","heats":8,"wins":3,"percs":"37.5%"}],
 
 		  // The name of the data record attribute that contains x-values.
 		  xkey: 'year',

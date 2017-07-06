@@ -138,6 +138,405 @@
                 <h2 style="text-align:center;">15.79%</h2>
             </div>
     	</div>
+    	
+	    	<hr/>
+<h4 style="text-align:center;">Progression through seasons</h4>
+	<p class="small" style="text-align:center;">You can choose a championship and a metric to analyze how the surfer is progressing through the season. </p>
+	<div class="row">
+			<div class="col-sm-12" style="margin-bottom:10px;">
+				<div class="dropdown">
+				  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Choose Event
+				  <span class="caret"></span></button>
+				  <ul class="dropdown-menu" style="z-index:999;">
+				  			<li href="#" id="event-roxy-pro-gold-coast" class="event-picker">Gold Coast, Queensland, Australia</li>
+				  			<li href="#" id="event-rip-curl-womens-pro-bells-beach" class="event-picker">Bells Beach, Victoria, Australia</li>
+				  			<li href="#" id="event-nike-us-open-of-surfing" class="event-picker">Huntington Beach, California, U.S.A.</li>
+				  </ul>
+				</div>	
+			</div>
+			
+			<div class="col-sm-12">
+				<div class="dropdown">
+				  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Choose Metric
+				  <span class="caret"></span></button>
+				  <ul class="dropdown-menu" style="z-index:999;">
+				  			<li href="#" id="graph-0" class="graph-picker">Average Heat Score</li>
+				  			<li href="#" id="graph-1" class="graph-picker">Winning Percentage</li>
+				  			<li href="#" id="graph-2" class="graph-picker">WSL Fantasy Points</li>
+				  			<li href="#" id="graph-3" class="graph-picker">FS Fantasy Surfer Points</li>
+				  </ul>
+				</div>
+			</div>
+		
+	</div>
+
+
+		<div class="row season-graph graph-0 event-roxy-pro-gold-coast">
+			<h5 style="text-align:center;">roxy-pro-gold-coast</h5>
+	
+			<h6 style="text-align:center;">Average Heat Score</h6>
+			<div id="season_events_roxy-pro-gold-coast_0"  style="height: 250px;"></div>
+		
+			<script type="text/javascript">
+				$('document').ready(function(){
+					new Morris.Line({
+					  // ID of the element in which to draw the chart.
+					  element: 'season_events_roxy-pro-gold-coast_0',
+					  // Chart data records -- each entry in this array corresponds to a point on
+					  // the chart.
+					  data: [{"year":"2012","y":11.16}],
+
+					  // The name of the data record attribute that contains x-values.
+					  xkey: 'year',
+					  // A list of names of data record attributes that contain y-values.
+					  ykeys: 'y',
+					  // Labels for the ykeys -- will be displayed when you hover over the
+					  // chart.
+					  labels: ['Average Heat Score']
+					});
+
+				});
+			</script>
+		</div>
+		
+		<div class="row season-graph graph-1 event-roxy-pro-gold-coast">
+			<h5 style="text-align:center;">roxy-pro-gold-coast</h5>
+	
+			<h6 style="text-align:center;">Winning Percentage</h6>
+			<div id="season_events_roxy-pro-gold-coast_1"  style="height: 250px;"></div>
+		
+			<script type="text/javascript">
+				$('document').ready(function(){
+					new Morris.Line({
+					  // ID of the element in which to draw the chart.
+					  element: 'season_events_roxy-pro-gold-coast_1',
+					  // Chart data records -- each entry in this array corresponds to a point on
+					  // the chart.
+					  data: [{"year":"2012","y":25.0}],
+
+					  // The name of the data record attribute that contains x-values.
+					  xkey: 'year',
+					  // A list of names of data record attributes that contain y-values.
+					  ykeys: 'y',
+					  // Labels for the ykeys -- will be displayed when you hover over the
+					  // chart.
+					  labels: ['Winning Percentage']
+					});
+
+				});
+			</script>
+		</div>
+		
+		<div class="row season-graph graph-2 event-roxy-pro-gold-coast">
+			<h5 style="text-align:center;">roxy-pro-gold-coast</h5>
+	
+			<h6 style="text-align:center;">WSL Fantasy Points</h6>
+			<div id="season_events_roxy-pro-gold-coast_2"  style="height: 250px;"></div>
+		
+			<script type="text/javascript">
+				$('document').ready(function(){
+					new Morris.Line({
+					  // ID of the element in which to draw the chart.
+					  element: 'season_events_roxy-pro-gold-coast_2',
+					  // Chart data records -- each entry in this array corresponds to a point on
+					  // the chart.
+					  data: [{"year":"2012","y":62.64}],
+
+					  // The name of the data record attribute that contains x-values.
+					  xkey: 'year',
+					  // A list of names of data record attributes that contain y-values.
+					  ykeys: 'y',
+					  // Labels for the ykeys -- will be displayed when you hover over the
+					  // chart.
+					  labels: ['WSL Fantasy Points']
+					});
+
+				});
+			</script>
+		</div>
+		
+		<div class="row season-graph graph-3 event-roxy-pro-gold-coast">
+			<h5 style="text-align:center;">roxy-pro-gold-coast</h5>
+	
+			<h6 style="text-align:center;">FS Fantasy Surfer Points</h6>
+			<div id="season_events_roxy-pro-gold-coast_3"  style="height: 250px;"></div>
+		
+			<script type="text/javascript">
+				$('document').ready(function(){
+					new Morris.Line({
+					  // ID of the element in which to draw the chart.
+					  element: 'season_events_roxy-pro-gold-coast_3',
+					  // Chart data records -- each entry in this array corresponds to a point on
+					  // the chart.
+					  data: [{"year":"2012","y":null}],
+
+					  // The name of the data record attribute that contains x-values.
+					  xkey: 'year',
+					  // A list of names of data record attributes that contain y-values.
+					  ykeys: 'y',
+					  // Labels for the ykeys -- will be displayed when you hover over the
+					  // chart.
+					  labels: ['FS Fantasy Surfer Points']
+					});
+
+				});
+			</script>
+		</div>
+		
+		<div class="row season-graph graph-0 event-rip-curl-womens-pro-bells-beach">
+			<h5 style="text-align:center;">rip-curl-womens-pro-bells-beach</h5>
+	
+			<h6 style="text-align:center;">Average Heat Score</h6>
+			<div id="season_events_rip-curl-womens-pro-bells-beach_0"  style="height: 250px;"></div>
+		
+			<script type="text/javascript">
+				$('document').ready(function(){
+					new Morris.Line({
+					  // ID of the element in which to draw the chart.
+					  element: 'season_events_rip-curl-womens-pro-bells-beach_0',
+					  // Chart data records -- each entry in this array corresponds to a point on
+					  // the chart.
+					  data: [{"year":"2012","y":15.24}],
+
+					  // The name of the data record attribute that contains x-values.
+					  xkey: 'year',
+					  // A list of names of data record attributes that contain y-values.
+					  ykeys: 'y',
+					  // Labels for the ykeys -- will be displayed when you hover over the
+					  // chart.
+					  labels: ['Average Heat Score']
+					});
+
+				});
+			</script>
+		</div>
+		
+		<div class="row season-graph graph-1 event-rip-curl-womens-pro-bells-beach">
+			<h5 style="text-align:center;">rip-curl-womens-pro-bells-beach</h5>
+	
+			<h6 style="text-align:center;">Winning Percentage</h6>
+			<div id="season_events_rip-curl-womens-pro-bells-beach_1"  style="height: 250px;"></div>
+		
+			<script type="text/javascript">
+				$('document').ready(function(){
+					new Morris.Line({
+					  // ID of the element in which to draw the chart.
+					  element: 'season_events_rip-curl-womens-pro-bells-beach_1',
+					  // Chart data records -- each entry in this array corresponds to a point on
+					  // the chart.
+					  data: [{"year":"2012","y":40.0}],
+
+					  // The name of the data record attribute that contains x-values.
+					  xkey: 'year',
+					  // A list of names of data record attributes that contain y-values.
+					  ykeys: 'y',
+					  // Labels for the ykeys -- will be displayed when you hover over the
+					  // chart.
+					  labels: ['Winning Percentage']
+					});
+
+				});
+			</script>
+		</div>
+		
+		<div class="row season-graph graph-2 event-rip-curl-womens-pro-bells-beach">
+			<h5 style="text-align:center;">rip-curl-womens-pro-bells-beach</h5>
+	
+			<h6 style="text-align:center;">WSL Fantasy Points</h6>
+			<div id="season_events_rip-curl-womens-pro-bells-beach_2"  style="height: 250px;"></div>
+		
+			<script type="text/javascript">
+				$('document').ready(function(){
+					new Morris.Line({
+					  // ID of the element in which to draw the chart.
+					  element: 'season_events_rip-curl-womens-pro-bells-beach_2',
+					  // Chart data records -- each entry in this array corresponds to a point on
+					  // the chart.
+					  data: [{"year":"2012","y":76.18}],
+
+					  // The name of the data record attribute that contains x-values.
+					  xkey: 'year',
+					  // A list of names of data record attributes that contain y-values.
+					  ykeys: 'y',
+					  // Labels for the ykeys -- will be displayed when you hover over the
+					  // chart.
+					  labels: ['WSL Fantasy Points']
+					});
+
+				});
+			</script>
+		</div>
+		
+		<div class="row season-graph graph-3 event-rip-curl-womens-pro-bells-beach">
+			<h5 style="text-align:center;">rip-curl-womens-pro-bells-beach</h5>
+	
+			<h6 style="text-align:center;">FS Fantasy Surfer Points</h6>
+			<div id="season_events_rip-curl-womens-pro-bells-beach_3"  style="height: 250px;"></div>
+		
+			<script type="text/javascript">
+				$('document').ready(function(){
+					new Morris.Line({
+					  // ID of the element in which to draw the chart.
+					  element: 'season_events_rip-curl-womens-pro-bells-beach_3',
+					  // Chart data records -- each entry in this array corresponds to a point on
+					  // the chart.
+					  data: [{"year":"2012","y":null}],
+
+					  // The name of the data record attribute that contains x-values.
+					  xkey: 'year',
+					  // A list of names of data record attributes that contain y-values.
+					  ykeys: 'y',
+					  // Labels for the ykeys -- will be displayed when you hover over the
+					  // chart.
+					  labels: ['FS Fantasy Surfer Points']
+					});
+
+				});
+			</script>
+		</div>
+		
+		<div class="row season-graph graph-0 event-nike-us-open-of-surfing">
+			<h5 style="text-align:center;">nike-us-open-of-surfing</h5>
+	
+			<h6 style="text-align:center;">Average Heat Score</h6>
+			<div id="season_events_nike-us-open-of-surfing_0"  style="height: 250px;"></div>
+		
+			<script type="text/javascript">
+				$('document').ready(function(){
+					new Morris.Line({
+					  // ID of the element in which to draw the chart.
+					  element: 'season_events_nike-us-open-of-surfing_0',
+					  // Chart data records -- each entry in this array corresponds to a point on
+					  // the chart.
+					  data: [{"year":"2012","y":9.55}],
+
+					  // The name of the data record attribute that contains x-values.
+					  xkey: 'year',
+					  // A list of names of data record attributes that contain y-values.
+					  ykeys: 'y',
+					  // Labels for the ykeys -- will be displayed when you hover over the
+					  // chart.
+					  labels: ['Average Heat Score']
+					});
+
+				});
+			</script>
+		</div>
+		
+		<div class="row season-graph graph-1 event-nike-us-open-of-surfing">
+			<h5 style="text-align:center;">nike-us-open-of-surfing</h5>
+	
+			<h6 style="text-align:center;">Winning Percentage</h6>
+			<div id="season_events_nike-us-open-of-surfing_1"  style="height: 250px;"></div>
+		
+			<script type="text/javascript">
+				$('document').ready(function(){
+					new Morris.Line({
+					  // ID of the element in which to draw the chart.
+					  element: 'season_events_nike-us-open-of-surfing_1',
+					  // Chart data records -- each entry in this array corresponds to a point on
+					  // the chart.
+					  data: [{"year":"2012","y":0.0}],
+
+					  // The name of the data record attribute that contains x-values.
+					  xkey: 'year',
+					  // A list of names of data record attributes that contain y-values.
+					  ykeys: 'y',
+					  // Labels for the ykeys -- will be displayed when you hover over the
+					  // chart.
+					  labels: ['Winning Percentage']
+					});
+
+				});
+			</script>
+		</div>
+		
+		<div class="row season-graph graph-2 event-nike-us-open-of-surfing">
+			<h5 style="text-align:center;">nike-us-open-of-surfing</h5>
+	
+			<h6 style="text-align:center;">WSL Fantasy Points</h6>
+			<div id="season_events_nike-us-open-of-surfing_2"  style="height: 250px;"></div>
+		
+			<script type="text/javascript">
+				$('document').ready(function(){
+					new Morris.Line({
+					  // ID of the element in which to draw the chart.
+					  element: 'season_events_nike-us-open-of-surfing_2',
+					  // Chart data records -- each entry in this array corresponds to a point on
+					  // the chart.
+					  data: [{"year":"2012","y":38.1}],
+
+					  // The name of the data record attribute that contains x-values.
+					  xkey: 'year',
+					  // A list of names of data record attributes that contain y-values.
+					  ykeys: 'y',
+					  // Labels for the ykeys -- will be displayed when you hover over the
+					  // chart.
+					  labels: ['WSL Fantasy Points']
+					});
+
+				});
+			</script>
+		</div>
+		
+		<div class="row season-graph graph-3 event-nike-us-open-of-surfing">
+			<h5 style="text-align:center;">nike-us-open-of-surfing</h5>
+	
+			<h6 style="text-align:center;">FS Fantasy Surfer Points</h6>
+			<div id="season_events_nike-us-open-of-surfing_3"  style="height: 250px;"></div>
+		
+			<script type="text/javascript">
+				$('document').ready(function(){
+					new Morris.Line({
+					  // ID of the element in which to draw the chart.
+					  element: 'season_events_nike-us-open-of-surfing_3',
+					  // Chart data records -- each entry in this array corresponds to a point on
+					  // the chart.
+					  data: [{"year":"2012","y":null}],
+
+					  // The name of the data record attribute that contains x-values.
+					  xkey: 'year',
+					  // A list of names of data record attributes that contain y-values.
+					  ykeys: 'y',
+					  // Labels for the ykeys -- will be displayed when you hover over the
+					  // chart.
+					  labels: ['FS Fantasy Surfer Points']
+					});
+
+				});
+			</script>
+		</div>
+		
+<hr/>
+<script type="text/javascript">
+	event_season = 'event-roxy-pro-gold-coast'
+	graph = 'graph-0'
+	
+	
+
+	$('document').ready(function(){
+		function show_season_graphs(){
+			$('.season-graph').hide()
+			$('.'+event_season + '.'+graph).show()
+		}
+
+		$('.graph-picker').click(function(){
+			graph = $(this).attr('id')
+			show_season_graphs()
+		})
+		$('.event-picker').click(function(){
+			console.log($(this).attr('id'))
+			event_season = $(this).attr('id')
+			show_season_graphs()
+		})
+
+		
+
+		show_season_graphs()
+		
+	})
+</script>
+
     	<hr/>
 		<h4 style="text-align:center;">Avg Heat Score progression</h4>
 		<div id="avg_chart" style="height: 250px;"></div>
@@ -163,12 +562,12 @@
 	  <span class="caret"></span></button>
 	  <ul class="dropdown-menu" style="z-index:999;">
 	    	<li href="#" id="rd1-heats-all" class="heats-all">Round 1</li>
-			<li href="#" id="rd2-heats-all" class="heats-all">Round 2</li>
-			<li href="#" id="rd3-heats-all" class="heats-all">Round 3</li>
-			<li href="#" id="rd4-heats-all" class="heats-all">Round 4</li>
-			<li href="#" id="rd5-heats-all" class="heats-all">Quaterfinals</li>
-			<li href="#" id="rd6-heats-all" class="heats-all">Semifinals</li>
-			<li href="#" id="rd7-heats-all" class="heats-all">Final</li>
+  			<li href="#" id="rd2-heats-all" class="heats-all">Round 2</li>
+  			<li href="#" id="rd3-heats-all" class="heats-all">Round 3</li>
+  			<li href="#" id="rd4-heats-all" class="heats-all">Round 4</li>
+  			<li href="#" id="rd5-heats-all" class="heats-all">Quaterfinals</li>
+  			<li href="#" id="rd6-heats-all" class="heats-all">Semifinals</li>
+  			<li href="#" id="rd7-heats-all" class="heats-all">Final</li>
 	  </ul>
 	</div>
 	</div>
