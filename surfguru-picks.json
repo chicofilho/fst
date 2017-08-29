@@ -1,8 +1,8 @@
 {
 	"events":[{
-		"name": "Billabong pro Tahiti",
-		"tierA": [{"nome": "John John Florence", "codigo":"jjoh"}, {"nome":"Owen Wright", "codigo":"owri"}],
-		"tierB": [{"nome":"Gabriel Medina", "codigo":"gmed"}, {"nome":"Mick Fanning", "codigo":"mfan"}, {"nome":"Jeremy Flores", "codigo":"jflo"}, {"nome":"Sebastian Ziets", "codigo":"szie"}],
-		"tierC": [{"nome":"Ian Gouveia", "codigo":"igou"}, {"nome":"Josh Kerr", "codigo":"jker"}] 
+		"name": "Hurley Pro at Trestles",
+		"tierA": [{"nome": "John John Florence", "codigo":"jjoh"}, {"nome":"Jordy Smith", "codigo":"jsmi"}],
+		"tierB": [{"nome":"Filipe Toledo", "codigo":"ftol"}, {"nome":"Mick Fanning", "codigo":"mfan"}, {"nome":"Kolohe Andino", "codigo":"kand"}, {"nome":"Michel Bourez", "codigo":"mbou"}],
+		"tierC": [{"nome":"Ezekiel Lau", "codigo":"elau"}, {"nome":"Jack Freestone", "codigo":"jfree"}] 
 		}]
 }
