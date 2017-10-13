@@ -1368,11 +1368,12 @@
             function create_round_four(rd3_ordered, rd3_results){
                 var z = 0
                 for (z = 0; z < rd3_results.length; z++) {
-                    rd4[0].push(rd3_results[z][0].surfer.toUpperCase())
+                    rd4[(z/3)%3].push(rd3_results[z][0].surfer.toUpperCase())
                 };
 
                 for (var i = z; i < rd3_ordered.length; i++) {
-                    rd3_ordered[i]
+                    rd4[(z/3)%3].push(rd3_ordered[i][0])
+
                 };
 
                 rd4[0].push(rd3_ordered[0][0])
@@ -1517,7 +1518,7 @@
         }
 
         function updateJson(){
-            jQuery.getJSON( "/surfers/live.json", function( data ) {
+            jQuery.getJSON( "/live.json", function( data ) {
                 console.log(data) 
                 update_live_heat(data.heat)
 
