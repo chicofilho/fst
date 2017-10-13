@@ -4,34 +4,34 @@
 	"heat": [
 				{
 					"name":"Miguel Pupo", 
-					"yahs": 11.16,
-					"yhwp": 29.17,
-					"eahs": 11.81,
-					"ehwp": 55.0,
-					"eahs2017": 13.13,
-					"ehwp2017": 75.0,
+					"yahs": 10.72,
+					"yhwp": 28.0,
+					"eahs": 11.25,
+					"ehwp": 52.38,
+					"eahs2017": 10.5,
+					"ehwp2017": 60.0,
 					"wins": 2
 				}
 				,
 				{
 					"name":"Owen Wright", 
-					"yahs": 13.82,
-					"yhwp": 58.97,
-					"eahs": 13.0,
-					"ehwp": 50.0,
-					"eahs2017": 11.66,
-					"ehwp2017": 75.0,
+					"yahs": 13.48,
+					"yhwp": 57.5,
+					"eahs": 12.32,
+					"ehwp": 47.37,
+					"eahs2017": 9.33,
+					"ehwp2017": 60.0,
 					"wins": 2
 				}
 				,
 				{
 					"name":"Kolohe Andino", 
-					"yahs": 12.54,
-					"yhwp": 53.33,
-					"eahs": 12.3,
-					"ehwp": 59.26,
-					"eahs2017": 11.88,
-					"ehwp2017": 75.0,
+					"yahs": 12.13,
+					"yhwp": 51.61,
+					"eahs": 11.86,
+					"ehwp": 57.14,
+					"eahs2017": 9.51,
+					"ehwp2017": 60.0,
 					"wins": 1
 				}
 	],
