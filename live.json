@@ -1179,6 +1179,7 @@
                 $('#rd2-container').html(generate_round_html(rd2_ordered, rd2_results))
 
                 console.log(rd2_results)
+                console.log(rd2_ordered)
 
                 create_round_three(rd1_ordered, rd2_ordered, rd2_results)
                 $('#rd3-container').html(generate_round_html(rd3, rd3_results))
@@ -1234,7 +1235,6 @@
             }
 
             function order_matchup(round, picked_result){
-                console.log(round)
                 var ordered = []
                 for (var i = 0; i < round.length; i++) {
                     var heat = []
@@ -1251,8 +1251,8 @@
             }
 
             function order_matchup_result(round, rd1_results, picked_result){
-                console.log(round)
-                console.log(rd1_results)
+            
+            
                 var ordered = []
                 var z = 0
                 for (z = 0; z< rd1_results.length; z++) {
@@ -1301,8 +1301,8 @@
                                 round2.push([surfers[j]])
                             }else{
                                 counter--
-                                console.log(round2[counter])
-                                console.log(surfers[j])
+                            
+                            
                                 round2[counter].push(surfers[j])
                                 
                             }
