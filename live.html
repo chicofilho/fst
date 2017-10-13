@@ -1175,7 +1175,7 @@
                     $('#rd1-container').html(generate_round_html_with_results(rd1_ordered, rd1_results))
                 }
                 
-                var rd2_ordered = create_round_two(rd1_ordered)
+                var rd2_ordered = create_round_two(rd1_ordered, rd2_results)
                 $('#rd2-container').html(generate_round_html(rd2_ordered, rd2_results))
 
                 create_round_three(rd1_ordered, rd2_ordered)
@@ -1274,7 +1274,7 @@
                 return ordered
             }
 
-            function create_round_two(surfers_ordered){
+            function create_round_two(surfers_ordered, rd2_results){
                 round2 = []
                 surfers = []
                 for (var i = 0; i < surfers_ordered.length; i++) {
