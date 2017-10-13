@@ -3,35 +3,35 @@
 	"place": "Landes, Nouvelle-Aquitaine, France",
 	"heat": [
 				{
-					"name":"Caio Ibelli", 
-					"yahs": "12.14",
-					"yhwp": "48.15",
-					"eahs": "10.44",
-					"ehwp": "54.55",
-					"eahs2017": 9.84,
-					"ehwp2017": 80.0,
-					"wins": 0
+					"name":"Mick Fanning", 
+					"yahs": "13.9",
+					"yhwp": "56.67",
+					"eahs": "13.76",
+					"ehwp": "69.57",
+					"eahs2017": 12.89,
+					"ehwp2017": 100.0,
+					"wins": 5
 				}
 				,
 				{
-					"name":"Marc Lacomare", 
-					"yahs": "-",
-					"yhwp": "-",
-					"eahs": "-",
-					"ehwp": "-",
-					"eahs2017": 11.1,
-					"ehwp2017": 80.0,
-					"wins": 0
+					"name":"John John Florence", 
+					"yahs": "15.97",
+					"yhwp": "73.68",
+					"eahs": "14.59",
+					"ehwp": "66.67",
+					"eahs2017": 11.61,
+					"ehwp2017": 66.67,
+					"wins": 7
 				}
 				,
 				{
-					"name":"Sebastian Zietz", 
-					"yahs": "12.47",
-					"yhwp": "39.39",
-					"eahs": "11.53",
-					"ehwp": "35.29",
-					"eahs2017": 9.04,
-					"ehwp2017": 50.0,
+					"name":"Joel Parkinson", 
+					"yahs": "12.73",
+					"yhwp": "50.0",
+					"eahs": "12.48",
+					"ehwp": "50.0",
+					"eahs2017": 10.82,
+					"ehwp2017": 66.67,
 					"wins": 3
 				}
 	],
