@@ -368,6 +368,15 @@
                     <td></td>
               </tr>
               <tr>                    
+                  <td><a href="http://fantasysurfingtips.com/surfers/mct/mfan">Mick Fanning</a> </td>
+                  <td>13.82</td>
+                  <td>3</td>
+                  <td>3</td>
+                  <td>100.0%</td>
+                    <td>41.47</td>
+                    <td></td>
+              </tr>
+              <tr>                    
                   <td><a href="http://fantasysurfingtips.com/surfers/mct/jflo">Jeremy Flores</a> </td>
                   <td>12.64</td>
                   <td>3</td>
@@ -446,15 +455,6 @@
                   <td>0</td>
                   <td>0.0%</td>
                     <td>22.44</td>
-                    <td></td>
-              </tr>
-              <tr>                    
-                  <td><a href="http://fantasysurfingtips.com/surfers/mct/mfan">Mick Fanning</a> </td>
-                  <td>11.21</td>
-                  <td>3</td>
-                  <td>2</td>
-                  <td>66.67%</td>
-                    <td>33.64</td>
                     <td></td>
               </tr>
               <tr>                    
@@ -1181,19 +1181,19 @@
                 create_round_three(rd1_ordered, rd2_ordered)
                 $('#rd3-container').html(generate_round_html(rd3, rd3_results))
             
-                create_round_four(rd3)
+                create_round_four(rd3, rd3_results)
                 $('#rd4-container').html(generate_round_html(rd4, rd4_results))
             
-                create_round_five(rd4)
+                create_round_five(rd4, rd4_results)
                 $('#rd5-container').html(generate_round_html(rd5, rd5_results))
 
-                create_qf(rd4, rd5)
+                create_qf(rd4, rd5_results)
                 $('#qf-container').html(generate_round_html(qf, rd6_results))
 
-                create_sf(qf)
+                create_sf(qf, rd6_results)
                 $('#sf-container').html(generate_round_html(sf, rd7_results))
 
-                create_f(sf)
+                create_f(sf, rd7_results)
                 $('#f-container').html(generate_round_html(f, rd8_results))
                 rd3 = [[], [], [], [], [], [], [], [], [], [], [], []]
                 rd4 = [[], [], [], []]
@@ -1365,7 +1365,20 @@
                 };
             }
 
-            function create_round_four(rd3_ordered){
+            function create_round_four(rd3_ordered, rd3_results){
+                for (var i = rd3_results.length - 1; i >= 0; i--) {
+                    rd3_results[i]
+                    rd4[0].push()
+                    
+                    var heat = []
+                    for (var i = 0; i < rd1_results[z].length; i++) {
+                        heat.push(rd1_results[z][i].surfer.toUpperCase())
+                    };
+                    ordered.push(heat)
+
+                };
+
+
                 rd4[0].push(rd3_ordered[0][0])
                 rd4[0].push(rd3_ordered[1][0])
                 rd4[0].push(rd3_ordered[2][0])
