@@ -1366,18 +1366,14 @@
             }
 
             function create_round_four(rd3_ordered, rd3_results){
-                for (var i = rd3_results.length - 1; i >= 0; i--) {
-                    rd3_results[i]
-                    rd4[0].push()
-                    
-                    var heat = []
-                    for (var i = 0; i < rd1_results[z].length; i++) {
-                        heat.push(rd1_results[z][i].surfer.toUpperCase())
-                    };
-                    ordered.push(heat)
-
+                var z = 0
+                for (z = 0; z < rd3_results.length; z++) {
+                    rd4[0].push(rd3_results[z][0].surfer.toUpperCase())
                 };
 
+                for (var i = z; i < rd3_ordered.length; i++) {
+                    rd3_ordered[i]
+                };
 
                 rd4[0].push(rd3_ordered[0][0])
                 rd4[0].push(rd3_ordered[1][0])
