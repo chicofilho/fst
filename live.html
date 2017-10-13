@@ -1283,8 +1283,14 @@
                     };
                 };
 
-
                 var counter = 0
+                var i = 0
+                for (i = 0; i < rd2_results.length; i++) {
+                    round2.push([rd2_results[i][0].surfer, rd2_results[i][0].surfer])
+                    counter = counter+1
+                };
+
+                
                 for (var i = 0; i < rd_heads.length; i++) {
                     rd_heads[i]
                     for (var j = rd2_results.length; j < surfers.length; j++) {
