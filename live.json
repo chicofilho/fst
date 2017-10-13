@@ -1177,7 +1177,7 @@
                 
                 var rd2_ordered = create_round_two(rd1_ordered, rd2_results)
                 $('#rd2-container').html(generate_round_html(rd2_ordered, rd2_results))
-
+                console.log('rd2_results')
                 console.log(rd2_results)
                 console.log(rd2_ordered)
 
