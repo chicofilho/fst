@@ -4,10 +4,10 @@
 	"heat": [
 				{
 					"name":"Caio Ibelli", 
-					"yahs": 12.48,
-					"yhwp": 50.0,
-					"eahs": 11.17,
-					"ehwp": 60.0,
+					"yahs": "12.48",
+					"yhwp": "50.0",
+					"eahs": "11.17",
+					"ehwp": "60.0",
 					"eahs2017": 11.5,
 					"ehwp2017": 100.0,
 					"wins": 0
@@ -15,10 +15,10 @@
 				,
 				{
 					"name":"Marc Lacomare", 
-					"yahs": &quot;-&quot;,
-					"yhwp": &quot;-&quot;,
-					"eahs": &quot;-&quot;,
-					"ehwp": &quot;-&quot;,
+					"yahs": "-",
+					"yhwp": "-",
+					"eahs": "-",
+					"ehwp": "-",
 					"eahs2017": 13.64,
 					"ehwp2017": 100.0,
 					"wins": 0
@@ -26,10 +26,10 @@
 				,
 				{
 					"name":"Sebastian Zietz", 
-					"yahs": 12.86,
-					"yhwp": 40.63,
-					"eahs": 12.25,
-					"ehwp": 37.5,
+					"yahs": "12.86",
+					"yhwp": "40.63",
+					"eahs": "12.25",
+					"ehwp": "37.5",
 					"eahs2017": 12.05,
 					"ehwp2017": 66.67,
 					"wins": 3
