@@ -1427,12 +1427,14 @@
             }
 
             function create_round_five(rd4_ordered, rd4_results){
-                [[0, 1], [1, 0], [2, 3], [3, 2]]
+                var positions = [[0, 1], [1, 0], [2, 3], [3, 2]]
                 for (var i = 0; i < rd4_results.length; i++) {
-                    rd4_results[i][0].surfer
-                    rd4_results[i][1].surfer
+                    rd5[positions[i][0]].push(rd4_results[i][0].surfer)
+                    rd5[positions[i][1]].push(rd4_results[i][0].surfer)
                 };
 
+                
+                
                 rd5[0].push(rd4_ordered[0][1])
                 rd5[0].push(rd4_ordered[1][2])
                 rd5[1].push(rd4_ordered[1][1])
