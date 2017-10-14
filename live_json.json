@@ -16,12 +16,12 @@
 				,
 				{
 					"name":"Sebastian Zietz", 
-					"score": "6.0",
-					"yahs": "12.79",
+					"score": "13.33",
+					"yahs": "13.0",
 					"yhwp": "42.86",
-					"eahs": "12.23",
+					"eahs": "12.61",
 					"ehwp": "42.11",
-					"eahs2017": 12.08,
+					"eahs2017": 13.3,
 					"ehwp2017": 66.67,
 					"wins": 2
 				}
@@ -32,7 +32,7 @@
 	"rd4_results" : [[{"surfer":"Miguel Pupo","w1":7.83,"w2":6.97,"sum":14.8},{"surfer":"Owen Wright","w1":6.5,"w2":5.83,"sum":12.33},{"surfer":"Kolohe Andino","w1":5.67,"w2":5.93,"sum":11.6}],[{"surfer":"Marc Lacomare","w1":7.5,"w2":7.93,"sum":15.43},{"surfer":"Caio Ibelli","w1":5.0,"w2":4.87,"sum":9.870000000000001},{"surfer":"Sebastian Zietz","w1":3.77,"w2":5.3,"sum":9.07}],[{"surfer":"John John Florence","w1":9.33,"w2":9.23,"sum":18.560000000000002},{"surfer":"Mick Fanning","w1":8.2,"w2":8.83,"sum":17.03},{"surfer":"Joel Parkinson","w1":3.5,"w2":7.87,"sum":11.370000000000001}],[{"surfer":"Gabriel Medina","w1":7.5,"w2":6.93,"sum":14.43},{"surfer":"Nat Young","w1":5.83,"w2":5.5,"sum":11.33},{"surfer":"Joan Duru","w1":6.0,"w2":2.67,"sum":8.67}]],
 	"rd5_results" : [[{"surfer":"Sebastian Zietz","w1":7.67,"w2":6.73,"sum":14.4},{"surfer":"Owen Wright","w1":6.83,"w2":4.9,"sum":11.73}],[{"surfer":"Kolohe Andino","w1":7.67,"w2":7.27,"sum":14.94},{"surfer":"Caio Ibelli","w1":6.83,"w2":5.13,"sum":11.96}],[{"surfer":"Mick Fanning","w1":8.17,"w2":7.53,"sum":15.7},{"surfer":"Joan Duru","w1":6.27,"w2":7.1,"sum":13.37}],[{"surfer":"Joel Parkinson","w1":8.7,"w2":5.33,"sum":14.03},{"surfer":"Nat Young","w1":6.67,"w2":3.57,"sum":10.24}]],
 	"rd6_results" : [[{"surfer":"Sebastian Zietz","w1":9.0,"w2":6.93,"sum":15.93},{"surfer":"Miguel Pupo","w1":7.33,"w2":6.77,"sum":14.1}],[{"surfer":"Kolohe Andino","w1":6.5,"w2":5.1,"sum":11.6},{"surfer":"Marc Lacomare","w1":3.5,"w2":2.6,"sum":6.1}],[{"surfer":"John John Florence","w1":9.7,"w2":9.97,"sum":19.67},{"surfer":"Mick Fanning","w1":5.0,"w2":5.67,"sum":10.67}],[{"surfer":"Gabriel Medina","w1":7.5,"w2":7.7,"sum":15.2},{"surfer":"Joel Parkinson","w1":0.2,"w2":1.0,"sum":1.2}]],
-	"rd7_results" : [[{"surfer":"Kolohe Andino","w1":8.5,"w2":5.5,"sum":14.0},{"surfer":"Sebastian Zietz","w1":6.0,"w2":0.0,"sum":6.0}],[{"surfer":"John John Florence","w1":0.0,"w2":0.0,"sum":0.0},{"surfer":"Gabriel Medina","w1":0.0,"w2":0.0,"sum":0.0}]],
+	"rd7_results" : [[{"surfer":"Kolohe Andino","w1":8.5,"w2":5.5,"sum":14.0},{"surfer":"Sebastian Zietz","w1":6.0,"w2":7.33,"sum":13.33}],[{"surfer":"John John Florence","w1":0.0,"w2":0.0,"sum":0.0},{"surfer":"Gabriel Medina","w1":0.0,"w2":0.0,"sum":0.0}]],
 	"rd8_results" : [],
 
 	"test" : []
