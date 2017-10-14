@@ -1453,14 +1453,14 @@
             }
 
             function create_qf(rd4_ordered, rd5_ordered, rd4_results, rd5_results){
-                for (i = 0; i < rd6_results.length; i++) {
-                    sf[parseInt(i/2)].push(rd6_results[0].surfer)    
+                for (i = 0; i < rd4_results.length; i++) {
+                    qf[i].push(rd4_results[i].surfer)    
                 };
                 for (var z = 0; z < Things.length; z++) {
                     sf[parseInt(z/2)].push(qf_ordered[0])    
                     
                 };
-                
+
                 qf[0].push(rd4_ordered[0][0])
                 qf[0].push(rd5_ordered[0][0])
                 qf[1].push(rd4_ordered[1][0])
