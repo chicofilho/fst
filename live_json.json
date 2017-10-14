@@ -3,26 +3,26 @@
 	"place": "Landes, Nouvelle-Aquitaine, France",
 	"heat": [
 				{
-					"name":"Gabriel Medina", 
-					"score": "15.2",
-					"yahs": "14.62",
-					"yhwp": "64.71",
-					"eahs": "14.86",
-					"ehwp": "81.25",
-					"eahs2017": 15.35,
-					"ehwp2017": 100.0,
+					"name":"Kolohe Andino", 
+					"score": "8.5",
+					"yahs": "12.46",
+					"yhwp": "57.58",
+					"eahs": "12.24",
+					"ehwp": "63.33",
+					"eahs2017": 11.8,
+					"ehwp2017": 85.71,
 					"wins": 4
 				}
 				,
 				{
-					"name":"Joel Parkinson", 
-					"score": "1.2",
-					"yahs": "12.67",
-					"yhwp": "50.0",
-					"eahs": "12.4",
-					"ehwp": "50.0",
-					"eahs2017": 11.11,
-					"ehwp2017": 60.0,
+					"name":"Sebastian Zietz", 
+					"score": "6.0",
+					"yahs": "12.79",
+					"yhwp": "42.86",
+					"eahs": "12.23",
+					"ehwp": "42.11",
+					"eahs2017": 12.08,
+					"ehwp2017": 66.67,
 					"wins": 2
 				}
 	],
