@@ -101,10 +101,16 @@
     			</div>
             </div>
             <div class="col-sm-3 portfolio-item">
+	            	<h6 style="text-align:center;">FST Stat Rank </h6>
+	                <h1 style="text-align:center;">#9</h1>
             </div>
             <div class="col-sm-3 portfolio-item">
               	<h6 style="text-align:center;">Avg Heat Score (FST DATA)</h6>
-                <h1 style="text-align:center;">9.67</h1>
+                <h1 style="text-align:center;">8.66</h1>
+            </div>
+            <div class="col-sm-3 portfolio-item">
+              	<h6 style="text-align:center;">Avg Heat Score (2017)</h6>
+                <h2 style="text-align:center;">7.65</h2>
             </div>
     	</div>
     	
@@ -142,22 +148,64 @@
 						</div>
 					</div>
 					<hr/>
+					<div class="row">
+						<div class="col-sm-4">
+							<h4 style="text-align:center;">
+								<a href="http://fantasysurfingtips.com/surfers/wct/cmark">wct</a>
+							</h4>
+						</div>
+						<div class="col-sm-4">
+							<h6 style="text-align:center;">Stat Rank</h6>
+							<p style="text-align:center;">#9</p>
+						</div>
+						<div class="col-sm-4">
+							<h6 style="text-align:center;">Stat Points</h6>
+							<p style="text-align:center;">69.41</p>
+						</div>
+					</div>
+					<hr/>
 
+	    		<h4 style="text-align:center;" >Epic Battles</h4>
+	    		<div class="row">
+	    			<div class="col-sm-6 ">
+		                <p style="text-align:center;">Surfed <b>2</b> heats against <a href="http://fantasysurfingtips.com/surfers/wct/sfit.html"> Sally Fitzgibbons</a> <br/> <b>won 2</b> and <b>lost 0</b></p>
+		                
+	                </div>
+	                <div class="col-sm-6 ">
+		                <p style="text-align:center;">Surfed <b>3</b> heats against <a href="http://fantasysurfingtips.com/surfers/wct/cmoo.html"> Carissa Moore</a> <br/> <b>won 1</b> and <b>lost 1</b></p>
+	                </div>
+		    	</div>
 
     	<hr/>
     	<h4 style="text-align:center;" >Heat Stats (FST data)</h4>
     	<div  class="row">
     		<div class="col-sm-4 portfolio-item">
               	<h6 style="text-align:center;">Heats</h6>
-                <h2 style="text-align:center;">2</h2>
+                <h2 style="text-align:center;">4</h2>
             </div>
               <div class="col-sm-4 portfolio-item">
               	<h6 style="text-align:center;">Heat wins</h6>
-                <h2 style="text-align:center;">0</h2>
+                <h2 style="text-align:center;">2</h2>
             </div>
             <div class="col-sm-4 portfolio-item">
               	<h6 style="text-align:center;">HEAT WINS PERCENTAGE</h6>
-                <h2 style="text-align:center;">0.0%</h2>
+                <h2 style="text-align:center;">50.0%</h2>
+            </div>
+    	</div>
+    	<hr/>
+    	<h4 style="text-align:center;">Heat Stats (2017)</h4>
+    	<div class="row">
+    		<div class="col-sm-4 portfolio-item">
+              	<h6 class="font-small" style="text-align:center;">HEATS</h6>
+                <h2 class="large" style="text-align:center;">2</h2>
+            </div>
+              <div class="col-sm-4 portfolio-item">
+              	<h6 style="text-align:center;">HEAT WINS</h6>
+                <h2 style="text-align:center;">2</h2>
+            </div>
+            <div class="col-sm-4 portfolio-item">
+              	<h6 style="text-align:center;">HEAT WINS PERCENTAGE</h6>
+                <h2 style="text-align:center;">100.0%</h2>
             </div>
     	</div>
     	
@@ -171,6 +219,7 @@
 				  <span class="caret"></span></button>
 				  <ul class="dropdown-menu" style="z-index:999;">
 				  			<li href="#" id="event-swatch-womens-pro" class="event-picker">Lower Trestles, San Clemente, California</li>
+				  			<li href="#" id="event-roxy-pro-france" class="event-picker">Landes, Nouvelle-Aquitaine, France</li>
 				  </ul>
 				</div>	
 			</div>
@@ -303,6 +352,118 @@
 			</script>
 		</div>
 		
+		<div class="row season-graph graph-0 event-roxy-pro-france">
+			<h5 style="text-align:center;">roxy-pro-france</h5>
+	
+			<h6 style="text-align:center;">Average Heat Score</h6>
+			<div id="season_events_roxy-pro-france_0"  style="height: 250px;"></div>
+		
+			<script type="text/javascript">
+				$('document').ready(function(){
+					new Morris.Line({
+					  // ID of the element in which to draw the chart.
+					  element: 'season_events_roxy-pro-france_0',
+					  // Chart data records -- each entry in this array corresponds to a point on
+					  // the chart.
+					  data: [{"year":"2017","y":7.65}],
+
+					  // The name of the data record attribute that contains x-values.
+					  xkey: 'year',
+					  // A list of names of data record attributes that contain y-values.
+					  ykeys: 'y',
+					  // Labels for the ykeys -- will be displayed when you hover over the
+					  // chart.
+					  labels: ['Average Heat Score']
+					});
+
+				});
+			</script>
+		</div>
+		
+		<div class="row season-graph graph-1 event-roxy-pro-france">
+			<h5 style="text-align:center;">roxy-pro-france</h5>
+	
+			<h6 style="text-align:center;">Winning Percentage</h6>
+			<div id="season_events_roxy-pro-france_1"  style="height: 250px;"></div>
+		
+			<script type="text/javascript">
+				$('document').ready(function(){
+					new Morris.Line({
+					  // ID of the element in which to draw the chart.
+					  element: 'season_events_roxy-pro-france_1',
+					  // Chart data records -- each entry in this array corresponds to a point on
+					  // the chart.
+					  data: [{"year":"2017","y":100.0}],
+
+					  // The name of the data record attribute that contains x-values.
+					  xkey: 'year',
+					  // A list of names of data record attributes that contain y-values.
+					  ykeys: 'y',
+					  // Labels for the ykeys -- will be displayed when you hover over the
+					  // chart.
+					  labels: ['Winning Percentage']
+					});
+
+				});
+			</script>
+		</div>
+		
+		<div class="row season-graph graph-2 event-roxy-pro-france">
+			<h5 style="text-align:center;">roxy-pro-france</h5>
+	
+			<h6 style="text-align:center;">WSL Fantasy Points</h6>
+			<div id="season_events_roxy-pro-france_2"  style="height: 250px;"></div>
+		
+			<script type="text/javascript">
+				$('document').ready(function(){
+					new Morris.Line({
+					  // ID of the element in which to draw the chart.
+					  element: 'season_events_roxy-pro-france_2',
+					  // Chart data records -- each entry in this array corresponds to a point on
+					  // the chart.
+					  data: [{"year":"2017","y":15.29}],
+
+					  // The name of the data record attribute that contains x-values.
+					  xkey: 'year',
+					  // A list of names of data record attributes that contain y-values.
+					  ykeys: 'y',
+					  // Labels for the ykeys -- will be displayed when you hover over the
+					  // chart.
+					  labels: ['WSL Fantasy Points']
+					});
+
+				});
+			</script>
+		</div>
+		
+		<div class="row season-graph graph-3 event-roxy-pro-france">
+			<h5 style="text-align:center;">roxy-pro-france</h5>
+	
+			<h6 style="text-align:center;">FS Fantasy Surfer Points</h6>
+			<div id="season_events_roxy-pro-france_3"  style="height: 250px;"></div>
+		
+			<script type="text/javascript">
+				$('document').ready(function(){
+					new Morris.Line({
+					  // ID of the element in which to draw the chart.
+					  element: 'season_events_roxy-pro-france_3',
+					  // Chart data records -- each entry in this array corresponds to a point on
+					  // the chart.
+					  data: [{"year":"2017","y":null}],
+
+					  // The name of the data record attribute that contains x-values.
+					  xkey: 'year',
+					  // A list of names of data record attributes that contain y-values.
+					  ykeys: 'y',
+					  // Labels for the ykeys -- will be displayed when you hover over the
+					  // chart.
+					  labels: ['FS Fantasy Surfer Points']
+					});
+
+				});
+			</script>
+		</div>
+		
 <hr/>
 <script type="text/javascript">
 	event_season = 'event-swatch-womens-pro'
@@ -373,30 +534,30 @@
 	 	<h6 style="text-align:center;">Round 1</h6>
 		<div class="col-sm-4">
           	<h5 style="text-align:center;">Appereances</h5>
-            <p style="text-align:center;">9</p>
+            <p style="text-align:center;">10</p>
         </div>
           <div class="col-sm-4">
           	<h5 style="text-align:center;">Victories</h5>
-            <p style="text-align:center;">5</p>
+            <p style="text-align:center;">6</p>
         </div>
         <div class="col-sm-4">
           	<h5 style="text-align:center;">Winning percentage</h5>
-            <p style="text-align:center;">55.56%</p>
+            <p style="text-align:center;">60.0%</p>
         </div>
     </div>
     <div id="rd2-heats-all-stat"  class="col-sm-12 heats-all-stat" style="display:none;">
     	<h6 style="text-align:center;">Round 2</h6>
 		<div class="col-sm-4">
           	<h5 style="text-align:center;">Appereances</h5>
-            <p style="text-align:center;">16</p>
+            <p style="text-align:center;">17</p>
         </div>
           <div class="col-sm-4">
           	<h5 style="text-align:center;">Victories</h5>
-            <p style="text-align:center;">12</p>
+            <p style="text-align:center;">13</p>
         </div>
         <div class="col-sm-4">
           	<h5 style="text-align:center;">Winning percentage</h5>
-            <p style="text-align:center;">75.0%</p>
+            <p style="text-align:center;">76.47%</p>
         </div>
     </div>
 </div>
@@ -484,6 +645,58 @@
 
 	    		
 
+	    			<h4 style="text-align:center;">Road to the Final (2017)</h4>
+<div class="row">
+	<div class="col-sm-12 ">
+	<div class="dropdown">
+	  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Choose Round
+	  <span class="caret"></span></button>
+	  <ul class="dropdown-menu" style="z-index:999;">
+	    	<li href="#" id="rd1-heats-2016" class="heats-2016">Round 1</li>
+  			<li href="#" id="rd2-heats-2016" class="heats-2016">Round 2</li>
+  			<li href="#" id="rd3-heats-2016" class="heats-2016">Round 3</li>
+  			<li href="#" id="rd4-heats-2016" class="heats-2016">Round 4</li>
+  			<li href="#" id="rd5-heats-2016" class="heats-2016">Quaterfinals</li>
+  			<li href="#" id="rd6-heats-2016" class="heats-2016">Semifinals</li>
+  			<li href="#" id="rd7-heats-2016" class="heats-2016">Final</li>
+	  </ul>
+	</div>
+	</div>
+</div>
+<div class="row">
+ 	<div id="rd1-heats-2016-stat" class="col-sm-12 heats-2016-stat" style="display:block;">
+	 	<h6 style="text-align:center;">Round 1</h6>
+		<div class="col-sm-4">
+          	<h5 style="text-align:center;">Appereances</h5>
+            <p style="text-align:center;">1</p>
+        </div>
+          <div class="col-sm-4">
+          	<h5 style="text-align:center;">Victories</h5>
+            <p style="text-align:center;">1</p>
+        </div>
+        <div class="col-sm-4">
+          	<h5 style="text-align:center;">Winning percentage</h5>
+            <p style="text-align:center;">100.0%</p>
+        </div>
+    </div>
+    <div id="rd2-heats-2016-stat"  class="col-sm-12 heats-2016-stat" style="display:none;">
+    	<h6 style="text-align:center;">Round 2</h6>
+		<div class="col-sm-4">
+          	<h5 style="text-align:center;">Appereances</h5>
+            <p style="text-align:center;">1</p>
+        </div>
+          <div class="col-sm-4">
+          	<h5 style="text-align:center;">Victories</h5>
+            <p style="text-align:center;">1</p>
+        </div>
+        <div class="col-sm-4">
+          	<h5 style="text-align:center;">Winning percentage</h5>
+            <p style="text-align:center;">100.0%</p>
+        </div>
+    </div>
+</div>
+
+    		</section>
 	<div class="container">
 		
 		<div id="disqus_thread"></div>
@@ -532,7 +745,7 @@
 		  element: 'avg_chart',
 		  // Chart data records -- each entry in this array corresponds to a point on
 		  // the chart.
-		  data: [{"year":"2015","avg":9.67,"avg_all":9.67}],
+		  data: [{"year":"2015","avg":9.67,"avg_all":8.66},{"year":"2017","avg":7.65,"avg_all":8.66}],
 
 		  // The name of the data record attribute that contains x-values.
 		  xkey: 'year',
@@ -548,7 +761,7 @@
 		  element: 'heat_chart',
 		  // Chart data records -- each entry in this array corresponds to a point on
 		  // the chart.
-		  data: [{"year":"2015","heats":2,"wins":0,"percs":"0.0%"}],
+		  data: [{"year":"2015","heats":2,"wins":0,"percs":"0.0%"},{"year":"2017","heats":2,"wins":2,"percs":"100.0%"}],
 
 		  // The name of the data record attribute that contains x-values.
 		  xkey: 'year',
