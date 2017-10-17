@@ -1,8 +1,8 @@
 {
 	"events":[{
-		"name": "Hurley Pro at Trestles",
+		"name": "Portugal",
 		"tierA": [{"nome": "John John Florence", "codigo":"jjoh"}, {"nome":"Jordy Smith", "codigo":"jsmi"}],
-		"tierB": [{"nome":"Filipe Toledo", "codigo":"ftol"}, {"nome":"Mick Fanning", "codigo":"mfan"}, {"nome":"Kolohe Andino", "codigo":"kand"}, {"nome":"Michel Bourez", "codigo":"mbou"}],
-		"tierC": [{"nome":"Ezekiel Lau", "codigo":"elau"}, {"nome":"Jack Freestone", "codigo":"jfree"}] 
+		"tierB": [{"nome":"Joel Parkinson", "codigo":"jpar"}, {"nome":"Mick Fanning", "codigo":"mfan"}, {"nome":"Kolohe Andino", "codigo":"kand"}, {"nome":"Sebastian Ziets", "codigo":"szie"}],
+		"tierC": [{"nome":"Miguel Pupo", "codigo":"mpup"}, {"nome":"Ian Gouveia", "codigo":"igou"}] 
 		}]
 }
