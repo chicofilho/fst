@@ -3,15 +3,15 @@
 	"place": "Peniche, Cascais, Portugal",
 	"heat": [
 				{
-					"name":"Leonardo Fioravanti", 
-					"score": "4.199999999999999",
-					"yahs": "12.03",
-					"yhwp": "24.0",
-					"eahs": "4.2",
-					"ehwp": "100.0",
-					"eahs2017": 4.2,
+					"name":"Julian Wilson", 
+					"score": "4.9",
+					"yahs": "13.96",
+					"yhwp": "57.89",
+					"eahs": "12.97",
+					"ehwp": "61.9",
+					"eahs2017": 4.9,
 					"ehwp2017": 100.0,
-					"wins": 0
+					"wins": 4
 				}
 				,
 				{
@@ -23,22 +23,22 @@
 					"ehwp": "28.57",
 					"eahs2017": 2.03,
 					"ehwp2017": 0.0,
-					"wins": 0
+					"wins": 1
 				}
 				,
 				{
-					"name":"Julian Wilson", 
-					"score": "2.7600000000000002",
-					"yahs": "13.9",
-					"yhwp": "55.26",
-					"eahs": "12.87",
-					"ehwp": "57.14",
-					"eahs2017": 2.76,
+					"name":"Leonardo Fioravanti", 
+					"score": "4.199999999999999",
+					"yahs": "12.03",
+					"yhwp": "20.0",
+					"eahs": "4.2",
+					"ehwp": "0.0",
+					"eahs2017": 4.2,
 					"ehwp2017": 0.0,
-					"wins": 2
+					"wins": 0
 				}
 	],
-	"rd1_results" : [[{"surfer":"Leonardo Fioravanti","w1":2.17,"w2":2.03,"sum":4.199999999999999},{"surfer":"Julian Wilson","w1":0.93,"w2":1.83,"sum":2.7600000000000002},{"surfer":"Caio Ibelli","w1":0.93,"w2":1.1,"sum":2.0300000000000002}],[{"surfer":"Matt Wilkinson","w1":0.0,"w2":0.0,"sum":0.0},{"surfer":"Bede Durbidge","w1":0.0,"w2":0.0,"sum":0.0},{"surfer":"Stuart Kennedy","w1":0.0,"w2":0.0,"sum":0.0}],[{"surfer":"Owen Wright","w1":0.0,"w2":0.0,"sum":0.0},{"surfer":"Conner Coffin","w1":0.0,"w2":0.0,"sum":0.0},{"surfer":"Ethan Ewing","w1":0.0,"w2":0.0,"sum":0.0}],[{"surfer":"Gabriel Medina","w1":0.0,"w2":0.0,"sum":0.0},{"surfer":"Wiggolly Dantas","w1":0.0,"w2":0.0,"sum":0.0},{"surfer":"Josh Kerr","w1":0.0,"w2":0.0,"sum":0.0}],[{"surfer":"Jordy Smith","w1":0.0,"w2":0.0,"sum":0.0},{"surfer":"Italo Ferreira","w1":0.0,"w2":0.0,"sum":0.0},{"surfer":"Vasco Ribeiro","w1":0.0,"w2":0.0,"sum":0.0}],[{"surfer":"John John Florence","w1":0.0,"w2":0.0,"sum":0.0},{"surfer":"Kanoa Igarashi","w1":0.0,"w2":0.0,"sum":0.0},{"surfer":"Mason Ho","w1":0.0,"w2":0.0,"sum":0.0}],[{"surfer":"Adriano de Souza","w1":0.0,"w2":0.0,"sum":0.0},{"surfer":"Jeremy Flores","w1":0.0,"w2":0.0,"sum":0.0},{"surfer":"Jack Freestone","w1":0.0,"w2":0.0,"sum":0.0}],[{"surfer":"Filipe Toledo","w1":0.0,"w2":0.0,"sum":0.0},{"surfer":"Michel Bourez","w1":0.0,"w2":0.0,"sum":0.0},{"surfer":"Jadson Andre","w1":0.0,"w2":0.0,"sum":0.0}],[{"surfer":"Joel Parkinson","w1":0.0,"w2":0.0,"sum":0.0},{"surfer":"Joan Duru","w1":0.0,"w2":0.0,"sum":0.0},{"surfer":"Nat Young","w1":0.0,"w2":0.0,"sum":0.0}],[{"surfer":"Kolohe Andino","w1":0.0,"w2":0.0,"sum":0.0},{"surfer":"Connor O\u0026apos;Leary","w1":0.0,"w2":0.0,"sum":0.0},{"surfer":"Miguel Pupo","w1":0.0,"w2":0.0,"sum":0.0}],[{"surfer":"Sebastian Zietz","w1":0.0,"w2":0.0,"sum":0.0},{"surfer":"Adrian Buchan","w1":0.0,"w2":0.0,"sum":0.0},{"surfer":"Ezekiel Lau","w1":0.0,"w2":0.0,"sum":0.0}],[{"surfer":"Mick Fanning","w1":0.0,"w2":0.0,"sum":0.0},{"surfer":"Frederico Morais","w1":0.0,"w2":0.0,"sum":0.0},{"surfer":"Ian Gouveia","w1":0.0,"w2":0.0,"sum":0.0}]],
+	"rd1_results" : [[{"surfer":"Julian Wilson","w1":1.83,"w2":3.07,"sum":4.9},{"surfer":"Leonardo Fioravanti","w1":2.17,"w2":2.03,"sum":4.199999999999999},{"surfer":"Caio Ibelli","w1":0.93,"w2":1.1,"sum":2.0300000000000002}],[{"surfer":"Matt Wilkinson","w1":0.0,"w2":0.0,"sum":0.0},{"surfer":"Bede Durbidge","w1":0.0,"w2":0.0,"sum":0.0},{"surfer":"Stuart Kennedy","w1":0.0,"w2":0.0,"sum":0.0}],[{"surfer":"Owen Wright","w1":0.0,"w2":0.0,"sum":0.0},{"surfer":"Conner Coffin","w1":0.0,"w2":0.0,"sum":0.0},{"surfer":"Ethan Ewing","w1":0.0,"w2":0.0,"sum":0.0}],[{"surfer":"Gabriel Medina","w1":0.0,"w2":0.0,"sum":0.0},{"surfer":"Wiggolly Dantas","w1":0.0,"w2":0.0,"sum":0.0},{"surfer":"Josh Kerr","w1":0.0,"w2":0.0,"sum":0.0}],[{"surfer":"Jordy Smith","w1":0.0,"w2":0.0,"sum":0.0},{"surfer":"Italo Ferreira","w1":0.0,"w2":0.0,"sum":0.0},{"surfer":"Vasco Ribeiro","w1":0.0,"w2":0.0,"sum":0.0}],[{"surfer":"John John Florence","w1":0.0,"w2":0.0,"sum":0.0},{"surfer":"Kanoa Igarashi","w1":0.0,"w2":0.0,"sum":0.0},{"surfer":"Mason Ho","w1":0.0,"w2":0.0,"sum":0.0}],[{"surfer":"Adriano de Souza","w1":0.0,"w2":0.0,"sum":0.0},{"surfer":"Jeremy Flores","w1":0.0,"w2":0.0,"sum":0.0},{"surfer":"Jack Freestone","w1":0.0,"w2":0.0,"sum":0.0}],[{"surfer":"Filipe Toledo","w1":0.0,"w2":0.0,"sum":0.0},{"surfer":"Michel Bourez","w1":0.0,"w2":0.0,"sum":0.0},{"surfer":"Jadson Andre","w1":0.0,"w2":0.0,"sum":0.0}],[{"surfer":"Joel Parkinson","w1":0.0,"w2":0.0,"sum":0.0},{"surfer":"Joan Duru","w1":0.0,"w2":0.0,"sum":0.0},{"surfer":"Nat Young","w1":0.0,"w2":0.0,"sum":0.0}],[{"surfer":"Kolohe Andino","w1":0.0,"w2":0.0,"sum":0.0},{"surfer":"Connor O\u0026apos;Leary","w1":0.0,"w2":0.0,"sum":0.0},{"surfer":"Miguel Pupo","w1":0.0,"w2":0.0,"sum":0.0}],[{"surfer":"Sebastian Zietz","w1":0.0,"w2":0.0,"sum":0.0},{"surfer":"Adrian Buchan","w1":0.0,"w2":0.0,"sum":0.0},{"surfer":"Ezekiel Lau","w1":0.0,"w2":0.0,"sum":0.0}],[{"surfer":"Mick Fanning","w1":0.0,"w2":0.0,"sum":0.0},{"surfer":"Frederico Morais","w1":0.0,"w2":0.0,"sum":0.0},{"surfer":"Ian Gouveia","w1":0.0,"w2":0.0,"sum":0.0}]],
 	"rd2_results" : [],
 	"rd3_results" : [],
 	"rd4_results" : [],
