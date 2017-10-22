@@ -3,25 +3,25 @@
 	"place": "Peniche, Cascais, Portugal",
 	"heat": [
 				{
-					"name":"Frederico Morais", 
-					"score": "5.03",
-					"yahs": "13.5",
-					"yhwp": "48.48",
-					"eahs": "11.68",
-					"ehwp": "54.55",
-					"eahs2017": 5.94,
+					"name":"Ezekiel Lau", 
+					"score": "1.6",
+					"yahs": "12.11",
+					"yhwp": "29.63",
+					"eahs": "2.79",
+					"ehwp": "50.0",
+					"eahs2017": 2.79,
 					"ehwp2017": 50.0,
-					"wins": 1
+					"wins": 0
 				}
 				,
 				{
-					"name":"Nat Young", 
-					"score": "2.87",
-					"yahs": "11.48",
-					"yhwp": "27.27",
-					"eahs": "11.88",
-					"ehwp": "43.75",
-					"eahs2017": 6.07,
+					"name":"Adrian Buchan", 
+					"score": "0.0",
+					"yahs": "13.75",
+					"yhwp": "46.88",
+					"eahs": "8.56",
+					"ehwp": "14.29",
+					"eahs2017": 7.9,
 					"ehwp2017": 0.0,
 					"wins": 1
 				}
