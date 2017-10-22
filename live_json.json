@@ -4,24 +4,24 @@
 	"heat": [
 				{
 					"name":"Bede Durbidge", 
-					"score": "10.53",
-					"yahs": "12.36",
-					"yhwp": "40.0",
-					"eahs": "11.2",
-					"ehwp": "40.0",
-					"eahs2017": 8.99,
-					"ehwp2017": 50.0,
+					"score": "8.6",
+					"yahs": "12.42",
+					"yhwp": "37.93",
+					"eahs": "11.24",
+					"ehwp": "35.71",
+					"eahs2017": 7.44,
+					"ehwp2017": 0.0,
 					"wins": 1
 				}
 				,
 				{
 					"name":"Conner Coffin", 
-					"score": "1.63",
+					"score": "1.87",
 					"yahs": "12.23",
 					"yhwp": "29.03",
-					"eahs": "10.3",
+					"eahs": "10.32",
 					"ehwp": "50.0",
-					"eahs2017": 5.49,
+					"eahs2017": 5.61,
 					"ehwp2017": 0.0,
 					"wins": 1
 				}
