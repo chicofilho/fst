@@ -951,7 +951,7 @@
              
              tierA = ['JOHN JOHN FLORENCE', 'JORDY SMITH', 'GABRIEL MEDINA', 'OWEN WRIGHT', 'MATT WILKINSON', 'JULIAN WILSON', 'ADRIANO DE SOUZA', 'FILIPE TOLEDO' ]
 
-            tierB = ['JOEL PARKINSON', 'KOLOHE ANDINO', 'SEBASTIAN ZIETZ', 'MICK FANNING', 'FREDERICO MORAIS', 'ADRIAN BUCHAN', 'CONNOR OLEARY', 'JOAN DURU', 'MICHEL BOUREZ', 'JEREMY FLORES', 'CAIO IBELLI', 'BEDE DURBIDGE', 'CONNER COFFIN', 'WIGGOLLY DANTAS', 'ITALO FERREIRA', 'KANOA IGARASHI']
+            tierB = ['JOEL PARKINSON', 'KOLOHE ANDINO', 'SEBASTIAN ZIETZ', 'MICK FANNING', 'FREDERICO MORAIS', 'ADRIAN BUCHAN', 'CONNOR OLEARY', 'CONNOR O&APOS;LEARY', 'JOAN DURU', 'MICHEL BOUREZ', 'JEREMY FLORES', 'CAIO IBELLI', 'BEDE DURBIDGE', 'CONNER COFFIN', 'WIGGOLLY DANTAS', 'ITALO FERREIRA', 'KANOA IGARASHI']
             tierC = ['EZEKIEL LAU', 'IAN GOUVEIA', 'JACK FREESTONE', 'JADSON ANDRE', 'LEONARDO FIORAVANTI', 'MIGUEL PUPO', 'STUART KENNEDY', 'NAT YOUNG', 'ETHAN EWING', 'JOSH KERR', 'VASCO RIBEIRO', 'MASON HO']
 
             rd1 = [
@@ -969,7 +969,7 @@
                 ['MICK FANNING', 'FREDERICO MORAIS', 'IAN GOUVEIA']
             ]
 
-            rd_heads = ['JOHN JOHN FLORENCE', 'JORDY SMITH', 'GABRIEL MEDINA', 'OWEN WRIGHT', 'MATT WILKINSON', 'JULIAN WILSON', 'ADRIANO DE SOUZA', 'FILIPE TOLEDO', 'JOEL PARKINSON', 'KOLOHE ANDINO', 'SEBASTIAN ZIETZ', 'MICK FANNING', 'FREDERICO MORAIS', 'ADRIAN BUCHAN', 'CONNOR OLEARY', 'JOAN DURU', 'MICHEL BOUREZ', 'JEREMY FLORES', 'CAIO IBELLI', 'BEDE DURBIDGE', 'CONNER COFFIN', 'WIGGOLLY DANTAS', 'ITALO FERREIRA', 'KANOA IGARASHI', 'IAN GOUVEIA', 'EZEKIEL LAU', 'MIGUEL PUPO', 'NAT YOUNG', 'JADSON ANDRE', 'JACK FREESTONE', 'LEONARDO FIORAVANTI', 'STUART KENNEDY', 'ETHAN EWING', 'JOSH KERR', 'VASCO RIBEIRO', 'MASON HO']
+            rd_heads = ['JOHN JOHN FLORENCE', 'JORDY SMITH', 'GABRIEL MEDINA', 'OWEN WRIGHT', 'MATT WILKINSON', 'JULIAN WILSON', 'ADRIANO DE SOUZA', 'FILIPE TOLEDO', 'JOEL PARKINSON', 'KOLOHE ANDINO', 'SEBASTIAN ZIETZ', 'MICK FANNING', 'FREDERICO MORAIS', 'ADRIAN BUCHAN', 'CONNOR OLEARY', 'CONNOR O&APOS;LEARY', 'JOAN DURU', 'MICHEL BOUREZ', 'JEREMY FLORES', 'CAIO IBELLI', 'BEDE DURBIDGE', 'CONNER COFFIN', 'WIGGOLLY DANTAS', 'ITALO FERREIRA', 'KANOA IGARASHI', 'IAN GOUVEIA', 'EZEKIEL LAU', 'MIGUEL PUPO', 'NAT YOUNG', 'JADSON ANDRE', 'JACK FREESTONE', 'LEONARDO FIORAVANTI', 'STUART KENNEDY', 'ETHAN EWING', 'JOSH KERR', 'VASCO RIBEIRO', 'MASON HO']
             rd2 = []
 
             rd3 = [[], [], [], [], [], [], [], [], [], [], [], []]
@@ -1400,56 +1400,57 @@
             }
 
             function create_round_four(rd3_ordered, rd3_results){
-                // var z = 0
-                // for (z = 0; z < rd3_results.length; z++) {
-                //     console.log(parseInt(z/3))
-                //     rd4[parseInt(z/3)].push(rd3_results[z][0].surfer.toUpperCase())
-                // };
+                var z = 0
+                for (z = 0; z < rd3_results.length; z++) {
+                    console.log(parseInt(z/3))
+                    console.log(rd3_results[z][0].surfer.toUpperCase())
+                    rd4[parseInt(z/3)].push(rd3_results[z][0].surfer.toUpperCase())
+                };
 
-                // for (var i = z; i < rd3_ordered.length; i++) {
-                //     rd4[parseInt(i/3)].push(rd3_ordered[i][0])
+                for (var i = z; i < rd3_ordered.length; i++) {
+                    rd4[parseInt(i/3)].push(rd3_ordered[i][0])
 
-                // };
+                };
 
-                rd4[0].push(rd3_ordered[0][0])
-                rd4[0].push(rd3_ordered[1][0])
-                rd4[0].push(rd3_ordered[2][0])
-                rd4[1].push(rd3_ordered[3][0])
-                rd4[1].push(rd3_ordered[4][0])
-                rd4[1].push(rd3_ordered[5][0])
-                rd4[2].push(rd3_ordered[6][0])
-                rd4[2].push(rd3_ordered[7][0])
-                rd4[2].push(rd3_ordered[8][0])
-                rd4[3].push(rd3_ordered[9][0])
-                rd4[3].push(rd3_ordered[10][0])
-                rd4[3].push(rd3_ordered[11][0])
+                // rd4[0].push(rd3_ordered[0][0])
+                // rd4[0].push(rd3_ordered[1][0])
+                // rd4[0].push(rd3_ordered[2][0])
+                // rd4[1].push(rd3_ordered[3][0])
+                // rd4[1].push(rd3_ordered[4][0])
+                // rd4[1].push(rd3_ordered[5][0])
+                // rd4[2].push(rd3_ordered[6][0])
+                // rd4[2].push(rd3_ordered[7][0])
+                // rd4[2].push(rd3_ordered[8][0])
+                // rd4[3].push(rd3_ordered[9][0])
+                // rd4[3].push(rd3_ordered[10][0])
+                // rd4[3].push(rd3_ordered[11][0])
                 order_matches(rd4)
                 console.log(rd4)
 
             }
 
             function create_round_five(rd4_ordered, rd4_results){
-                // var positions = [[0, 1], [1, 0], [2, 3], [3, 2]]
-                // var i = 0;
-                // for (i = 0; i < rd4_results.length; i++) {
-                //     rd5[positions[i][0]].push(rd4_results[i][1].surfer)
-                //     rd5[positions[i][1]].push(rd4_results[i][2].surfer)
-                // };
+                var positions = [[0, 1], [1, 0], [2, 3], [3, 2]]
+                var i = 0;
+                for (i = 0; i < rd4_results.length; i++) {
+                    rd5[positions[i][0]].push(rd4_results[i][1].surfer.toUpperCase())
+                    rd5[positions[i][1]].push(rd4_results[i][2].surfer.toUpperCase())
+                };
 
-                // for (var z = 0; z < rd4_ordered.length; z++) {
-                //     rd5[positions[z][0]].push(rd4_ordered[z][1].surfer)
-                //     rd5[positions[z][1]].push(rd4_ordered[z][2].surfer)                 
-                // };
+                for (var z = i; z < rd4_ordered.length; z++) {
+                    rd5[positions[z][0]].push(rd4_ordered[z][1])
+                    rd5[positions[z][1]].push(rd4_ordered[z][2])                 
+                };
 
 
-                rd5[0].push(rd4_ordered[0][1])
-                rd5[0].push(rd4_ordered[1][2])
-                rd5[1].push(rd4_ordered[1][1])
-                rd5[1].push(rd4_ordered[0][2])
-                rd5[2].push(rd4_ordered[2][1])
-                rd5[2].push(rd4_ordered[3][2])
-                rd5[3].push(rd4_ordered[3][1])
-                rd5[3].push(rd4_ordered[2][2])
+                // rd5[0].push(rd4_ordered[0][1])
+                // rd5[0].push(rd4_ordered[1][2])
+                // rd5[1].push(rd4_ordered[1][1])
+                // rd5[1].push(rd4_ordered[0][2])
+                // rd5[2].push(rd4_ordered[2][1])
+                // rd5[2].push(rd4_ordered[3][2])
+                // rd5[3].push(rd4_ordered[3][1])
+                // rd5[3].push(rd4_ordered[2][2])
                 order_matches(rd5)
                 console.log(rd5)
             }
