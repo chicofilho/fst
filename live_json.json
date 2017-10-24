@@ -3,38 +3,38 @@
 	"place": "Peniche, Cascais, Portugal",
 	"heat": [
 				{
-					"name":"Kanoa Igarashi", 
-					"score": "5.67",
-					"yahs": "10.56",
-					"yhwp": "33.33",
-					"eahs": "9.59",
-					"ehwp": "57.14",
-					"eahs2017": 8.44,
+					"name":"Frederico Morais", 
+					"score": "8.33",
+					"yahs": "13.28",
+					"yhwp": "51.43",
+					"eahs": "11.37",
+					"ehwp": "61.54",
+					"eahs2017": 7.8,
 					"ehwp2017": 75.0,
-					"wins": 1
+					"wins": 0
 				}
 				,
 				{
 					"name":"Josh Kerr", 
-					"score": "0.0",
-					"yahs": "10.82",
-					"yhwp": "19.05",
-					"eahs": "12.31",
-					"ehwp": "66.67",
-					"eahs2017": 10.75,
-					"ehwp2017": 100.0,
-					"wins": 1
+					"score": "3.67",
+					"yahs": "10.49",
+					"yhwp": "18.18",
+					"eahs": "11.92",
+					"ehwp": "63.64",
+					"eahs2017": 8.39,
+					"ehwp2017": 66.67,
+					"wins": 0
 				}
 				,
 				{
-					"name":"Frederico Morais", 
-					"score": "0.0",
-					"yahs": "13.42",
-					"yhwp": "50.0",
-					"eahs": "11.63",
-					"ehwp": "58.33",
-					"eahs2017": 7.62,
-					"ehwp2017": 66.67,
+					"name":"Kanoa Igarashi", 
+					"score": "5.67",
+					"yahs": "10.56",
+					"yhwp": "30.0",
+					"eahs": "9.59",
+					"ehwp": "42.86",
+					"eahs2017": 8.44,
+					"ehwp2017": 50.0,
 					"wins": 0
 				}
 	],
