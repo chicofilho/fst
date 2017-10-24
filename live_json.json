@@ -4,24 +4,24 @@
 	"heat": [
 				{
 					"name":"Frederico Morais", 
-					"score": "8.33",
-					"yahs": "13.28",
+					"score": "13.6",
+					"yahs": "13.43",
 					"yhwp": "51.43",
-					"eahs": "11.37",
+					"eahs": "11.78",
 					"ehwp": "61.54",
-					"eahs2017": 7.8,
+					"eahs2017": 9.12,
 					"ehwp2017": 75.0,
 					"wins": 0
 				}
 				,
 				{
 					"name":"Josh Kerr", 
-					"score": "3.67",
-					"yahs": "10.49",
+					"score": "4.17",
+					"yahs": "10.51",
 					"yhwp": "18.18",
-					"eahs": "11.92",
+					"eahs": "11.94",
 					"ehwp": "63.64",
-					"eahs2017": 8.39,
+					"eahs2017": 8.56,
 					"ehwp2017": 66.67,
 					"wins": 0
 				}
