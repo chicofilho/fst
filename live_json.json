@@ -4,25 +4,25 @@
 	"heat": [
 				{
 					"name":"Gabriel Medina", 
-					"score": "0.5",
-					"yahs": "14.11",
+					"score": "1.13",
+					"yahs": "14.12",
 					"yhwp": "69.77",
-					"eahs": "12.16",
+					"eahs": "12.19",
 					"ehwp": "64.0",
-					"eahs2017": 11.04,
+					"eahs2017": 11.13,
 					"ehwp2017": 85.71,
 					"wins": 3
 				}
 				,
 				{
 					"name":"Julian Wilson", 
-					"score": "0.0",
-					"yahs": "13.81",
-					"yhwp": "61.9",
-					"eahs": "12.88",
-					"ehwp": "68.0",
-					"eahs2017": 10.88,
-					"ehwp2017": 100.0,
+					"score": "1.0",
+					"yahs": "13.51",
+					"yhwp": "60.47",
+					"eahs": "12.42",
+					"ehwp": "65.38",
+					"eahs2017": 9.23,
+					"ehwp2017": 83.33,
 					"wins": 7
 				}
 	],
