@@ -3,27 +3,27 @@
 	"place": "Peniche, Cascais, Portugal",
 	"heat": [
 				{
-					"name":"Kolohe Andino", 
-					"score": "9.26",
-					"yahs": "12.67",
-					"yhwp": "60.0",
-					"eahs": "12.73",
-					"ehwp": "51.85",
-					"eahs2017": 12.89,
-					"ehwp2017": 71.43,
-					"wins": 6
+					"name":"Julian Wilson", 
+					"score": "9.43",
+					"yahs": "13.63",
+					"yhwp": "61.9",
+					"eahs": "12.58",
+					"ehwp": "68.0",
+					"eahs2017": 9.4,
+					"ehwp2017": 100.0,
+					"wins": 5
 				}
 				,
 				{
-					"name":"Julian Wilson", 
-					"score": "0.0",
-					"yahs": "13.73",
-					"yhwp": "60.98",
-					"eahs": "12.71",
-					"ehwp": "66.67",
-					"eahs2017": 9.39,
-					"ehwp2017": 100.0,
-					"wins": 5
+					"name":"Kolohe Andino", 
+					"score": "9.26",
+					"yahs": "12.67",
+					"yhwp": "57.5",
+					"eahs": "12.73",
+					"ehwp": "48.15",
+					"eahs2017": 12.89,
+					"ehwp2017": 57.14,
+					"wins": 6
 				}
 	],
 	"rd1_results" : [[{"surfer":"Julian Wilson","w1":3.07,"w2":1.9,"sum":4.97},{"surfer":"Leonardo Fioravanti","w1":2.17,"w2":2.03,"sum":4.199999999999999},{"surfer":"Caio Ibelli","w1":0.93,"w2":1.1,"sum":2.0300000000000002}],[{"surfer":"Matt Wilkinson","w1":4.67,"w2":5.17,"sum":9.84},{"surfer":"Stuart Kennedy","w1":3.77,"w2":4.13,"sum":7.9},{"surfer":"Bede Durbidge","w1":4.77,"w2":2.67,"sum":7.4399999999999995}],[{"surfer":"Ethan Ewing","w1":6.5,"w2":3.87,"sum":10.370000000000001},{"surfer":"Conner Coffin","w1":3.17,"w2":6.17,"sum":9.34},{"surfer":"Owen Wright","w1":4.33,"w2":5.0,"sum":9.33}],[{"surfer":"Josh Kerr","w1":6.33,"w2":6.5,"sum":12.83},{"surfer":"Gabriel Medina","w1":7.67,"w2":3.2,"sum":10.870000000000001},{"surfer":"Wiggolly Dantas","w1":0.9,"w2":2.0,"sum":2.9}],[{"surfer":"Jordy Smith","w1":5.17,"w2":4.03,"sum":9.2},{"surfer":"Vasco Ribeiro","w1":0.57,"w2":3.07,"sum":3.6399999999999997},{"surfer":"Italo Ferreira","w1":1.17,"w2":0.87,"sum":2.04}],[{"surfer":"John John Florence","w1":4.0,"w2":7.67,"sum":11.67},{"surfer":"Mason Ho","w1":1.17,"w2":2.5,"sum":3.67},{"surfer":"Kanoa Igarashi","w1":0.5,"w2":0.0,"sum":0.5}],[{"surfer":"Jack Freestone","w1":5.9,"w2":9.0,"sum":14.9},{"surfer":"Adriano de Souza","w1":5.67,"w2":7.0,"sum":12.67},{"surfer":"Jeremy Flores","w1":2.4,"w2":1.93,"sum":4.33}],[{"surfer":"Michel Bourez","w1":3.5,"w2":8.5,"sum":12.0},{"surfer":"Filipe Toledo","w1":6.67,"w2":1.07,"sum":7.74},{"surfer":"Jadson Andre","w1":2.23,"w2":2.5,"sum":4.73}],[{"surfer":"Joel Parkinson","w1":8.93,"w2":4.57,"sum":13.5},{"surfer":"Nat Young","w1":7.0,"w2":2.27,"sum":9.27},{"surfer":"Joan Duru","w1":3.33,"w2":1.4,"sum":4.73}],[{"surfer":"Miguel Pupo","w1":3.67,"w2":4.33,"sum":8.0},{"surfer":"Kolohe Andino","w1":4.83,"w2":1.83,"sum":6.66},{"surfer":"Connor O\u0026apos;Leary","w1":3.0,"w2":2.17,"sum":5.17}],[{"surfer":"Sebastian Zietz","w1":6.5,"w2":3.27,"sum":9.77},{"surfer":"Adrian Buchan","w1":2.67,"w2":5.23,"sum":7.9},{"surfer":"Ezekiel Lau","w1":2.77,"w2":1.2,"sum":3.9699999999999998}],[{"surfer":"Mick Fanning","w1":9.0,"w2":6.5,"sum":15.5},{"surfer":"Frederico Morais","w1":4.17,"w2":2.67,"sum":6.84},{"surfer":"Ian Gouveia","w1":1.67,"w2":2.83,"sum":4.5}]],
@@ -32,7 +32,7 @@
 	"rd4_results" : [[{"surfer":"Julian Wilson","w1":5.5,"w2":6.17,"sum":11.67},{"surfer":"Sebastian Zietz","w1":4.67,"w2":3.43,"sum":8.1},{"surfer":"Leonardo Fioravanti","w1":3.9,"w2":3.87,"sum":7.77}],[{"surfer":"John John Florence","w1":8.33,"w2":8.67,"sum":17.0},{"surfer":"Kolohe Andino","w1":7.5,"w2":8.07,"sum":15.57},{"surfer":"Connor O\u0026apos;Leary","w1":7.33,"w2":6.17,"sum":13.5}],[{"surfer":"Kanoa Igarashi","w1":8.33,"w2":8.5,"sum":16.83},{"surfer":"Josh Kerr","w1":5.87,"w2":9.57,"sum":15.440000000000001},{"surfer":"Frederico Morais","w1":8.33,"w2":5.27,"sum":13.6}],[{"surfer":"Gabriel Medina","w1":6.8,"w2":7.67,"sum":14.469999999999999},{"surfer":"Mick Fanning","w1":6.67,"w2":5.8,"sum":12.469999999999999},{"surfer":"Miguel Pupo","w1":0.0,"w2":5.27,"sum":5.27}]],
 	"rd5_results" : [[{"surfer":"Sebastian Zietz","w1":5.17,"w2":6.93,"sum":12.1},{"surfer":"Connor O\u0026apos;Leary","w1":6.5,"w2":5.57,"sum":12.07}],[{"surfer":"Kolohe Andino","w1":6.9,"w2":9.63,"sum":16.53},{"surfer":"Leonardo Fioravanti","w1":4.5,"w2":6.33,"sum":10.83}],[{"surfer":"Miguel Pupo","w1":8.43,"w2":7.07,"sum":15.5},{"surfer":"Josh Kerr","w1":3.5,"w2":7.17,"sum":10.67}],[{"surfer":"Mick Fanning","w1":8.5,"w2":3.37,"sum":11.870000000000001},{"surfer":"Frederico Morais","w1":5.17,"w2":4.83,"sum":10.0}]],
 	"rd6_results" : [[{"surfer":"Julian Wilson","w1":4.17,"w2":3.33,"sum":7.5},{"surfer":"Sebastian Zietz","w1":5.5,"w2":1.9,"sum":7.4}],[{"surfer":"Kolohe Andino","w1":7.17,"w2":6.83,"sum":14.0},{"surfer":"John John Florence","w1":2.33,"w2":1.47,"sum":3.8}],[{"surfer":"Kanoa Igarashi","w1":6.83,"w2":5.67,"sum":12.5},{"surfer":"Miguel Pupo","w1":2.27,"w2":6.17,"sum":8.44}],[{"surfer":"Gabriel Medina","w1":5.33,"w2":6.0,"sum":11.33},{"surfer":"Mick Fanning","w1":2.0,"w2":1.17,"sum":3.17}]],
-	"rd7_results" : [[{"surfer":"Kolohe Andino","w1":0.43,"w2":8.83,"sum":9.26},{"surfer":"Julian Wilson","w1":0.0,"w2":0.0,"sum":0.0}],[{"surfer":"Kanoa Igarashi","w1":0.0,"w2":0.0,"sum":0.0},{"surfer":"Gabriel Medina","w1":0.0,"w2":0.0,"sum":0.0}]],
+	"rd7_results" : [[{"surfer":"Julian Wilson","w1":9.43,"w2":0.0,"sum":9.43},{"surfer":"Kolohe Andino","w1":0.43,"w2":8.83,"sum":9.26}],[{"surfer":"Kanoa Igarashi","w1":0.0,"w2":0.0,"sum":0.0},{"surfer":"Gabriel Medina","w1":0.0,"w2":0.0,"sum":0.0}]],
 	"rd8_results" : [],
 
 	"test" : []
