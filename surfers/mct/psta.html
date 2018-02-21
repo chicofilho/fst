@@ -110,22 +110,6 @@
     	
     		<hr/>
     		<h4 style="text-align:center;" >Competitions</h4>
-					<div class="row">
-						<div class="col-sm-4">
-							<h4 style="text-align:center;">
-								<a href="http://fantasysurfingtips.com/surfers/mqs/psta">mqs</a>
-							</h4>
-						</div>
-						<div class="col-sm-4">
-							<h6 style="text-align:center;">Stat Rank</h6>
-							<p style="text-align:center;">#25</p>
-						</div>
-						<div class="col-sm-4">
-							<h6 style="text-align:center;">Stat Points</h6>
-							<p style="text-align:center;">79.37</p>
-						</div>
-					</div>
-					<hr/>
 
 
     	<hr/>
@@ -145,177 +129,6 @@
             </div>
     	</div>
     	
-	    	<hr/>
-<h4 style="text-align:center;">Progression through seasons</h4>
-	<p class="small" style="text-align:center;">You can choose a championship and a metric to analyze how the surfer is progressing through seasons </p>
-	<div class="row">
-			<div class="col-sm-12" style="margin-bottom:10px;">
-				<div class="dropdown">
-				  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Choose Event
-				  <span class="caret"></span></button>
-				  <ul class="dropdown-menu" style="z-index:999;">
-				  			<li href="#" id="event-drug-aware-margaret-river-pro" class="event-picker">Margaret River, Western Australia</li>
-				  </ul>
-				</div>	
-			</div>
-			
-			<div class="col-sm-12">
-				<div class="dropdown">
-				  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Choose Metric
-				  <span class="caret"></span></button>
-				  <ul class="dropdown-menu" style="z-index:999;">
-				  			<li href="#" id="graph-0" class="graph-picker">Average Heat Score</li>
-				  			<li href="#" id="graph-1" class="graph-picker">Winning Percentage</li>
-				  			<li href="#" id="graph-2" class="graph-picker">WSL Fantasy Points</li>
-				  			<li href="#" id="graph-3" class="graph-picker">FS Fantasy Surfer Points</li>
-				  </ul>
-				</div>
-			</div>
-		
-	</div>
-
-
-		<div class="row season-graph graph-0 event-drug-aware-margaret-river-pro">
-			<h5 style="text-align:center;">drug-aware-margaret-river-pro</h5>
-	
-			<h6 style="text-align:center;">Average Heat Score</h6>
-			<div id="season_events_drug-aware-margaret-river-pro_0"  style="height: 250px;"></div>
-		
-			<script type="text/javascript">
-				$('document').ready(function(){
-					new Morris.Line({
-					  // ID of the element in which to draw the chart.
-					  element: 'season_events_drug-aware-margaret-river-pro_0',
-					  // Chart data records -- each entry in this array corresponds to a point on
-					  // the chart.
-					  data: [{"year":"2014","y":10.0}],
-
-					  // The name of the data record attribute that contains x-values.
-					  xkey: 'year',
-					  // A list of names of data record attributes that contain y-values.
-					  ykeys: 'y',
-					  // Labels for the ykeys -- will be displayed when you hover over the
-					  // chart.
-					  labels: ['Average Heat Score']
-					});
-
-				});
-			</script>
-		</div>
-		
-		<div class="row season-graph graph-1 event-drug-aware-margaret-river-pro">
-			<h5 style="text-align:center;">drug-aware-margaret-river-pro</h5>
-	
-			<h6 style="text-align:center;">Winning Percentage</h6>
-			<div id="season_events_drug-aware-margaret-river-pro_1"  style="height: 250px;"></div>
-		
-			<script type="text/javascript">
-				$('document').ready(function(){
-					new Morris.Line({
-					  // ID of the element in which to draw the chart.
-					  element: 'season_events_drug-aware-margaret-river-pro_1',
-					  // Chart data records -- each entry in this array corresponds to a point on
-					  // the chart.
-					  data: [{"year":"2014","y":0.0}],
-
-					  // The name of the data record attribute that contains x-values.
-					  xkey: 'year',
-					  // A list of names of data record attributes that contain y-values.
-					  ykeys: 'y',
-					  // Labels for the ykeys -- will be displayed when you hover over the
-					  // chart.
-					  labels: ['Winning Percentage']
-					});
-
-				});
-			</script>
-		</div>
-		
-		<div class="row season-graph graph-2 event-drug-aware-margaret-river-pro">
-			<h5 style="text-align:center;">drug-aware-margaret-river-pro</h5>
-	
-			<h6 style="text-align:center;">WSL Fantasy Points</h6>
-			<div id="season_events_drug-aware-margaret-river-pro_2"  style="height: 250px;"></div>
-		
-			<script type="text/javascript">
-				$('document').ready(function(){
-					new Morris.Line({
-					  // ID of the element in which to draw the chart.
-					  element: 'season_events_drug-aware-margaret-river-pro_2',
-					  // Chart data records -- each entry in this array corresponds to a point on
-					  // the chart.
-					  data: [{"year":"2014","y":26.6}],
-
-					  // The name of the data record attribute that contains x-values.
-					  xkey: 'year',
-					  // A list of names of data record attributes that contain y-values.
-					  ykeys: 'y',
-					  // Labels for the ykeys -- will be displayed when you hover over the
-					  // chart.
-					  labels: ['WSL Fantasy Points']
-					});
-
-				});
-			</script>
-		</div>
-		
-		<div class="row season-graph graph-3 event-drug-aware-margaret-river-pro">
-			<h5 style="text-align:center;">drug-aware-margaret-river-pro</h5>
-	
-			<h6 style="text-align:center;">FS Fantasy Surfer Points</h6>
-			<div id="season_events_drug-aware-margaret-river-pro_3"  style="height: 250px;"></div>
-		
-			<script type="text/javascript">
-				$('document').ready(function(){
-					new Morris.Line({
-					  // ID of the element in which to draw the chart.
-					  element: 'season_events_drug-aware-margaret-river-pro_3',
-					  // Chart data records -- each entry in this array corresponds to a point on
-					  // the chart.
-					  data: [{"year":"2014","y":41}],
-
-					  // The name of the data record attribute that contains x-values.
-					  xkey: 'year',
-					  // A list of names of data record attributes that contain y-values.
-					  ykeys: 'y',
-					  // Labels for the ykeys -- will be displayed when you hover over the
-					  // chart.
-					  labels: ['FS Fantasy Surfer Points']
-					});
-
-				});
-			</script>
-		</div>
-		
-<hr/>
-<script type="text/javascript">
-	event_season = 'event-drug-aware-margaret-river-pro'
-	graph = 'graph-0'
-	
-	
-
-	$('document').ready(function(){
-		function show_season_graphs(){
-			$('.season-graph').hide()
-			$('.'+event_season + '.'+graph).show()
-		}
-
-		$('.graph-picker').click(function(){
-			graph = $(this).attr('id')
-			show_season_graphs()
-		})
-		$('.event-picker').click(function(){
-			console.log($(this).attr('id'))
-			event_season = $(this).attr('id')
-			show_season_graphs()
-		})
-
-		
-
-		show_season_graphs()
-		
-	})
-</script>
 
     	<hr/>
 		<h4 style="text-align:center;">Avg Heat Score progression</h4>
@@ -359,22 +172,7 @@
   	 	<h6 style="text-align:center;">Round 1</h6>
   		<div class="col-sm-4">
             	<h5 style="text-align:center;">Appereances</h5>
-              <p style="text-align:center;">30</p>
-          </div>
-            <div class="col-sm-4">
-            	<h5 style="text-align:center;">Victories</h5>
-              <p style="text-align:center;">13</p>
-          </div>
-          <div class="col-sm-4">
-            	<h5 style="text-align:center;">Winning percentage</h5>
-              <p style="text-align:center;">43.33%</p>
-          </div>
-      </div>
-      <div id="rd2-heats-all-stat"  class="col-sm-12 heats-all-stat" style="display:none;">
-      	<h6 style="text-align:center;">Round 2</h6>
-  		<div class="col-sm-4">
-            	<h5 style="text-align:center;">Appereances</h5>
-              <p style="text-align:center;">25</p>
+              <p style="text-align:center;">31</p>
           </div>
             <div class="col-sm-4">
             	<h5 style="text-align:center;">Victories</h5>
@@ -382,7 +180,22 @@
           </div>
           <div class="col-sm-4">
             	<h5 style="text-align:center;">Winning percentage</h5>
-              <p style="text-align:center;">56.0%</p>
+              <p style="text-align:center;">45.16%</p>
+          </div>
+      </div>
+      <div id="rd2-heats-all-stat"  class="col-sm-12 heats-all-stat" style="display:none;">
+      	<h6 style="text-align:center;">Round 2</h6>
+  		<div class="col-sm-4">
+            	<h5 style="text-align:center;">Appereances</h5>
+              <p style="text-align:center;">26</p>
+          </div>
+            <div class="col-sm-4">
+            	<h5 style="text-align:center;">Victories</h5>
+              <p style="text-align:center;">15</p>
+          </div>
+          <div class="col-sm-4">
+            	<h5 style="text-align:center;">Winning percentage</h5>
+              <p style="text-align:center;">57.69%</p>
           </div>
       </div>
   </div>
@@ -393,30 +206,30 @@
 	 	<h6 style="text-align:center;">Round 3</h6>
 		<div class="col-sm-4">
           	<h5 style="text-align:center;">Appereances</h5>
-            <p style="text-align:center;">18</p>
+            <p style="text-align:center;">19</p>
         </div>
           <div class="col-sm-4">
           	<h5 style="text-align:center;">Victories</h5>
-            <p style="text-align:center;">10</p>
+            <p style="text-align:center;">11</p>
         </div>
         <div class="col-sm-4">
           	<h5 style="text-align:center;">Winning percentage</h5>
-            <p style="text-align:center;">55.56%</p>
+            <p style="text-align:center;">57.89%</p>
         </div>
     </div>
     <div id="rd4-heats-all-stat" class="col-sm-12 heats-all-stat" style="display:none;">
     	<h6 style="text-align:center;">Round 4</h6>
 		<div class="col-sm-4">
           	<h5 style="text-align:center;">Appereances</h5>
-            <p style="text-align:center;">15</p>
+            <p style="text-align:center;">16</p>
         </div>
           <div class="col-sm-4">
           	<h5 style="text-align:center;">Victories</h5>
-            <p style="text-align:center;">7</p>
+            <p style="text-align:center;">8</p>
         </div>
         <div class="col-sm-4">
           	<h5 style="text-align:center;">Winning percentage</h5>
-            <p style="text-align:center;">46.67%</p>
+            <p style="text-align:center;">50.0%</p>
         </div>
     </div>
 </div>
@@ -426,7 +239,7 @@
 	 	<h6 style="text-align:center;">Round 5</h6>
 		<div class="col-sm-4">
           	<h5 style="text-align:center;">Appereances</h5>
-            <p style="text-align:center;">8</p>
+            <p style="text-align:center;">9</p>
         </div>
           <div class="col-sm-4">
           	<h5 style="text-align:center;">Victories</h5>
@@ -434,7 +247,7 @@
         </div>
         <div class="col-sm-4">
           	<h5 style="text-align:center;">Winning percentage</h5>
-            <p style="text-align:center;">75.0%</p>
+            <p style="text-align:center;">66.67%</p>
         </div>
     </div>
     <div id="rd6-heats-all-stat" class="col-sm-12 heats-all-stat" style="display:none;">
