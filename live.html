@@ -1773,6 +1773,9 @@
                     for (var j = 0; j < picked_result.length; j++) {
                         for (var k = 0; k < round[i].length; k++) {    
                             if(picked_result[j][0] == round[i][k]){
+                                if(round[i][k] == 'KELLY SLATER'){
+                                    round[i][k] = 'MICHAEL FEBRUARY'
+                                }
                                 heat.push(round[i][k])
                             }
                         }
