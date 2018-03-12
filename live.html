@@ -1764,6 +1764,11 @@
                 for (z = 0; z< rd1_results.length; z++) {
                     var heat = []
                     for (var i = 0; i < rd1_results[z].length; i++) {
+                         if(rd1_results[z][i].surfer.toUpperCase() == 'KELLY SLATER'){
+                                console.log('found!!!!!')
+                                rd1_results[z][i].surfer = 'MICHAEL FEBRUARY'
+                        }
+                                
                         heat.push(rd1_results[z][i].surfer.toUpperCase())
                     };
                     ordered.push(heat)
@@ -1773,13 +1778,7 @@
                     for (var j = 0; j < picked_result.length; j++) {
                         for (var k = 0; k < round[i].length; k++) {    
                             if(picked_result[j][0] == round[i][k]){
-                                console.log('finding kelly')
-                                console.log(round[i][k])
-                                if(round[i][k] == 'KELLY SLATER'){
-                                    console.log('found!!!!!')
-                                    round[i][k] = 'MICHAEL FEBRUARY'
-                                }
-                                heat.push(round[i][k])
+                               heat.push(round[i][k])
                             }
                         }
                     };
