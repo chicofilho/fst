@@ -1764,12 +1764,14 @@
                 for (z = 0; z< rd1_results.length; z++) {
                     var heat = []
                     for (var i = 0; i < rd1_results[z].length; i++) {
-                         if(rd1_results[z][i].surfer.toUpperCase() == 'KELLY SLATER'){
+                        if(rd1_results[z][i].surfer.toUpperCase() == 'KELLY SLATER'){
                                 console.log('found!!!!!')
-                                rd1_results[z][i].surfer = 'MICHAEL FEBRUARY'
+                            //rd1_results[z][i].surfer = 
+                            heat.push('MICHAEL FEBRUARY')
+                        }else{
+                            heat.push(rd1_results[z][i].surfer.toUpperCase())
                         }
                                 
-                        heat.push(rd1_results[z][i].surfer.toUpperCase())
                     };
                     ordered.push(heat)
                 };
