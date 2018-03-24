@@ -70,30 +70,56 @@
         <p class="small"> By choosing overall the other ranks will be ignored. Only overall will be used </p>
         <p class="small">Help us grow, <a href="https://twitter.com/FanSurfingTips">spread</a> the word :)</p>
         <hr/>
-        <h4>Rankings:</h4>
+        <h4>Fantasy Tools</h4>
         <div class="row">
-            <div class="col-lg-2">
-                <p> <input id="momentum" type="checkbox" value="momentum"/> Momentum    </p>
-            </div>
-            <div class="col-lg-2">    
-                <p> <input id="performance" type="checkbox" value="performance" /> Performance   </p>
-            </div>
-            <div class="col-lg-2">        
-                <p> <input id="past_position" type="checkbox" value="past_position"/> Past Position   </p>
-            </div>
-            <div class="col-lg-2">        
-                <p> <input id="overall" type="checkbox" value="overall"/> Overall   </p>
-            </div>
-            <div class="col-lg-2">        
-                <p> <input id="rd1_matchups" type="checkbox" value="overall"/> Avoid RD1 Matchups    </p>
-            </div>
-            <div class="row">
-                <div class="col-lg-2">
-                    <button id="generate" type="button" class="btn btn-primary">Generate</button>
-                    
+            <div class="col-lg-12">
+                <div class="col-lg-12">
+                    <p class="small">Choose an overall version </p>
                 </div>
-            </div>      
+                <div class="col-sm-2">        
+                    <p class="small"> <input id="overall" type="radio" class='version' name='version' value="overall"/> v1.5 (best of 2017)    
+                    </p>
+                </div>
+                <div class="col-sm-2">        
+                    <p class="small"> <input id="overall5" type="radio" class='version' name='version' value="overall"/> v1.5.1   </p>
+                </div>
+                 <div class="col-sm-2">        
+                    <p class="small"> <input id="overall7" type="radio" class='version' name='version' value="overall"/> v1.7   </p>
+                </div>
+                 <div class="col-sm-2">        
+                    <p class="small"> <input id="overall2" type="radio" class='version' name='version' value="overall"/> v2.1 (new)  </p>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="col-lg-12">
+                    <p class="small">Tune v1.5 your own way</p>
+                </div>
+                <div class="col-sm-2">
+                    <p class="small"> <input id="momentum" type="checkbox" class='tunning' value="momentum"/> Momentum    </p>
+                </div>
+                <div class="col-sm-2">    
+                    <p class="small"> <input id="performance" type="checkbox" class='tunning' value="performance" /> Performance   </p>
+                </div>
+                <div class="col-sm-2">        
+                    <p class="small"> <input id="past_position" type="checkbox" class='tunning' value="past_position"/> Past Position   </p>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <hr/>
+                <div class="col-sm-12">  
+                    <p class="small"> <input id="rd1_matchups" type="checkbox" name='version' value="overall"/> Avoid rd1 matchup </p>
+                </div>
+
+                <div class="col-sm-12">  
+                    <button id="generate" type="button" class="btn btn-primary">Generate</button>
+                </div>
+                <div class="col-sm-12">  
+                    <button id="random" type="button" class="btn btn-default">Random Picks</button>    
+                </div>
+            </div>
         </div>
+
+        
         <hr class="star-primary">
         <div class="row">
             <div class="col-lg-3">
@@ -333,11 +359,24 @@
 
 
 
-            overall = [['MICK FANNING', 862.8542333852783], ['JORDY SMITH', 850.0], ['ADRIANO DE SOUZA', 803.2151793908336], ['JOEL PARKINSON', 790.8188275295938], ['KELLY SLATER', 787.4872050517337], ['JOHN JOHN FLORENCE', 783.8499708815262], ['JULIAN WILSON', 781.1834264881088], ['FILIPE TOLEDO', 779.9773014553864], ['CONNER COFFIN', 760.2727943623886], ['MATT WILKINSON', 758.3243193820222], ['CAIO IBELLI', 752.5639122598145], ['OWEN WRIGHT', 752.2594670549863], ['SEBASTIAN ZIETZ', 752.2071197860344], ['WILLIAN CARDOSO', 748.7207052056726], ['GABRIEL MEDINA', 747.0960248519543], ['EZEKIEL LAU', 741.7803459648268], ['ITALO FERREIRA', 738.2582166963448], ['FREDERICO MORAIS', 716.0505059975739], ['MICHEL BOUREZ', 709.927848723975], ['JOAN DURU', 709.6301836935747], ['ADRIAN BUCHAN', 708.6869169706271], ['PATRICK GUDAUSKAS', 708.3130921033129], ['GRIFFIN COLAPINTO', 704.6315566946323], ['TOMAS HERMES', 703.2422914716368], ['YAGO DORA', 703.241770366902], ['JESSE MENDES', 703.241770366902], ['MICHAEL RODRIGUES', 702.5471377554043], ['KANOA IGARASHI', 700.4991643379377], ['WADE CARMICHAEL', 699.7675650999437], ['KEANU ASING', 696.7284371781316], ['KOLOHE ANDINO', 689.7125909029287], ['JEREMY FLORES', 687.401832199531], ['MIKEY WRIGHT', 686.5049282857902], ['IAN GOUVEIA', 678.5658518338388], ['CONNOR OLEARY', 654.0607130734404], ['MICHAEL FEBRUARY', 652.0], ['LEONARDO FIORAVANTI', 648.8809099199285], ['NAT YOUNG', 146.76516882462653], ['BEDE DURBIDGE', 71.4728725737573], ['WIGGOLLY DANTAS', 34.0], ['STUART KENNEDY', 31.017853937735815], ['MASON HO', 31.0], ['JOSH KERR', 29.0], ['KAI OTTON', 26.0], ['MIGUEL PUPO', 25.091892774658707], ['FREDDY PATACCHIA JR.', 24.0], ['TAJ BURROW', 24.0], ['DAVEY CATHELS', 22.0], ['DUSTY PAYNE', 14.0], ['ARITZ ARANBURU', 8.0], ['MITCH CREWS', 8.0], ['ADAM MELLING', 5.0], ['C.J. HOBGOOD', 5.0], ['DAMIEN HOBGOOD', 3.0], ['RAONI MONTEIRO', -1.0], ['TAYLOR KNOX', -1.0], ['JADSON ANDRE', -2.0], ['YADIN NICOL', -3.0], ['TANNER GUDAUSKAS', -3.0], ['MATT BANTING', -3.0], ['TIAGO PIRES', -3.0], ['KIEREN PERROW', -4.0], ['GLENN HALL', -4.0], ['HEITOR ALVES', -4.0], ['DION ATKINSON', -6.0], ['MITCH COLEBORN', -6.0], ['ALEJO MUNIZ', -7.0], ['JACK FREESTONE', -9.0], ['RICARDO CHRISTIE', -9.0], ['TRAVIS LOGIE', -9.0], ['BRETT SIMPSON', -11.0], ['DEIVID SILVA', -15.0], ['TIMOTHEE BISSO', -15.0], ['STEVEN SAWYER', -15.0], ['BRUCE IRONS', -15.0], ['BINO LOPES', -15.0], ['BRUNO SANTOS', -15.0], ['MARCO FERNANDEZ', -15.0], ['LUCAS SILVEIRA', -15.0], ['JACOB WILLCOX', -15.0], ['TIM STEVENSON', -15.0], ['FINN MCGILL', -15.0], ['GAVIN BESCHEN', -15.0], ['JACK ROBINSON', -15.0], ['ALEX RIBEIRO', -24.0], ['JAY DAVIES', -24.0], ['RYAN CALLINAN', -24.0]]
+            overall = [['MICK FANNING', 449.85423338527835], ['JORDY SMITH', 430.63829787234044], ['NAT YOUNG', 374.99921137781797], ['ADRIANO DE SOUZA', 373.5768815184931], ['JOEL PARKINSON', 352.8613807210832], ['KELLY SLATER', 350.0191199453507], ['JULIAN WILSON', 345.67278819023653], ['JOHN JOHN FLORENCE', 341.97763045599436], ['FILIPE TOLEDO', 332.2326206043225], ['MATT WILKINSON', 325.74985129691584], ['GABRIEL MEDINA', 309.6279397455714], ['CONNER COFFIN', 309.59194329855876], ['SEBASTIAN ZIETZ', 305.9305240413534], ['OWEN WRIGHT', 305.00414790605015], ['CAIO IBELLI', 296.01072077045285], ['ITALO FERREIRA', 290.513535845281], ['WILLIAN CARDOSO', 283.84836478014074], ['EZEKIEL LAU', 274.46119702865656], ['BEDE DURBIDGE', 257.1324470418424], ['MICHEL BOUREZ', 254.3533806388686], ['ADRIAN BUCHAN', 245.77202335360576], ['FREDERICO MORAIS', 241.39093152948868], ['PATRICK GUDAUSKAS', 239.03649635863204], ['KANOA IGARASHI', 238.5629941251718], ['GRIFFIN COLAPINTO', 237.31240775846206], ['TOMAS HERMES', 235.92314253546658], ['YAGO DORA', 235.9226214307318], ['JESSE MENDES', 235.9226214307318], ['WIGGOLLY DANTAS', 235.3191489361702], ['MICHAEL RODRIGUES', 235.22798881923404], ['JOAN DURU', 234.97060922548968], ['WADE CARMICHAEL', 232.44841616377346], ['KEANU ASING', 227.94120313557838], ['JOSH KERR', 227.87234042553192], ['STUART KENNEDY', 225.4859390441188], ['JEREMY FLORES', 221.06140666761604], ['KOLOHE ANDINO', 218.9679100518648], ['MIGUEL PUPO', 218.58125447678637], ['MIKEY WRIGHT', 211.84535381770513], ['IAN GOUVEIA', 211.2467028976685], ['MICHAEL FEBRUARY', 184.68085106382978], ['CONNOR O&apos;LEARY', 184.68085106382978], ['TAUMATA PUHETINI', 184.68085106382978], ['ETHAN EWING', 184.68085106382978], ['JADSON ANDRE', 181.70212765957444], ['LEONARDO FIORAVANTI', 174.22133545184337], ['JACK FREESTONE', 171.27659574468086], ['JACOB WILLCOX', 162.3404255319149], ['BINO LOPES', 162.3404255319149], ['MASON HO', 81.91489361702128], ['KAI OTTON', 74.46808510638297], ['FREDDY PATACCHIA JR.', 71.48936170212765], ['TAJ BURROW', 71.48936170212765], ['DAVEY CATHELS', 68.51063829787233], ['DUSTY PAYNE', 56.59574468085107], ['ARITZ ARANBURU', 47.659574468085104], ['MITCH CREWS', 47.659574468085104], ['ADAM MELLING', 43.19148936170213], ['C.J. HOBGOOD', 43.19148936170213], ['DAMIEN HOBGOOD', 40.212765957446805], ['RAONI MONTEIRO', 34.25531914893617], ['TAYLOR KNOX', 34.25531914893617], ['YADIN NICOL', 31.276595744680854], ['TANNER GUDAUSKAS', 31.276595744680854], ['MATT BANTING', 31.276595744680854], ['TIAGO PIRES', 31.276595744680854], ['KIEREN PERROW', 29.78723404255319], ['GLENN HALL', 29.78723404255319], ['HEITOR ALVES', 29.78723404255319], ['DION ATKINSON', 26.80851063829787], ['MITCH COLEBORN', 26.80851063829787], ['ALEJO MUNIZ', 25.319148936170212], ['RICARDO CHRISTIE', 22.340425531914892], ['TRAVIS LOGIE', 22.340425531914892], ['BRETT SIMPSON', 19.361702127659573], ['DEIVID SILVA', 13.404255319148936], ['TIMOTHEE BISSO', 13.404255319148936], ['BRUCE IRONS', 13.404255319148936], ['STEVEN SAWYER', 13.404255319148936], ['BRUNO SANTOS', 13.404255319148936], ['MARCO FERNANDEZ', 13.404255319148936], ['LUCAS SILVEIRA', 13.404255319148936], ['TIM STEVENSON', 13.404255319148936], ['FINN MCGILL', 13.404255319148936], ['GAVIN BESCHEN', 13.404255319148936], ['JACK ROBINSON', 13.404255319148936], ['ALEX RIBEIRO', 0.0], ['JAY DAVIES', 0.0], ['RYAN CALLINAN', 0.0]]
+
+            overall5 = [['MICK FANNING', 862.8542333852783], ['JORDY SMITH', 850.0], ['ADRIANO DE SOUZA', 803.2151793908336], ['JOEL PARKINSON', 790.8188275295938], ['KELLY SLATER', 787.4872050517337], ['JOHN JOHN FLORENCE', 783.8499708815262], ['JULIAN WILSON', 781.1834264881088], ['FILIPE TOLEDO', 779.9773014553864], ['CONNER COFFIN', 760.2727943623886], ['MATT WILKINSON', 758.3243193820222], ['CAIO IBELLI', 752.5639122598145], ['OWEN WRIGHT', 752.2594670549863], ['SEBASTIAN ZIETZ', 752.2071197860344], ['WILLIAN CARDOSO', 748.7207052056726], ['GABRIEL MEDINA', 747.0960248519543], ['EZEKIEL LAU', 741.7803459648268], ['ITALO FERREIRA', 738.2582166963448], ['FREDERICO MORAIS', 716.0505059975739], ['MICHEL BOUREZ', 709.927848723975], ['JOAN DURU', 709.6301836935747], ['ADRIAN BUCHAN', 708.6869169706271], ['PATRICK GUDAUSKAS', 708.3130921033129], ['GRIFFIN COLAPINTO', 704.6315566946323], ['TOMAS HERMES', 703.2422914716368], ['YAGO DORA', 703.241770366902], ['JESSE MENDES', 703.241770366902], ['MICHAEL RODRIGUES', 702.5471377554043], ['KANOA IGARASHI', 700.4991643379377], ['WADE CARMICHAEL', 699.7675650999437], ['KEANU ASING', 696.7284371781316], ['KOLOHE ANDINO', 689.7125909029287], ['JEREMY FLORES', 687.401832199531], ['MIKEY WRIGHT', 686.5049282857902], ['IAN GOUVEIA', 678.5658518338388], ['CONNOR O&APOS;LEARY', 654.0607130734404], ['MICHAEL FEBRUARY', 652.0], ['LEONARDO FIORAVANTI', 648.8809099199285], ['NAT YOUNG', 146.76516882462653], ['BEDE DURBIDGE', 71.4728725737573], ['WIGGOLLY DANTAS', 34.0], ['STUART KENNEDY', 31.017853937735815], ['MASON HO', 31.0], ['JOSH KERR', 29.0], ['KAI OTTON', 26.0], ['MIGUEL PUPO', 25.091892774658707], ['FREDDY PATACCHIA JR.', 24.0], ['TAJ BURROW', 24.0], ['DAVEY CATHELS', 22.0], ['DUSTY PAYNE', 14.0], ['ARITZ ARANBURU', 8.0], ['MITCH CREWS', 8.0], ['ADAM MELLING', 5.0], ['C.J. HOBGOOD', 5.0], ['DAMIEN HOBGOOD', 3.0], ['RAONI MONTEIRO', -1.0], ['TAYLOR KNOX', -1.0], ['JADSON ANDRE', -2.0], ['YADIN NICOL', -3.0], ['TANNER GUDAUSKAS', -3.0], ['MATT BANTING', -3.0], ['TIAGO PIRES', -3.0], ['KIEREN PERROW', -4.0], ['GLENN HALL', -4.0], ['HEITOR ALVES', -4.0], ['DION ATKINSON', -6.0], ['MITCH COLEBORN', -6.0], ['ALEJO MUNIZ', -7.0], ['JACK FREESTONE', -9.0], ['RICARDO CHRISTIE', -9.0], ['TRAVIS LOGIE', -9.0], ['BRETT SIMPSON', -11.0], ['DEIVID SILVA', -15.0], ['TIMOTHEE BISSO', -15.0], ['STEVEN SAWYER', -15.0], ['BRUCE IRONS', -15.0], ['BINO LOPES', -15.0], ['BRUNO SANTOS', -15.0], ['MARCO FERNANDEZ', -15.0], ['LUCAS SILVEIRA', -15.0], ['JACOB WILLCOX', -15.0], ['TIM STEVENSON', -15.0], ['FINN MCGILL', -15.0], ['GAVIN BESCHEN', -15.0], ['JACK ROBINSON', -15.0], ['ALEX RIBEIRO', -24.0], ['JAY DAVIES', -24.0], ['RYAN CALLINAN', -24.0]]
+
+            overall2 = [['GABRIEL MEDINA', [-0.32813810324468845]], ['ADRIANO DE SOUZA', [-0.36817907128133809]], ['JORDY SMITH', [-0.39352043045194418]], ['JOHN JOHN FLORENCE', [-0.40561777475540201]], ['MICK FANNING', [-0.40702261600580164]], ['FILIPE TOLEDO', [-0.44072241388596156]], ['CAIO IBELLI', [-0.47814426521631814]], ['KELLY SLATER', [-0.48910376076424306]], ['OWEN WRIGHT', [-0.50407673597093672]], ['GRIFFIN COLAPINTO', [-0.51569741061378616]], ['EZEKIEL LAU', [-0.53343453758958181]], ['ITALO FERREIRA', [-0.53871419193892323]], ['FREDERICO MORAIS', [-0.54226585955633755]], ['MIKEY WRIGHT', [-0.54635648115297086]], ['WILLIAN CARDOSO', [-0.55101487116972847]], ['HIROTO OHHARA', [-0.56591035359009101]], ['JULIAN WILSON', [-0.58107945691784069]], ['STUART KENNEDY', [-0.58807077325144275]], ['KOLOHE ANDINO', [-0.58824979171280478]], ['JOEL PARKINSON', [-0.59443791339790863]], ['JEREMY FLORES', [-0.609927279856737]], ['EVAN GEISELMAN', [-0.61352415455805298]], ['YAGO DORA', [-0.6178805120134504]], ['KANOA IGARASHI', [-0.62917324646648032]], ['JADSON ANDRE', [-0.63037383318371132]], ['ADRIAN BUCHAN', [-0.64280553207297153]], ['KEANU ASING', [-0.64592013127391223]], ['JOAN DURU', [-0.6560783122559295]], ['NAT YOUNG', [-0.67314645916240545]], ['LEONARDO FIORAVANTI', [-0.67766916588472537]], ['PATRICK GUDAUSKAS', [-0.69403325467290811]], ['MICHAEL RODRIGUES', [-0.69494268526869019]], ['CONNOR OLEARY', [-0.69548778465334371]], ['SEBASTIAN ZIETZ', [-0.69683480668156483]], ['WADE CARMICHAEL', [-0.69710798033778709]], ['MIGUEL PUPO', [-0.69725346454079618]], ['IAN GOUVEIA', [-0.71218204391623741]], ['BEDE DURBIDGE', [-0.72072436202324519]], ['CONNER COFFIN', [-0.72624134818334474]], ['TOMAS HERMES', [-0.72788674082396643]], ['MICHEL BOUREZ', [-0.73093288981867022]], ['MATT WILKINSON', [-0.73528772684034549]], ['JESSE MENDES', [-0.76159053710522129]]]
+
+            overall7 = [['MICK FANNING', 686.9777746694162], ['JOHN JOHN FLORENCE', 663.5825248230697], ['GRIFFIN COLAPINTO', 663.5611551767506], ['JULIAN WILSON', 649.4239262228557], ['KELLY SLATER', 624.827300790284], ['FILIPE TOLEDO', 607.3633391631826], ['JORDY SMITH', 580.2113406237593], ['OWEN WRIGHT', 558.244765739796], ['ADRIANO DE SOUZA', 519.2454410745979], ['MICHAEL RODRIGUES', 492.68497739066305], ['JOEL PARKINSON', 481.91615079425634], ['ADRIAN BUCHAN', 481.1561011710763], ['NAT YOUNG', 476.7112242315935], ['CAIO IBELLI', 452.33425428105954], ['EZEKIEL LAU', 438.805509260027], ['SEBASTIAN ZIETZ', 436.55632206509887], ['BEDE DURBIDGE', 432.1896451374067], ['MICHEL BOUREZ', 431.74739911461245], ['GABRIEL MEDINA', 426.7319105251461], ['ITALO FERREIRA', 425.8490107834746], ['JOAN DURU', 415.3398540814123], ['YAGO DORA', 411.7060377173609], ['MATT WILKINSON', 405.32766255553895], ['HIROTO OHHARA', 390.10340982923753], ['MIKEY WRIGHT', 387.0187235909824], ['FREDERICO MORAIS', 383.55982339689086], ['EVAN GEISELMAN', 376.51480901402704], ['PATRICK GUDAUSKAS', 367.322573564322], ['JEREMY FLORES', 357.7770062514648], ['TOMAS HERMES', 347.2358373576202], ['IAN GOUVEIA', 339.080601358134], ['KOLOHE ANDINO', 337.54178945411445], ['WILLIAN CARDOSO', 312.82736114218807], ['CONNER COFFIN', 311.0263645836445], ['KEANU ASING', 299.8604985358413], ['LEONARDO FIORAVANTI', 293.0173150133523], ['JESSE MENDES', 286.279850685684], ['KANOA IGARASHI', 276.15961395740726], ['MIGUEL PUPO', 272.93808754863926], ['CONNOR O&APOS;LEARY', 271.8200875562613], ['JADSON ANDRE', 227.58386957243545], ['STUART KENNEDY', 218.71072332300253], ['WADE CARMICHAEL', 125.0]]
 
 
 
+            $('.version').click(function(){
+                $('.tunning').prop('checked', false);
 
+            });
+
+            $('.tunning').click(function(){
+                $('.version').prop('checked', false);
+            });
 
             function get_random_picks_from(arr, amount){
                 var picks = []
@@ -368,7 +407,7 @@
                 tierC_result = []
                 all_tiers = []
                 picked_result = []
-                overall_checked = document.getElementById('overall').checked
+                overall_checked = document.getElementById('overall').checked || document.getElementById('overall5').checked || document.getElementById('overall2').checked || document.getElementById('overall7').checked
                 rd1_matchups = document.getElementById('rd1_matchups').checked
                 if(!overall_checked){
                     if(document.getElementById('past_position').checked || overall_checked){
@@ -409,7 +448,15 @@
                     }
                 }else{
                     picked_result = []
-                    picked_result = overall.slice()
+                    if(document.getElementById('overall').checked){
+                        picked_result = overall.slice()
+                    }else if(document.getElementById('overall5').checked){
+                        picked_result = overall5.slice()
+                    }else if(document.getElementById('overall2').checked){
+                        picked_result = overall2.slice()
+                    }else if(document.getElementById('overall7').checked){
+                        picked_result = overall7.slice()
+                    }
                     
                 }
                 
