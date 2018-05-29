@@ -1,14 +1,14 @@
 <div class="sponsor-container">
     <a 	href="https://www.patreon.com/fantasysurfingtips" 
     	target="blank"
-    	onclick="gtag('event', 'click', {'event_category': 'patreon-header'});" >
+    	onClick="ga('send', 'event', {eventAction: 'click', eventCategory: 'patreon-header'});" >
         <img class="sponsor-image">
     </a>        
 </div> 
 <script type="text/javascript">
 	$('document').ready(function(){
-		$('.sponsor-container').click(function(){
-			ga('send', 'event', 'patreon', 'click', 'header', '');
-		});
+		// $('.sponsor-container').click(function(){
+		// 	ga('send', 'event', 'patreon', 'click', 'header', '');
+		// });
 	})
 </script>
