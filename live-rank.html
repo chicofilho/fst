@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    
+    
+    
+
+    <meta name="author" content="">
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
+    
+
+    <meta property="og:title" content="Fantasy Surfing tips"/>
+    <meta property="og:image" content="https://fantasysurfingtips.com/img/just_waves.png"/>
+    
+
+    
+
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: https://bootswatch.com/flatly/ -->
+    <link href="https://fantasysurfingtips.com/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="https://fantasysurfingtips.com/css/freelancer.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/plug-ins/1.10.7/integration/bootstrap/3/dataTables.bootstrap.css" rel="stylesheet" />
+
+
+    <!-- Custom Fonts -->
+    <link href="https://fantasysurfingtips.com/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+
+  
+ 
+ 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+	
+    <script src="https://code.jquery.com/jquery-2.x-git.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ujs/1.2.1/rails.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+
+    <script src="https://www.w3schools.com/lib/w3data.js"></script>
+</head>
+<body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.6";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+	<!-- Navigation -->
+    <div w3-include-html="https://fantasysurfingtips.com/layout/header.html"></div>
+    
+    <div w3-include-html="https://fantasysurfingtips.com/layout/sponsor.html"></div> 
+    <div class="container">
+        <h3 class="text-center">Live WSL Rank</h3>
+
+        <div id="rank-content" class="simulation-content">
+	        <div class="row">
+	                <div class="col-lg-2">
+	                </div>
+	                <div class="col-lg-8">
+	                    <div class="row text-center">
+	                        <div class="btn-group text-center">
+	                          <button id="no-throwaway" type="button" class="btn btn-default">Without Throwaway</button>
+	                          <button id="yes-throwaway" type="button" class="btn btn-default">Throwaway Applied</button>
+	                        </div>
+	                    </div>
+	                    <div id='rank_no_discard' >
+	                        <h3>Rank <small>(Without Throwaway)</small></h3>
+	                        <h5>Considering results from "Corona Bali Protected"</h5>
+	                        <table class="table table-striped table-hover">
+	                            <thead class="thead-inverse">
+	                                <tr>
+	                                    <th>Position</th>
+	                                    <td>Surfer</td>
+	                                    <td>Points</td>
+	                                </tr>
+	                            </thead>
+	                            <tbody>
+	                                <tr>
+	                                    <td >1</td>
+	                                    <td >Filipe Toledo</td>
+	                                    <td >22820</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >2</td>
+	                                    <td >Julian Wilson</td>
+	                                    <td >21080</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >3</td>
+	                                    <td >Italo Ferreira</td>
+	                                    <td >19740</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >4</td>
+	                                    <td >Gabriel Medina</td>
+	                                    <td >17860</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >5</td>
+	                                    <td >Michel Bourez</td>
+	                                    <td >16320</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >6</td>
+	                                    <td >Adrian Buchan</td>
+	                                    <td >15250</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >7</td>
+	                                    <td >Griffin Colapinto</td>
+	                                    <td >14580</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >8</td>
+	                                    <td >Wade Carmichael</td>
+	                                    <td >14005</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >9</td>
+	                                    <td >Ezekiel Lau</td>
+	                                    <td >13335</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >10</td>
+	                                    <td >Michael Rodrigues</td>
+	                                    <td >13240</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >11</td>
+	                                    <td >Owen Wright</td>
+	                                    <td >13240</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >12</td>
+	                                    <td >Jeremy Flores</td>
+	                                    <td >11775</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >13</td>
+	                                    <td >Mikey Wright</td>
+	                                    <td >11775</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >14</td>
+	                                    <td >Willian Cardoso</td>
+	                                    <td >11405</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >15</td>
+	                                    <td >Jordy Smith</td>
+	                                    <td >11405</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >16</td>
+	                                    <td >Adriano de Souza</td>
+	                                    <td >11150</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >17</td>
+	                                    <td >Tomas Hermes</td>
+	                                    <td >10255</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >18</td>
+	                                    <td >Frederico Morais</td>
+	                                    <td >10160</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >19</td>
+	                                    <td >Kolohe Andino</td>
+	                                    <td >10160</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >20</td>
+	                                    <td >John John Florence</td>
+	                                    <td >9115</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >21</td>
+	                                    <td >Conner Coffin</td>
+	                                    <td >9115</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >22</td>
+	                                    <td >Kanoa Igarashi</td>
+	                                    <td >8660</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >23</td>
+	                                    <td >Jesse Mendes</td>
+	                                    <td >7870</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >24</td>
+	                                    <td >Sebastian Zietz</td>
+	                                    <td >7870</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >25</td>
+	                                    <td >Patrick Gudauskas</td>
+	                                    <td >7765</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >26</td>
+	                                    <td >Yago Dora</td>
+	                                    <td >7670</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >27</td>
+	                                    <td >Joel Parkinson</td>
+	                                    <td >6660</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >28</td>
+	                                    <td >Matt Wilkinson</td>
+	                                    <td >6625</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >29</td>
+	                                    <td >Keanu Asing</td>
+	                                    <td >5835</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >30</td>
+	                                    <td >Michael February</td>
+	                                    <td >5835</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >31</td>
+	                                    <td >Ian Gouveia</td>
+	                                    <td >5380</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >32</td>
+	                                    <td >Connor O&amp;apos;Leary</td>
+	                                    <td >4590</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >33</td>
+	                                    <td >Joan Duru</td>
+	                                    <td >3345</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >34</td>
+	                                    <td >Miguel Pupo</td>
+	                                    <td >2505</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >35</td>
+	                                    <td >Carl Wright</td>
+	                                    <td >0</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >36</td>
+	                                    <td >Kelly Slater</td>
+	                                    <td >0</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >37</td>
+	                                    <td >Mick Fanning</td>
+	                                    <td >0</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >38</td>
+	                                    <td >Caio Ibelli</td>
+	                                    <td >0</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >39</td>
+	                                    <td >Wiggolly Dantas</td>
+	                                    <td >0</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >40</td>
+	                                    <td >Bede Durbidge</td>
+	                                    <td >0</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >41</td>
+	                                    <td >Alejo Muniz</td>
+	                                    <td >0</td>
+	                                </tr>
+	                               
+	                            </tbody>
+	                        </table>
+	                    </div>
+
+	                    <div id='rank_after_discard'  style="display:none;">
+	                        <h3>Rank <small>(Throwaway Applied)</small></h3>
+	                        <h5>Considering results from "Corona Bali Protected"</h5>
+	                        <table class="table table-striped table-hover">
+	                            <thead class="thead-inverse">
+	                                <tr>
+	                                    <th>Position</th>
+	                                    <td>Surfer</td>
+	                                    <td>Points</td>
+	                                </tr>
+	                            </thead>
+	                            <tbody>
+	                                <tr>
+	                                    <td >1</td>
+	                                    <td >Filipe Toledo</td>
+	                                    <td >19490</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >2</td>
+	                                    <td >Julian Wilson</td>
+	                                    <td >17750</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >3</td>
+	                                    <td >Italo Ferreira</td>
+	                                    <td >16410</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >4</td>
+	                                    <td >Gabriel Medina</td>
+	                                    <td >14530</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >5</td>
+	                                    <td >Michel Bourez</td>
+	                                    <td >14235</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >6</td>
+	                                    <td >Adrian Buchan</td>
+	                                    <td >13165</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >7</td>
+	                                    <td >Wade Carmichael</td>
+	                                    <td >13165</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >8</td>
+	                                    <td >Griffin Colapinto</td>
+	                                    <td >12495</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >9</td>
+	                                    <td >Ezekiel Lau</td>
+	                                    <td >12495</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >10</td>
+	                                    <td >Michael Rodrigues</td>
+	                                    <td >11155</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >11</td>
+	                                    <td >Owen Wright</td>
+	                                    <td >11155</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >12</td>
+	                                    <td >Mikey Wright</td>
+	                                    <td >10110</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >13</td>
+	                                    <td >Jeremy Flores</td>
+	                                    <td >10110</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >14</td>
+	                                    <td >Tomas Hermes</td>
+	                                    <td >9415</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >15</td>
+	                                    <td >Adriano de Souza</td>
+	                                    <td >9065</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >16</td>
+	                                    <td >Jordy Smith</td>
+	                                    <td >8075</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >17</td>
+	                                    <td >Frederico Morais</td>
+	                                    <td >8075</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >18</td>
+	                                    <td >Kolohe Andino</td>
+	                                    <td >8075</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >19</td>
+	                                    <td >Willian Cardoso</td>
+	                                    <td >8075</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >20</td>
+	                                    <td >Kanoa Igarashi</td>
+	                                    <td >7820</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >21</td>
+	                                    <td >John John Florence</td>
+	                                    <td >7030</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >22</td>
+	                                    <td >Jesse Mendes</td>
+	                                    <td >7030</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >23</td>
+	                                    <td >Conner Coffin</td>
+	                                    <td >7030</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >24</td>
+	                                    <td >Sebastian Zietz</td>
+	                                    <td >7030</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >25</td>
+	                                    <td >Patrick Gudauskas</td>
+	                                    <td >6925</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >26</td>
+	                                    <td >Yago Dora</td>
+	                                    <td >6830</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >27</td>
+	                                    <td >Matt Wilkinson</td>
+	                                    <td >5785</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >28</td>
+	                                    <td >Michael February</td>
+	                                    <td >4995</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >29</td>
+	                                    <td >Keanu Asing</td>
+	                                    <td >4995</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >30</td>
+	                                    <td >Joel Parkinson</td>
+	                                    <td >4995</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >31</td>
+	                                    <td >Ian Gouveia</td>
+	                                    <td >4540</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >32</td>
+	                                    <td >Connor O&amp;apos;Leary</td>
+	                                    <td >3750</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >33</td>
+	                                    <td >Joan Duru</td>
+	                                    <td >2505</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >34</td>
+	                                    <td >Miguel Pupo</td>
+	                                    <td >1665</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >35</td>
+	                                    <td >Mick Fanning</td>
+	                                    <td >0</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >36</td>
+	                                    <td >Kelly Slater</td>
+	                                    <td >0</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >37</td>
+	                                    <td >Carl Wright</td>
+	                                    <td >0</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >38</td>
+	                                    <td >Wiggolly Dantas</td>
+	                                    <td >0</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >39</td>
+	                                    <td >Caio Ibelli</td>
+	                                    <td >0</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >40</td>
+	                                    <td >Bede Durbidge</td>
+	                                    <td >0</td>
+	                                </tr>
+	                                <tr>
+	                                    <td >41</td>
+	                                    <td >Alejo Muniz</td>
+	                                    <td >0</td>
+	                                </tr>
+	                               
+	                            </tbody>
+	                        </table>
+	                    </div>
+	                    
+
+	                </div>
+	                <div class="col-lg-2">
+
+	                </div>
+	            </div>
+	            <section>
+	                
+	            </section>
+	   	</div>
+    </div>
+
+
+        
+
+<script type="text/javascript">
+		jQuery('#no-throwaway').click(function(){
+	        jQuery('#rank_after_discard').css('display', 'none')
+	        jQuery('#rank_no_discard').css('display', 'block')        
+	    })
+
+	    jQuery('#yes-throwaway').click(function(){
+	        jQuery('#rank_after_discard').css('display', 'block')
+	        jQuery('#rank_no_discard').css('display', 'none')                
+	    })
+
+
+        function updateJson(){
+            jQuery.getJSON( "/live_json.json", function( data ) {
+                //console.log(data) 
+                //update_live_heat(data.heat)
+
+
+                // if(rd8_results.length > 0){
+                //     showRound('f')
+                // }else if(rd7_results.length > 0){
+                //     showRound('sf')                        
+                // }else if(rd6_results.length > 0){
+                //     showRound('qf')
+                // }else if(rd5_results.length > 0){
+                //     showRound('rd5')
+                // }else if(rd4_results.length > 0){
+                //     showRound('rd4')
+                // }else if(rd3_results.length > 0){
+                //     showRound('rd3') 
+                // }else if(rd2_results.length > 0){
+                //     showRound('rd2')
+                // }
+
+
+                generate_simulation();
+            });    
+        }
+            
+        updateJson()
+        setInterval(function() {
+            updateJson()
+        }, 30*1000);
+
+</script>
+
+
+
+    <!-- Footer -->
+    <div w3-include-html="https://fantasysurfingtips.com/layout/footer.html"></div>
+
+   
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-74337819-1', 'auto');  // Replace with your property ID.
+        ga('send', 'pageview');
+    </script>
+
+    <script>
+        w3IncludeHTML();
+    </script>
+     <!-- jQuery -->
+    <script src="https://fantasysurfingtips.com/js/jquery.js"></script>
+        <script src="https://cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://fantasysurfingtips.com/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+
+
+    <script src="https://fantasysurfingtips.com/js/classie.js"></script>
+    <script src="https://fantasysurfingtips.com/js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="https://fantasysurfingtips.com/js/jqBootstrapValidation.js"></script>
+    <script src="https://fantasysurfingtips.com/js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="https://fantasysurfingtips.com/js/freelancer.js"></script>
+
+    <script type="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+    <script type="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>
+
+
+
+
+</body>
+</html>
