@@ -560,40 +560,6 @@
 	        jQuery('#rank_after_discard').css('display', 'block')
 	        jQuery('#rank_no_discard').css('display', 'none')                
 	    })
-
-
-        function updateJson(){
-            jQuery.getJSON( "/live_json.json", function( data ) {
-                //console.log(data) 
-                //update_live_heat(data.heat)
-
-
-                // if(rd8_results.length > 0){
-                //     showRound('f')
-                // }else if(rd7_results.length > 0){
-                //     showRound('sf')                        
-                // }else if(rd6_results.length > 0){
-                //     showRound('qf')
-                // }else if(rd5_results.length > 0){
-                //     showRound('rd5')
-                // }else if(rd4_results.length > 0){
-                //     showRound('rd4')
-                // }else if(rd3_results.length > 0){
-                //     showRound('rd3') 
-                // }else if(rd2_results.length > 0){
-                //     showRound('rd2')
-                // }
-
-
-                generate_simulation();
-            });    
-        }
-            
-        updateJson()
-        setInterval(function() {
-            updateJson()
-        }, 30*1000);
-
 </script>
 
 
