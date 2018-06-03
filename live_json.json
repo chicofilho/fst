@@ -4,12 +4,12 @@
 	"heat": [
 				{
 					"name":"Italo Ferreira", 
-					"score": "7.17",
-					"yahs": "12.28",
+					"score": "14.84",
+					"yahs": "12.56",
 					"yhwp": "70.37",
-					"eahs": "12.55",
+					"eahs": "13.14",
 					"ehwp": "76.92",
-					"eahs2017": 13.39,
+					"eahs2017": 14.49,
 					"ehwp2017": 85.71,
 					"wins": 1
 				}
@@ -32,7 +32,7 @@
 	"rd4_results" : [[{"surfer":"Michel Bourez","w1":9.0,"w2":8.0,"sum":17.0},{"surfer":"Willian Cardoso","w1":6.6,"w2":7.0,"sum":13.6},{"surfer":"Jesse Mendes","w1":5.63,"w2":6.03,"sum":11.66}],[{"surfer":"Mikey Wright","w1":7.6,"w2":8.2,"sum":15.799999999999999},{"surfer":"Griffin Colapinto","w1":6.5,"w2":7.23,"sum":13.73},{"surfer":"Adrian Buchan","w1":7.0,"w2":5.5,"sum":12.5}],[{"surfer":"Jordy Smith","w1":5.33,"w2":6.43,"sum":11.76},{"surfer":"Jeremy Flores","w1":7.0,"w2":4.7,"sum":11.7},{"surfer":"Gabriel Medina","w1":5.83,"w2":4.93,"sum":10.76}],[{"surfer":"Italo Ferreira","w1":8.4,"w2":8.6,"sum":17.0},{"surfer":"Filipe Toledo","w1":6.5,"w2":7.37,"sum":13.870000000000001},{"surfer":"Adriano de Souza","w1":7.33,"w2":5.83,"sum":13.16}]],
 	"rd5_results" : [[{"surfer":"Michel Bourez","w1":7.67,"w2":8.5,"sum":16.17},{"surfer":"Griffin Colapinto","w1":8.5,"w2":5.93,"sum":14.43}],[{"surfer":"Mikey Wright","w1":6.5,"w2":8.43,"sum":14.93},{"surfer":"Willian Cardoso","w1":7.33,"w2":7.53,"sum":14.86}],[{"surfer":"Jordy Smith","w1":9.57,"w2":5.77,"sum":15.34},{"surfer":"Filipe Toledo","w1":6.83,"w2":7.57,"sum":14.4}],[{"surfer":"Italo Ferreira","w1":7.6,"w2":8.6,"sum":16.2},{"surfer":"Jeremy Flores","w1":9.0,"w2":6.73,"sum":15.73}]],
 	"rd6_results" : [[{"surfer":"Michel Bourez","w1":7.6,"w2":6.67,"sum":14.27},{"surfer":"Mikey Wright","w1":2.0,"w2":3.67,"sum":5.67}],[{"surfer":"Italo Ferreira","w1":7.13,"w2":10.0,"sum":17.13},{"surfer":"Jordy Smith","w1":8.0,"w2":8.93,"sum":16.93}]],
-	"rd7_results" : [[{"surfer":"Italo Ferreira","w1":7.17,"w2":0.0,"sum":7.17},{"surfer":"Michel Bourez","w1":0.0,"w2":0.0,"sum":0.0}]],
+	"rd7_results" : [[{"surfer":"Italo Ferreira","w1":7.17,"w2":7.67,"sum":14.84},{"surfer":"Michel Bourez","w1":0.0,"w2":0.0,"sum":0.0}]],
 	"rd8_results" : [],
 
 	"test" : []
