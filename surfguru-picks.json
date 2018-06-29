@@ -1,8 +1,8 @@
 {
 	"events":[{
-		"name": "Pipe",
-		"tierA": [{"nome": "John John Florence", "codigo":"jjoh"}, {"nome":"Gabriel Medina", "codigo":"gmed"}],
-		"tierB": [{"nome":"Joel Parkinson", "codigo":"jpar"}, {"nome":"Mick Fanning", "codigo":"mfan"}, {"nome":"Filipe Toledo", "codigo":"ftol"}, {"nome":"Sebastian Ziets", "codigo":"szie"}],
-		"tierC": [{"nome":"Ítalo Ferreira", "codigo":"ifer"}, {"nome":"Kelly Slater", "codigo":"ksla"}] 
+		"name": "J-Bay",
+		"tierA": [{"nome": "Jordy Smith", "codigo":"jsmi"}, {"nome":"Gabriel Medina", "codigo":"gmed"}],
+		"tierB": [{"nome":"Frederico Morais", "codigo":"fmor"}, {"nome":"Adriano de Souza", "codigo":"asou"}, {"nome":"Jeremy Flores", "codigo":"jflo"}, {"nome":"Griffin Colapinto", "codigo":"gcol"}],
+		"tierC": [{"nome":"Joel Parkinson", "codigo":"jpar"}, {"nome":"Kelly Slater", "codigo":"ksla"}] 
 		}]
 }
