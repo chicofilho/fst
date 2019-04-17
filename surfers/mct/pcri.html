@@ -112,7 +112,7 @@
             </div>
             <div class="col-sm-3 portfolio-item">
               	<h6 style="text-align:center;">Avg Heat Score (FST DATA)</h6>
-                <h1 style="text-align:center;">9.7</h1>
+                <h1 style="text-align:center;">10.41</h1>
             </div>
     	</div>
     	
@@ -122,11 +122,11 @@
 	    		<h4 style="text-align:center;" >Epic Battles</h4>
 	    		<div class="row">
 	    			<div class="col-sm-6 ">
-		                <p style="text-align:center;">Surfed <b>2</b> heats against <a href="http://fantasysurfingtips.com/surfers/mct/gmed.html"> Gabriel Medina</a> <br/> <b>won 1</b> and <b>lost 1</b></p>
+		                <p style="text-align:center;">Surfed <b>1</b> heats against <a href="http://fantasysurfingtips.com/surfers/mct/owri.html"> Owen Wright</a> <br/> <b>won 1</b> and <b>lost 0</b></p>
 		                
 	                </div>
 	                <div class="col-sm-6 ">
-		                <p style="text-align:center;">Surfed <b>2</b> heats against <a href="http://fantasysurfingtips.com/surfers/mct/jpar.html"> Joel Parkinson</a> <br/> <b>won 0</b> and <b>lost 2</b></p>
+		                <p style="text-align:center;">Surfed <b>3</b> heats against <a href="http://fantasysurfingtips.com/surfers/mct/ksla.html"> Kelly Slater</a> <br/> <b>won 1</b> and <b>lost 2</b></p>
 	                </div>
 		    	</div>
 
@@ -135,7 +135,7 @@
     	<div  class="row">
     		<div class="col-sm-4 portfolio-item">
               	<h6 style="text-align:center;">Heats</h6>
-                <h2 style="text-align:center;">5</h2>
+                <h2 style="text-align:center;">8</h2>
             </div>
               <div class="col-sm-4 portfolio-item">
               	<h6 style="text-align:center;">Heat wins</h6>
@@ -143,7 +143,7 @@
             </div>
             <div class="col-sm-4 portfolio-item">
               	<h6 style="text-align:center;">HEAT WINS PERCENTAGE</h6>
-                <h2 style="text-align:center;">20.0%</h2>
+                <h2 style="text-align:center;">12.5%</h2>
             </div>
     	</div>
     	
@@ -210,11 +210,11 @@
           </div>
             <div class="col-sm-4">
             	<h5 style="text-align:center;">Victories</h5>
-              <p style="text-align:center;">1</p>
+              <p style="text-align:center;">0</p>
           </div>
           <div class="col-sm-4">
             	<h5 style="text-align:center;">Winning percentage</h5>
-              <p style="text-align:center;">50.0%</p>
+              <p style="text-align:center;">0.0%</p>
           </div>
       </div>
   </div>
@@ -238,7 +238,56 @@
     </div>
 </div>
 
+<div class="row">
+    <div id="rd6-heats-all-stat" class="col-sm-12 heats-all-stat" style="display:none;">
+    	   <h6 style="text-align:center;">Quaterfinals</h6>
+		<div class="col-sm-4">
+          	<h5 style="text-align:center;">Appereances</h5>
+            <p style="text-align:center;">1</p>
+        </div>
+          <div class="col-sm-4">
+          	<h5 style="text-align:center;">Victories</h5>
+            <p style="text-align:center;">0</p>
+        </div>
+        <div class="col-sm-4">
+          	<h5 style="text-align:center;">Winning percentage</h5>
+            <p style="text-align:center;">0.0%</p>
+        </div>
+    </div>
+</div>
 
+<div class="row">
+	 	<div id="rd7-heats-all-stat" class="col-sm-12 heats-all-stat" style="display:none;">
+		 	  <h6 style="text-align:center;">Semifinals</h6>
+			<div class="col-sm-4">
+	          	<h5 style="text-align:center;">Appereances</h5>
+	            <p style="text-align:center;">1</p>
+	        </div>
+	          <div class="col-sm-4">
+	          	<h5 style="text-align:center;">Victories</h5>
+	            <p style="text-align:center;">1</p>
+	        </div>
+	        <div class="col-sm-4">
+	          	<h5 style="text-align:center;">Winning percentage</h5>
+	            <p style="text-align:center;">100.0%</p>
+	        </div>
+	    </div>
+	    <div id="rd8-heats-all-stat" class="col-sm-12 heats-all-stat" style="display:none;">
+	    	<h6 style="text-align:center;">Final</h6>
+			<div class="col-sm-4">
+	          	<h5 style="text-align:center;">Appereances</h5>
+	            <p style="text-align:center;">1</p>
+	        </div>
+	          <div class="col-sm-4">
+	          	<h5 style="text-align:center;">Victories</h5>
+	            <p style="text-align:center;">0</p>
+	        </div>
+	        <div class="col-sm-4">
+	          	<h5 style="text-align:center;">Winning percentage</h5>
+	            <p style="text-align:center;">0.0%</p>
+	        </div>
+	    </div>
+</div>
 
 	    		
 
@@ -290,7 +339,7 @@
 		  element: 'avg_chart',
 		  // Chart data records -- each entry in this array corresponds to a point on
 		  // the chart.
-		  data: [{"year":"2012","avg":11.07,"avg_all":9.7},{"year":"2014","avg":7.65,"avg_all":9.7}],
+		  data: [],
 
 		  // The name of the data record attribute that contains x-values.
 		  xkey: 'year',
@@ -306,7 +355,7 @@
 		  element: 'heat_chart',
 		  // Chart data records -- each entry in this array corresponds to a point on
 		  // the chart.
-		  data: [{"year":"2012","heats":3,"wins":1,"percs":"33.33%"},{"year":"2014","heats":2,"wins":0,"percs":"0.0%"}],
+		  data: [],
 
 		  // The name of the data record attribute that contains x-values.
 		  xkey: 'year',
