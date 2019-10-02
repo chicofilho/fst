@@ -119,6 +119,16 @@
     		<hr/>
     		<h4 style="text-align:center;" >Competitions</h4>
 
+	    		<h4 style="text-align:center;" >Epic Battles</h4>
+	    		<div class="row">
+	    			<div class="col-sm-6 ">
+		                <p style="text-align:center;">Surfed <b>12</b> heats against <a href="http://fantasysurfingtips.com/surfers/mct/jpar.html"> Joel Parkinson</a> <br/> <b>won 5</b> and <b>lost 6</b></p>
+		                
+	                </div>
+	                <div class="col-sm-6 ">
+		                <p style="text-align:center;">Surfed <b>14</b> heats against <a href="http://fantasysurfingtips.com/surfers/mct/jker.html"> Josh Kerr</a> <br/> <b>won 3</b> and <b>lost 10</b></p>
+	                </div>
+		    	</div>
 
     	<hr/>
     	<h4 style="text-align:center;" >Heat Stats (FST data)</h4>
@@ -129,11 +139,11 @@
             </div>
               <div class="col-sm-4 portfolio-item">
               	<h6 style="text-align:center;">Heat wins</h6>
-                <h2 style="text-align:center;">0</h2>
+                <h2 style="text-align:center;">37</h2>
             </div>
             <div class="col-sm-4 portfolio-item">
               	<h6 style="text-align:center;">HEAT WINS PERCENTAGE</h6>
-                <h2 style="text-align:center;">0.0%</h2>
+                <h2 style="text-align:center;">27.41%</h2>
             </div>
     	</div>
     	
@@ -185,11 +195,11 @@
           </div>
             <div class="col-sm-4">
             	<h5 style="text-align:center;">Victories</h5>
-              <p style="text-align:center;">0</p>
+              <p style="text-align:center;">10</p>
           </div>
           <div class="col-sm-4">
             	<h5 style="text-align:center;">Winning percentage</h5>
-              <p style="text-align:center;">0.0%</p>
+              <p style="text-align:center;">20.0%</p>
           </div>
       </div>
       <div id="rd2-heats-all-stat"  class="col-sm-12 heats-all-stat" style="display:none;">
@@ -200,11 +210,11 @@
           </div>
             <div class="col-sm-4">
             	<h5 style="text-align:center;">Victories</h5>
-              <p style="text-align:center;">0</p>
+              <p style="text-align:center;">17</p>
           </div>
           <div class="col-sm-4">
             	<h5 style="text-align:center;">Winning percentage</h5>
-              <p style="text-align:center;">0.0%</p>
+              <p style="text-align:center;">39.53%</p>
           </div>
       </div>
   </div>
@@ -219,11 +229,11 @@
         </div>
           <div class="col-sm-4">
           	<h5 style="text-align:center;">Victories</h5>
-            <p style="text-align:center;">0</p>
+            <p style="text-align:center;">7</p>
         </div>
         <div class="col-sm-4">
           	<h5 style="text-align:center;">Winning percentage</h5>
-            <p style="text-align:center;">0.0%</p>
+            <p style="text-align:center;">28.0%</p>
         </div>
     </div>
     <div id="rd4-heats-all-stat" class="col-sm-12 heats-all-stat" style="display:none;">
@@ -252,11 +262,11 @@
         </div>
           <div class="col-sm-4">
           	<h5 style="text-align:center;">Victories</h5>
-            <p style="text-align:center;">0</p>
+            <p style="text-align:center;">3</p>
         </div>
         <div class="col-sm-4">
           	<h5 style="text-align:center;">Winning percentage</h5>
-            <p style="text-align:center;">0.0%</p>
+            <p style="text-align:center;">42.86%</p>
         </div>
     </div>
     <div id="rd6-heats-all-stat" class="col-sm-12 heats-all-stat" style="display:none;">
@@ -327,7 +337,7 @@
 		  element: 'avg_chart',
 		  // Chart data records -- each entry in this array corresponds to a point on
 		  // the chart.
-		  data: [],
+		  data: [{"year":"2012","avg":10.56,"avg_all":11.19},{"year":"2013","avg":12.06,"avg_all":11.19},{"year":"2014","avg":11.32,"avg_all":11.19},{"year":"2015","avg":10.47,"avg_all":11.19},{"year":"2016","avg":11.62,"avg_all":11.19}],
 
 		  // The name of the data record attribute that contains x-values.
 		  xkey: 'year',
@@ -343,7 +353,7 @@
 		  element: 'heat_chart',
 		  // Chart data records -- each entry in this array corresponds to a point on
 		  // the chart.
-		  data: [],
+		  data: [{"year":"2012","heats":22,"wins":4,"percs":"18.18%"},{"year":"2013","heats":26,"wins":6,"percs":"23.08%"},{"year":"2014","heats":27,"wins":8,"percs":"29.63%"},{"year":"2015","heats":33,"wins":10,"percs":"30.3%"},{"year":"2016","heats":27,"wins":9,"percs":"33.33%"}],
 
 		  // The name of the data record attribute that contains x-values.
 		  xkey: 'year',
